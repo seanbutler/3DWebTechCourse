@@ -1,0 +1,32 @@
+html {
+    margin: 3vw 3vw 3vw 3vw;
+    font-family: monospace;
+    font-size: 2vw;
+    line-height: 2.2vw;
+    background-color: lightgrey;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-size: 2vw;
+    line-height: 3.5vw;
+}
+
+a {
+    background-color: white;
+    text-decoration: none;
+}
+
+a[href]:hover {
+    background-color: black;
+}
+
+canvas {
+  width: 100vw;
+  height: 100vh;
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -9999;
+  background-color: lightgrey;
+}
