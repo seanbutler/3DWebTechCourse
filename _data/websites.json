@@ -1,0 +1,26 @@
+[
+    {
+        "url": "https://en.wikipedia.org/wiki/WebGL",
+        "title": "WebGL",
+        "author": "WIKIPEDIA",
+        "comments": "Often a good place to start from is wikipedia"
+    },
+    {
+        "url": "https://en.wikipedia.org/wiki/Three.js",
+        "title": "Three.js",
+        "author": "WIKIPEDIA",
+        "comments": "Often a good place to start from is wikipedia"
+    },
+    {
+        "url": "https://threejs.org/",
+        "title": "Three.js",
+        "author": "david scott lyons",
+        "comments": "nice web tech based slide presentation about webgl. side effect shows integration between webgl, css tweening and html page."
+    },
+    {
+        "url": "http://davidscottlyons.com/threejs/presentations/frontporch14/index.html#slide-0",
+        "title": "Intro to WebGL",
+        "author": "david scott lyons",
+        "comments": "nice web tech based slide presentation about webgl. side effect shows integration between webgl, css tweening and html page."
+    }
+]

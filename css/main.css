@@ -1,24 +1,30 @@
 html {
-    margin: 3vw 3vw 3vw 3vw;
+    /*margin: 3vw 3vw 3vw 3vw;*/
     font-family: monospace;
-    font-size: 2vw;
-    line-height: 2.2vw;
-    background-color: orange;
+    font-size: 1.5vw;
+    /*background-color: orange;*/
+    /*color: white;*/
+    /*line-height: 2.2vw;*/
+    font-weight: light;
 }
 
-h1, h2, h3, h4, h5, h6 {
-    font-size: 2vw;
-    line-height: 3.5vw;
+h1 {
+    font-weight: bold;
 }
 
-a {
+h2, h3, h4, h5, h6{
+    /*color: orange;*/
+    /*border-bottom: 0.2vw solid orange;*/
+}
+
+/*a {
     background-color: white;
     text-decoration: none;
-}
+}*/
 
-a[href]:hover {
+/*a[href]:hover {
     background-color: black;
-}
+}*/
 
 canvas {
   width: 100vw;
@@ -28,5 +34,4 @@ canvas {
   top: 0;
   left: 0;
   z-index: -9999;
-  background-color: lightgrey;
 }
