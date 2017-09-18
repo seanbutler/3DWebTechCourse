@@ -6,7 +6,7 @@ html{
     margin: 0;
     border: 0;
     padding: 0;
-    color: white;
+    color: black;
 }
 
 body {
@@ -36,6 +36,7 @@ nav {
     /*border-left: 1vw solid black;
     border-right: 1vw solid black;*/
     /*border-bottom: 0.5vw solid black;*/
+    color: white;
 }
 
 h2{
@@ -44,7 +45,7 @@ h2{
 }
 
 h3,h4, h5, h6{
-    /*color: red;*/
+    color: white;
 }
 
 p, ul, ol {
