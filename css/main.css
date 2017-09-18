@@ -50,6 +50,7 @@ h3,h4, h5, h6{
 
 p, ul, ol {
     padding-left: 10vw;
+    color: white;
 }
 
 a {
@@ -103,5 +104,9 @@ img{
     scenery
     {
         display: none !important;
+    }
+
+    p, ul, ol, li, a, h1, h2, h3, h4, h5, h6 {
+        color: black;
     }
 }
