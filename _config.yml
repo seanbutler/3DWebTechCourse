@@ -32,3 +32,14 @@ gems:
 exclude:
   - Gemfile
   - Gemfile.lock
+
+collections:
+    worksheets:
+        output: true
+        permalink: /worksheets/:path/
+    lectures:
+        output: true
+        permalink: /lectures/:path/
+    assignments:
+        output: true
+        permalink: /assignments/:path/
