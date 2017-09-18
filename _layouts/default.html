@@ -15,12 +15,18 @@
 		<br />*{{ page.title }}</h1>
 
 		<nav>
-			<a href="/3DWebTechCourse3DWebTechCourse/">[home]</a>
-			<a href="/3DWebTechCourse/worksheets">[worksheets]</a>
-			<a href="/3DWebTechCourse/lectures">[lectures]</a>
-			<a href="/3DWebTechCourse/assignments">[assignments]</a>
-			<a href="/3DWebTechCourse/sources">[sources]</a>
+			<a href="/">[home]</a>
+			<a href="/worksheets">[worksheets]</a>
+			<a href="/lectures">[lectures]</a>
+			<a href="/assignments">[assignments]</a>
+			<a href="/sources">[sources]</a>
 		</nav>
+
+<pre>
+	{{page.hostdomain}}
+	{{page.url}}
+	{{page.path}}
+</pre>
 
 		<div class="container">
 			{{ content }}
