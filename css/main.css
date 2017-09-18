@@ -11,29 +11,30 @@ html{
 
 body {
     margin: 3vw 12vw 3vw 12vw;
-    font-size: 2vw;
+    font-size: 1.6vw;
     font-weight: light;
 }
 
 h1 {
     padding: 1vw;
     font-size: 6vw;
-    background-color: red;
-    color: black;
-    margin: 0;
-    border: 1vw solid black;
+    /*background-color: red;*/
+    color: white;
+    /*margin: 0;*/
+    /*border: 1vw solid black;*/
 }
 
 nav {
     padding-top: 1vw;
     padding: 1vw;
     font-size: 2vw;
-    background-color: rgba(255,0,0,0.85);
-    color: black;
+    /*background-color: rgba(255,0,0,0.85);*/
+    /*color: black;*/
     margin: 0;
     padding-bottom: 1vw;
-    border-left: 1vw solid black;
-    border-right: 1vw solid black;
+    /*border-left: 1vw solid black;
+    border-right: 1vw solid black;*/
+    border-bottom: 0.5vw solid black;
 }
 
 h2{
@@ -50,12 +51,13 @@ p, ul, ol {
 }
 
 a {
-    color: white;
+    background-color: white;
+    color: black;
+
 }
 
 a[href]:hover {
-    background-color: white;
-    color: black;
+    color: white;
 }
 
 scenery {
