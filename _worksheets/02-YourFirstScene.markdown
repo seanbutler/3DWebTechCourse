@@ -12,8 +12,6 @@ Please visit <https://www.google.com/chrome/> where you will see a large blue bu
 
 ![](/assets/getchrome.png)
 
-
-
 You may use other browsers, all the major ones have the necessary debugging and inspection tools built in. It doesn't however make the course simpler to administer if we all use the same tools.
 
 ## Step 2
