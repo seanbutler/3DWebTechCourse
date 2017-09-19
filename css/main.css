@@ -53,6 +53,7 @@ a {
 
 a[href]:hover {
     color: white;
+    background-color: black;
 }
 
 scenery {

@@ -37,13 +37,13 @@ If you are using one of the lab machines on campus then chrome should already be
 
 Please visit <https://www.google.com/chrome/> where you will see a large blue button. Please download and install Chrome by following the instructions.
 
-![](/assets/getchrome.png)
+![](/3DWebTechCourse/assets/getchrome.png)
 
 You may use other browsers, all the major ones have the necessary debugging and inspection tools built in. It doesn't however make the course simpler to administer if we all use the same tools.
 
 ## Step 3
 - Signup for Github (Educational for Privacy)
-![](/assets/githubwecme.png)
+![](/3DWebTechCourse/assets/githubwecme.png)
 
 Make yursef a prject
 Reccmend yu create a prject fr everything yu wrk n
@@ -52,14 +52,14 @@ Reccmend yu create a prject fr everything yu wrk n
 ## Step 4
 - Download and Install Github Desktop Client
 - https://desktop.github.com/
-![](/assets/getgthubdesktp.png)
+![](/3DWebTechCourse/assets/getgthubdesktp.png)
 
 
 ## Step 5
 - Download and Install Atom or similar
 - https://atom.io/
 - https://code.visualstudio.com/
-![](/assets/getatm.png)
+![](/3DWebTechCourse/assets/getatm.png)
 
 
 ## Step 5
