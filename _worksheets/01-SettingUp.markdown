@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Setting Up"
+title:  "Setting Up & Tool Overview"
 date:   2017-09-13 23:46:24 +0100
 ---
 
@@ -8,18 +8,22 @@ date:   2017-09-13 23:46:24 +0100
 - Discover Three.js
 - Download and Install Chrome
 
-## Step 1 - Discver Three.js
+
+## Introduction
+
+Three.js is a Javascript library, which means setting up your development environment is very easy. Javascript the only requirements are a text editor and a web browser. That being said, text editors with features such as syntax highlighting/folding, bracket matching, a document map, and so on - such as Notepad++ or Sublime Text - will provide a better coding experience.
+
+## Step 1 - Discover Three.js
 
 Please visit <https://threejs.org/>.
+
 This is the home of three.js on the web. There you can find an array of featured projects, the api documentation, lots of examples, forums, links to recommended books and websites.
 
-Take the time t investigate haf a dzen ff the featured prjects.
+![](/3DWebTechCourse/assets/threejs.png)
 
-![](/assets/threejs.png)
+Keep this bookmarked somewhere convenient. Over the rest of the module you will visit this website many times.
 
-Keep this bookmarked somewere convecnient over the rest f the mdue yu wi visit this website many times.
-
-Pease take the time to review some of the featured projects, yu wi get a fee fr the pssabiities taht are achievable using three.js.
+Please take the time to review a few of the featured projects. You will get a feel for the possabilities tha are achievable using three.js and webgl.
 
 <http://hexgl.bkcore.com/>
 
@@ -27,7 +31,7 @@ Pease take the time to review some of the featured projects, yu wi get a fee fr 
 
 Q. Given what you've seen. What possibilities are you interested in making?
 
-Q. You've seen we can render 3D just like a native app. Given that we have close/integrated access to all the other web technologies, what other interesting things could we do with that 3D rendering?
+Q. Aw we have close integrated access to all the other web technologies, what other interesting things could we do with that 3D rendering?
 
 While you think about those questions, move on through the next few steps.
 
@@ -35,7 +39,7 @@ While you think about those questions, move on through the next few steps.
 
 If you are using one of the lab machines on campus then chrome should already be installed.
 
-Please visit <https://www.google.com/chrome/> where you will see a large blue button. Please download and install Chrome by following the instructions.
+Otherwise, please visit <https://www.google.com/chrome/> where you will see a large blue button. Download and install Chrome by following the instructions.
 
 ![](/3DWebTechCourse/assets/getchrome.png)
 
@@ -45,9 +49,7 @@ You may use other browsers, all the major ones have the necessary debugging and 
 - Signup for Github (Educational for Privacy)
 ![](/3DWebTechCourse/assets/githubwecme.png)
 
-Make yursef a prject
-Reccmend yu create a prject fr everything yu wrk n
-
+Make yourself a project. We recommend you make a project for every piece of work you carry out. Keep your work there and push/sync all the changes you make. If you get in a pickle then you can roll back and get your earlier work.
 
 ## Step 4
 - Download and Install Github Desktop Client
@@ -62,10 +64,18 @@ Reccmend yu create a prject fr everything yu wrk n
 ![](/3DWebTechCourse/assets/getatm.png)
 
 
+
+
+## Discussion
+
+As for web browsers, both Google Chrome and Mozilla Firefox have excellent WebGL support. Google Chrome has a particularly helpful set of built-in developer tools that can greatly simplify the workflow process, such as a console that can be used for debugging and inspecting Javascript values and objects, and Workspace settings that allow you to edit and save source files from within the browser. More details can be found at the Chrome DevTools site.
+
+Tip: It is also possible to write code using Three.js entirely online, using services such as cloud9 or jsFiddle. This option is typically only used for sharing examples or demonstrations with small amounts of code.
+
+(from: https://gamedevelopment.tutsplus.com/articles/how-to-learn-threejs-for-game-development--gamedev-11787)
+
 ## Step 5
-- Im assuming yu kne htm and css at this pint.
-
-
+- I'm assuming you know html and css at this point.
 
 ~~~ html
     <!DOCTYPE html>
