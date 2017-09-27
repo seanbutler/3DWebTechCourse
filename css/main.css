@@ -19,6 +19,7 @@ h1 {
     padding: 1vw;
     font-size: 6vw;
     color: white;
+    background-color: green;
     margin: 0;
 
 }
@@ -30,20 +31,24 @@ nav {
     margin: 0;
     padding-bottom: 1vw;
     color: white;
+    background-color: green;
 }
 
 h2{
     color: white;
-    border-bottom: 0.5vw solid white;
+    border-bottom: 0.5vw solid red;
+    background-color: green;
 }
 
 h3,h4, h5, h6{
     color: white;
+    background-color: green;
 }
 
 p, ul, ol {
     padding-left: 10vw;
     color: white;
+    background-color: green;
 }
 
 a {

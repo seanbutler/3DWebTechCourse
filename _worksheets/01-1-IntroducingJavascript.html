@@ -1,0 +1,174 @@
+---
+layout: slides
+title:  "Introducing Javascript"
+date:   2017-09-13 23:46:24 +0100
+---
+
+<section>
+    <h1>Introducing Javascript</h1>
+    <p>part of 3d tech for the web course</p>
+</section>
+
+<section>
+    <h2>Aims and Objectives</h2>
+        <p>Understand Why Javascript</p>
+        <p>Why do people dislike it?</p>
+        <p>Review The Differences from other Languages</p>
+        <p>Be Familiar Enough to Migrate</p>
+        <p>Review Several Common Pitfalls/Gotchas for new js programmers</p>
+</section>
+
+<section>
+    <h2>Javascript for Java Programmers</h2>
+    <small>
+        <code>
+            https://developer.mozilla.org/en-US/docs/Web/JavaScript/A_re-introduction_to_JavaScript
+            https://stackoverflow.com/questions/536912/teaching-javascript-to-java-programmers
+        </code>
+    </small>
+</section>
+
+<section>
+    <h1>General syntax</h1>
+    <ul>
+        <li>Similar Yet Different</li>
+        <li>Derived from Java and C so should be familiar to _anyone_ coming from those languages.</li>
+        <li>There are several important differences from how you might expect a language of this heritage to behave.</li>
+    </ul>
+</section>
+
+<section>
+    <h2>Why Javascript?</h2>
+    <ul>
+        <li>The most widespread programming language today</li>
+        <li>Ubiquitous</li>
+        <li>Javascript is the language built into web pages</li>
+    </ul>
+</section>
+
+<section>
+    <h2>Why Javascript?</h2>
+    <ul>
+        <li>Javascript is different from _whatever you were using before_</li>
+        <li>May cause pain, but there is pain for all new language learning</li>
+        <li>The internal model of web pages (DOM) sucks</li>
+        <li>The DOM is big and complicated, vendors implemented it differently and its not completely standard</li>
+    </ul>
+</section>
+
+<section>
+    <h2>The Good Parts</h2>
+    <p>http://gnab.github.io/js-workshop/#1</p>
+</section>
+
+<section>
+    <h2>The Bad Parts</h2>
+</section>
+
+<section>
+    <h2>The Global Namespace</h2>
+    <p>Why are globals evil?</p>
+    <p>Luckily there are ways around this, use them</p>
+</section>
+
+<section>
+    <h2>Equals</h2>
+    <ul>
+        <li>==</li>
+        <li>!==</li>
+        <li>===</li>
+        <li>!==</li>
+    </ul>
+</section>
+
+<section>
+    <h2>with statement</h2>
+</section>
+
+<section>
+    <h2>eval</h2>
+    <p>major security problem</p>
+    <p>you pass control of your program to the contents of a string variable</p>
+    <p>so you have to up things in place to stop malicious code getting in there</p>
+    <p>don't</p>
+</section>
+
+<section>
+    <h2>continue</h2>
+    - continue jumps back to the top of a loop
+    - refactor it out
+    - simpler & singular, and overall easier to read
+    - express your branches separately from the loop itself
+</section>
+
+<section>
+    <h2>switch fallthrough</h2>
+    - generally not needed
+    - only use if you have to
+    - most switches are expected to not fall through, so if you do, then make sure you announce it clearly
+    - refactor it out
+</section>
+
+<section>
+    <h2>Blockless Statements</h2>
+    - if, while, do, for statements take a block
+    - blocks can be singles lines or other statements without the { }
+    - this can lead to some confusing issues
+</section>
+
+<section>
+    <h2>increment and decrement</h2>
+</section>
+
+<section>
+    <h2>bitwise operators</h2>
+    <ul>
+        <li>dont match expectations for migrating Programmers</li>
+        <li>usually v fast</li>
+        <li>js they are slow</li>
+    </ul>
+</section>
+
+<section>
+    <h2>Main Differences Between Javascript and Java</h2>
+</section>
+
+<section>
+    <h2>Built In Types</h2>
+</section>
+
+<section>
+    <h2>Numbers</h2>
+</section>
+
+<section>
+    <h2>Strings</h2>
+</section>
+
+<section>
+    <h2>Prototype Objects rather than classes</h2>
+    <p>a set of idioms for encapsulation that rely on the dynamic nature of the language. es2016 introduces class syntax for the traditional approach.</p>
+</section>
+
+<section data-markdown>
+    <h2>Untyped variables</h2>
+    <p>var & hoisting</p>
+    <p>es2016 introduced let</p>
+</section>
+
+<section>
+    <h2>Recent Introductions</h2>
+    <p>classes</p>
+    <p>let</p>
+    <p>new function syntax</p>
+</section>
+
+<section>
+<h2>Further Reading</h2>
+
+<p>Crockford, D. (2008) Javascript: The Good Parts. Oreilly YAHOO Press.</p>
+<p>https://www.d.umn.edu/~gshute/webdev/javascript/javascript.xhtml</p>
+<p>http://blog.angular-university.io/javascript-for-java-developers/</p>
+<p>http://blog.firetree.net/2005/06/16/object-orientated-javascript/</p>
+
+</section>
