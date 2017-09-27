@@ -6,7 +6,7 @@ html{
     margin: 0;
     border: 0;
     padding: 0;
-    color: black;
+    /*color: black;*/
 }
 
 body {
@@ -18,8 +18,8 @@ body {
 h1 {
     padding: 1vw;
     font-size: 6vw;
-    color: white;
-    background-color: green;
+    /*color: white;*/
+    /*background-color: green;*/
     margin: 0;
 
 }
@@ -30,25 +30,25 @@ nav {
     font-size: 2.2vw;
     margin: 0;
     padding-bottom: 1vw;
-    color: white;
-    background-color: green;
+    /*color: white;
+    background-color: green;*/
 }
 
 h2{
-    color: white;
-    border-bottom: 0.5vw solid red;
-    background-color: green;
+    /*color: white;
+    border-bottom: 0.5vw solid white;
+    background-color: green;*/
 }
 
 h3,h4, h5, h6{
-    color: white;
-    background-color: green;
+    /*color: white;
+    background-color: green;*/
 }
 
 p, ul, ol {
     padding-left: 10vw;
-    color: white;
-    background-color: green;
+    /*color: white;
+    background-color: green;*/
 }
 
 a {
