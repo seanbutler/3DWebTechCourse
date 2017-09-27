@@ -59,20 +59,82 @@ date:   2017-09-13 23:46:24 +0100
 </section>
 
 <section>
-Objects
+    <h2>Objects</h2>
+    <p>objects are 'just' a collection of key value pairs</p>
+
+    <pre>
+        <code>
+            var obj = {
+              key1: 'value1',
+              key2: 13
+            };
+
+            obj.key1;         // 'value1'
+            obj['key2'];      // 13
+            obj.key3;         // undefined
+
+            delete obj.key1;
+            obj.key1;         // undefined
+        </code>
+    </pre>
 </section>
 
 <section>
-Object Literals
+    <h2>Arrays</h2>
+
+    <pre>
+        <code>
+            var arr = [1, "two", 3];
+
+            arr.push(4);
+
+            arr[1];         // "two"
+            arr[3] = 4;
+            arr.length;     // 4
+        </code>
+    </pre>
+
 </section>
 
 <section>
-Arrays
+    <h2>Objects are Arrays</h2>
+
+    <pre>
+        <code>
+            var obj = [1, 2, 3];
+            obj.speed = 5;
+
+            obj[1];         // 2
+            obj.speed       // 5
+            obj['speed'];   // 5
+
+            obj.length;     // 3
+        </code>
+    </pre>
 </section>
 
+
 <section>
-Objects are Arrays
+    <h2>Objects are Arrays</h2>
+
+    <pre>
+        <code>
+            var obj = [1, 2, 3];
+            obj.speed = 5;
+
+            var i;
+            for (i = 0; i < obj.length; ++i) {
+              obj[i];  // 1, 2, 3
+            }
+
+            var key;
+            for (key in obj) {
+              obj[key];  // 1, 2, 3, 5
+            }
+        </code>
+    </pre>
 </section>
+
 
 <section data-background-color="#ff7f00">
     <h2>In Java everything is an Object</h2>
@@ -90,7 +152,7 @@ Objects are Arrays
     <img src = "/3DWebTechCourse/worksheets/assets/js_global_for_itor.png">
 
     <p>Why are globals evil?</p>
-    <p>Luckily there are ways around this, use them</p>
+    <p>There are ways around this. Use them</p>
 </section>
 
 <section>
