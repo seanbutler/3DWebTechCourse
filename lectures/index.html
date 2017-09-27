@@ -2,8 +2,9 @@
 layout: default
 title: lectures
 ---
-
-{% for doc in site.lectures %}
-    <a href="/3DWebTechCourse/{{ doc.url }}">{{ doc.title }}</a>
-    <br />
-{% endfor %}
+<div class="container">
+    {% for doc in site.lectures %}
+        <a href="/3DWebTechCourse/{{ doc.url }}">{{ doc.title }}</a>
+        <br />
+    {% endfor %}
+</div>
