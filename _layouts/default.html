@@ -49,7 +49,7 @@
 			camera.position.z = 1000;
 
 			scene = new THREE.Scene();
-			scene.background = new THREE.Color( 0x000000 );
+			scene.background = new THREE.Color( 0xffffff );
 
 			scene.add( new THREE.AmbientLight( 0x505050 ) );
 
@@ -64,7 +64,7 @@
 			for ( var i = 0; i < 50; i ++ ) {
 
 				// var object = new THREE.Mesh( geometry, new THREE.MeshLambertMaterial( { color: Math.random() * 0xffffff } ) );
-				var object = new THREE.Mesh( geometry, new THREE.MeshLambertMaterial( { color: 0xFF0000 } ) );
+				var object = new THREE.Mesh( geometry, new THREE.MeshLambertMaterial( { color: 0xFFFFFF } ) );
 
 				object.position.x = Math.random() * 1200 - 600;
 				object.position.y = Math.random() * 800 - 400;
