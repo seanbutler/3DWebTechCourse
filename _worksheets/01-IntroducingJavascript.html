@@ -111,30 +111,30 @@ obj['speed'];   // 5
 obj.length;     // 3
         </code>
     </pre>
+
+
+
+    <section>
+        <h2>Objects are Arrays</h2>
+
+        <pre>
+            <code>
+    var obj = [1, 2, 3];
+    obj.speed = 5;
+
+    var i;
+    for (i = 0; i < obj.length; ++i) {
+        obj[i];  // 1, 2, 3
+    }
+
+    var key;
+    for (key in obj) {
+        obj[key];  // 1, 2, 3, 5
+    }
+            </code>
+        </pre>
+    </section>
 </section>
-
-
-<section>
-    <h2>Objects are Arrays</h2>
-
-    <pre>
-        <code>
-var obj = [1, 2, 3];
-obj.speed = 5;
-
-var i;
-for (i = 0; i < obj.length; ++i) {
-    obj[i];  // 1, 2, 3
-}
-
-var key;
-for (key in obj) {
-    obj[key];  // 1, 2, 3, 5
-}
-        </code>
-    </pre>
-</section>
-
 
 
 <section>
@@ -178,40 +178,41 @@ var recur = function rec (num) {
 };
         </code>
     </pre>
+
+
+    <section>
+        <h2>Functions</h2>
+        <p>can access their arguments, length and callee</p>
+        <pre>
+            <code>
+    function countArgs () {
+        return arguments.length;
+    }
+
+    countArgs();              // 0
+    countArgs('one');         // 1
+    countArgs('one', 'two');  // 2
+            </code>
+        </pre>
+    </section>
+
+    <section>
+        <h2>Functions</h2>
+        <p>are first order objects can be assigned and returned like any other variable</p>
+        <pre>
+            <code>
+    function createFunction () {
+        return function () {
+        };
+    }
+
+    var anonymous = createFunction();
+    anonymous();  // undefined
+            </code>
+        </pre>
+    </section>
+
 </section>
-
-<section>
-    <h2>Functions</h2>
-    <p>can access their arguments, length and callee</p>
-    <pre>
-        <code>
-function countArgs () {
-    return arguments.length;
-}
-
-countArgs();              // 0
-countArgs('one');         // 1
-countArgs('one', 'two');  // 2
-        </code>
-    </pre>
-</section>
-
-<section>
-    <h2>Functions</h2>
-    <p>are first order objects can be assigned and returned like any other variable</p>
-    <pre>
-        <code>
-function createFunction () {
-    return function () {
-    };
-}
-
-var anonymous = createFunction();
-anonymous();  // undefined
-        </code>
-    </pre>
-</section>
-
 
 <section>
     <h2>Scope</h2>
@@ -230,6 +231,7 @@ function () {
 </code>
 </pre>
 
+<section>
 <p>so we move all variable declarations to the top of their function</p>
 <pre>
     <code>
@@ -248,7 +250,7 @@ function () {
     </pre>
 
 </section>
-
+</section>
 
 <section>
     <h2>Scope</h2>
@@ -267,23 +269,27 @@ function doSomething () {
 </code>
 </pre>
 
-<p>but not the other way around</p>
-<pre>
-    <code>
-function doSomething () {
-  var b = 1;
+    <section>
 
-  function doMore () {
-    b;  // 1
-  }
-}
-doSomething();
+    <p>but not the other way around</p>
+    <pre>
+        <code>
+    function doSomething () {
+      var b = 1;
 
-b;  // ReferenceError
-        </code>
-    </pre>
+      function doMore () {
+        b;  // 1
+      }
+    }
+    doSomething();
 
-</section>
+    b;  // ReferenceError
+            </code>
+        </pre>
+
+    </section>
+
+
 
 
 <section>
@@ -304,7 +310,7 @@ function () {
     </pre>
 
 
-
+</section>
 
 </section>
 
