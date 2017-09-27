@@ -17,9 +17,9 @@ body {
 
 h1 {
     padding: 1vw;
-    font-size: 6vw;
+    font-size: 4vw;
     /*color: white;*/
-    /*background-color: green;*/
+    background-color: white;
     margin: 0;
 
 }
@@ -38,9 +38,12 @@ h2{
     /*color: white;
     border-bottom: 0.5vw solid white;
     background-color: green;*/
+
+    background-color: white;
 }
 
 h3,h4, h5, h6{
+    background-color: white;
     /*color: white;
     background-color: green;*/
 }
@@ -58,7 +61,7 @@ a {
 
 a[href]:hover {
     color: white;
-    background-color: black;
+    background-color: grey;
 }
 
 scenery {
