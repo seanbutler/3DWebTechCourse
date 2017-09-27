@@ -64,17 +64,17 @@ date:   2017-09-13 23:46:24 +0100
 
     <pre>
         <code>
-            var obj = {
-              key1: 'value1',
-              key2: 13
-            };
+var obj = {
+    key1: 'value1',
+    key2: 13
+};
 
-            obj.key1;         // 'value1'
-            obj['key2'];      // 13
-            obj.key3;         // undefined
+obj.key1;         // 'value1'
+obj['key2'];      // 13
+obj.key3;         // undefined
 
-            delete obj.key1;
-            obj.key1;         // undefined
+delete obj.key1;
+obj.key1;         // undefined
         </code>
     </pre>
 </section>
@@ -84,13 +84,13 @@ date:   2017-09-13 23:46:24 +0100
 
     <pre>
         <code>
-            var arr = [1, "two", 3];
+var arr = [1, "two", 3];
 
-            arr.push(4);
+arr.push(4);
 
-            arr[1];         // "two"
-            arr[3] = 4;
-            arr.length;     // 4
+arr[1];         // "two"
+arr[3] = 4;
+arr.length;     // 4
         </code>
     </pre>
 
@@ -101,14 +101,14 @@ date:   2017-09-13 23:46:24 +0100
 
     <pre>
         <code>
-            var obj = [1, 2, 3];
-            obj.speed = 5;
+var obj = [1, 2, 3];
+obj.speed = 5;
 
-            obj[1];         // 2
-            obj.speed       // 5
-            obj['speed'];   // 5
+obj[1];         // 2
+obj.speed       // 5
+obj['speed'];   // 5
 
-            obj.length;     // 3
+obj.length;     // 3
         </code>
     </pre>
 </section>
@@ -119,20 +119,193 @@ date:   2017-09-13 23:46:24 +0100
 
     <pre>
         <code>
-            var obj = [1, 2, 3];
-            obj.speed = 5;
+var obj = [1, 2, 3];
+obj.speed = 5;
 
-            var i;
-            for (i = 0; i < obj.length; ++i) {
-              obj[i];  // 1, 2, 3
-            }
+var i;
+for (i = 0; i < obj.length; ++i) {
+    obj[i];  // 1, 2, 3
+}
 
-            var key;
-            for (key in obj) {
-              obj[key];  // 1, 2, 3, 5
-            }
+var key;
+for (key in obj) {
+    obj[key];  // 1, 2, 3, 5
+}
         </code>
     </pre>
+</section>
+
+
+
+<section>
+    <h2>Types</h2>
+
+    <pre>
+        <code>
+new Object();       // {}
+new Array();        // []
+new Number(1);      // 1
+new Boolean(true);  // true
+
+typeof {};          // 'object'
+typeof [];          // 'object'     WTF?
+typeof 1;           // 'number'
+typeof '';          // 'string'
+typeof true;        // 'boolean'
+
+typeof null;        // 'object'     WTF?
+        </code>
+    </pre>
+</section>
+
+<section>
+    <h2>Functions</h2>
+    <pre>
+        <code>
+function () {}
+
+function add (a, b) {
+  return a + b;
+}
+
+var multiply = function (a, b) {
+  return a * b;
+};
+
+var recur = function rec (num) {
+  if (num === 0) { return num; }
+  return rec(num - 1);
+};
+        </code>
+    </pre>
+</section>
+
+<section>
+    <h2>Functions</h2>
+    <p>can access their arguments, length and callee</p>
+    <pre>
+        <code>
+function countArgs () {
+    return arguments.length;
+}
+
+countArgs();              // 0
+countArgs('one');         // 1
+countArgs('one', 'two');  // 2
+        </code>
+    </pre>
+</section>
+
+<section>
+    <h2>Functions</h2>
+    <p>are first order objects can be assigned and returned like any other variable</p>
+    <pre>
+        <code>
+function createFunction () {
+    return function () {
+    };
+}
+
+var anonymous = createFunction();
+anonymous();  // undefined
+        </code>
+    </pre>
+</section>
+
+
+<section>
+    <h2>Scope</h2>
+    <p>Function Scope, not Block Scope you are used to</p>
+    <pre>
+        <code>
+function () {
+    i;  // undefined    WTF?
+
+    for (var i = 0; i < 10; i++) {
+
+    }
+
+    i;  // ?
+}
+</code>
+</pre>
+
+<p>so we move all variable declarations to the top of their function</p>
+<pre>
+    <code>
+
+function () {
+  var i;
+
+  for (i = 0; i < 10; i++) {
+
+  }
+
+  i;  // 10
+}
+
+        </code>
+    </pre>
+
+</section>
+
+
+<section>
+    <h2>Scope</h2>
+    <p>External Access</p>
+    <pre>
+        <code>
+var a = 1;
+
+function doSomething () {
+  a;  // 1
+
+  function doMore () {
+    a;  // 1
+  }
+}
+</code>
+</pre>
+
+<p>but not the other way around</p>
+<pre>
+    <code>
+function doSomething () {
+  var b = 1;
+
+  function doMore () {
+    b;  // 1
+  }
+}
+doSomething();
+
+b;  // ReferenceError
+        </code>
+    </pre>
+
+</section>
+
+
+<section>
+    <h2>Scope</h2>
+    <p>Function Scope, not Block Scope you are used to</p>
+    <pre>
+        <code>
+function () {
+    i;  // undefined    WTF?
+
+    for (var i = 0; i < 10; i++) {
+
+    }
+
+    i;  // ?
+}
+        </code>
+    </pre>
+
+
+
+
 </section>
 
 
