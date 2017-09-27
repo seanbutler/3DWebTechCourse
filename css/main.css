@@ -92,9 +92,10 @@ img{
     margin-bottom: 1vw;
     font-family: monospace;
     font-size: 1.2vw;
-    border: 1px solid white;
-    background: #333;
-    color: white;
+
+    border: 1px solid #333;
+    color: #333;
+    background: white;
 
 }
 
