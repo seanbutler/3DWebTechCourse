@@ -164,10 +164,10 @@ typeof null;        // 'object'     WTF?
 </section>
 
 <section>
+    <h2>Functions</h2>
 
     <section>
-    <h2>Functions</h2>
-    <p>first order objects can be assigned and returned like other variables</p>
+    <p>can be assigned and returned just like other variables</p>
 
 <pre><code data-trim>
 function () {}
@@ -188,17 +188,14 @@ var recur = function rec (num) {
     </section>
 
     <section>
-        <h2>Functions</h2>
         <p>can access their arguments, length and callee</p>
-<pre><code data-trim>
-function countArgs () {
+<pre><code data-trim>function countArgs () {
     return arguments.length;
 }
 
 countArgs();              // 0
 countArgs('one');         // 1
-countArgs('one', 'two');  // 2
-</code></pre>
+countArgs('one', 'two');  // 2</code></pre>
     </section>
 
 </section>
@@ -237,10 +234,8 @@ function () {
     </section>
 
     <section>
-        <h2>Scope</h2>
         <p>External Access</p>
-<pre><code data-trim>
-var a = 1;
+<pre><code data-trim>var a = 1;
 
 function doSomething () {
   a;  // 1
@@ -271,10 +266,8 @@ b;  // ReferenceError
     </section>
 
     <section>
-        <h2>Scope</h2>
         <p>Function Scope, not Block Scope you are used to</p>
-<pre><code data-trim>
-function () {
+<pre><code data-trim>function () {
     i;  // undefined    WTF?
 
     for (var i = 0; i < 10; i++) {
@@ -290,12 +283,11 @@ function () {
 
 
 <section>
+    <h2>Closures</h2>
 
     <section>
-        <h2>Closures</h2>
         <p>Functions can bind scope, even after their outer function has returned!</p>
-<pre><code data-trim>
-function makeAdder(x) {
+<pre><code data-trim>function makeAdder(x) {
   return function(y) {
     return x + y;
   };
@@ -311,7 +303,6 @@ console.log(add10(2)); // 12
     </section>
 
     <section>
-        <h2>Closures</h2>
         <p>functions can run immediatly!</p>
 <pre><code data-trim>
 var inc = function () {
@@ -329,7 +320,7 @@ inc();  // 1
     </section>
 
     <section>
-<h2>Create Modules via Closures</h2>
+<p>Used to Create Modules</p>
 <pre><code data-trim>
 var lib = {};
 lib.module = (function () {
@@ -349,9 +340,11 @@ lib.module = (function () {
 </section>
 
 <section>
+    <h2>Functions</h2>
+
     <section>
-        <h2>Functions</h2>
-        <p>Functions run in different contexts</p>
+
+        <p>Can run in different contexts</p>
         <p class = "fragment">Depending on how they are invoked</p>
         <p class = "fragment">May be invoked in 4 primary ways</p>
 
@@ -364,7 +357,6 @@ lib.module = (function () {
     </section>
 
     <section>
-        <h2>Functions</h2>
         <p>Function invocation / Called Directly</p>
 <pre><code data-trim>
 var countArgs = function () {
@@ -378,7 +370,6 @@ countArgs();  // 0
 </section>
 
     <section>
-        <h2>Functions</h2>
         <p>Constructor invocation / via the new Keyword</p>
 <pre><code data-trim>
 function Person (name) {
@@ -395,7 +386,6 @@ ed.name = 'fred';
     </section>
 
     <section>
-        <h2>Functions</h2>
         <p>Method invocation / called on objects</p>
 <pre><code data-trim>
     var obj = {
@@ -414,7 +404,6 @@ ed.name = 'fred';
 
 
     <section>
-        <h2>Functions</h2>
         <p>Apply and Call / Applying functions to objects</p>
 <pre><code data-trim>
     function doStuff () {
@@ -433,19 +422,18 @@ ed.name = 'fred';
 
 <section>
     <h2>Inheritance</h2>
+
     <section>
-    Prototypal/differential inheritance
-    Pseudoclassical inheritance
-    Functional inheritance
+        <p>Prototypal Inheritance</p>
+        <p>Pseudoclassical inheritance</p>
+        <p>Functional inheritance</p>
     </section>
 
     <section>
-    <h2>Prototypal/differential inheritance</h2>
-<p>no classes like c++, inherit from other objects</p>
-    <pre><code data-trim>
-var obj = {};
-obj.toString();  // '[object Object]'
-    </code></pre>
+    <h2>Prototypal Inheritance</h2>
+    <p>no classes like c++, inherit from other objects</p>
+<pre><code data-trim>var obj = {};
+obj.toString();  // '[object Object]'</code></pre>
 
     <pre><code data-trim>
 function Object () {}
@@ -480,8 +468,6 @@ first.x = 1;       // on first
 first.toString();  // on first's prototype (Object)
 </code></pre>
     </section>
-
-
 
 </section>
 
