@@ -47,17 +47,15 @@ date:   2017-09-13 23:46:24 +0100
     <ul>
         <li class = "fragment">ubiquitous</li>
         <li class = "fragment">www</li>
-        <li>Javascript is different from _whatever you were using before_</li>
-        <li>May cause pain, but there is pain for all new language learning</li>
     </ul>
 </section>
 
 <section>
     <h2>Why Not Javascript?</h2>
     <ul>
-        <li class = "fragment">Javascript is different from _whatever you were using before_</li>
+        <li class = "fragment">Javascript is different from <em>whatever you were using before</em></li>
         <li class = "fragment">May cause pain, but there is pain for all new language learning</li>
-        <li class = "fragment">Other preferable languages compile into js</li>
+        <li class = "fragment">Other <em>preferable</em> languages compile into js</li>
     </ul>
 </section>
 
@@ -76,7 +74,6 @@ date:   2017-09-13 23:46:24 +0100
 <section>
     <h2>Objects</h2>
     <p>objects are 'just' a collection of key value pairs</p>
-
     <pre>
         <code>
 var obj = {
@@ -96,10 +93,9 @@ obj.key1;         // undefined
 
 <section>
 
-    <section>
-
+<section>
     <h2>Arrays</h2>
-<p>A collection of indexed properties.</p>
+    <p>A collection of indexed properties.</p>
     <pre>
         <code>
 var arr = [1, "two", 3];
@@ -111,56 +107,47 @@ arr[3] = 4;
 arr.length;     // 4
         </code>
     </pre>
+</section>
 
-    </section>
-
-    <section>
+<section>
     <h2>Objects are Arrays</h2>
-
     <p>Arrays are not "real":</p>
-
     <ul>
         <li>Objects in disguise</li>
         <li>Operations are slow when number of elements are large</li>
     </ul>
-
     <pre>
         <code>
 var obj = [1, 2, 3];
 obj.speed = 5;
-
 obj[1];         // 2
 obj.speed       // 5
 obj['speed'];   // 5
-
 obj.length;     // 3
         </code>
     </pre>
-    </section>
-
+</section>
 
     <section>
         <h2>Objects are Arrays</h2>
+        <p>The for (... in ...) loops all properties of an object.<p>
+        <p class = "fragment">Loops over the values of a 'fake' array just the same.<p>
+<pre>
+<code>
+var obj = [1, 2, 3];
+obj.speed = 5;
 
-<p>The for (... in ...) loops all properties of an object.<p>
-<p class = "fragment">Therefore it loops over the values of a 'fake' array just the same.<p>
+var i;
+for (i = 0; i < obj.length; ++i) {
+    obj[i];  // 1, 2, 3
+}
 
-        <pre>
-            <code>
-    var obj = [1, 2, 3];
-    obj.speed = 5;
-
-    var i;
-    for (i = 0; i < obj.length; ++i) {
-        obj[i];  // 1, 2, 3
-    }
-
-    var key;
-    for (key in obj) {
-        obj[key];  // 1, 2, 3, 5
-    }
-            </code>
-        </pre>
+var key;
+for (key in obj) {
+    obj[key];  // 1, 2, 3, 5
+}
+</code>
+</pre>
     </section>
 
 </section>
@@ -168,28 +155,22 @@ obj.length;     // 3
 
 <section>
     <h2>Types</h2>
-
-    <pre>
-        <code>
+<pre><code>
 new Object();       // {}
 new Array();        // []
 new Number(1);      // 1
 new Boolean(true);  // true
-</code>
-</pre>
+</code></pre>
 
-<pre class = "fragment">
-    <code>
-
+<pre class = "fragment"><code>
 typeof {};          // 'object'
 typeof [];          // 'object'     WTF?
 typeof 1;           // 'number'
 typeof '';          // 'string'
 typeof true;        // 'boolean'
-
 typeof null;        // 'object'     WTF?
-        </code>
-    </pre>
+</code></pre>
+
 </section>
 
 <section>
@@ -362,7 +343,6 @@ b;  // ReferenceError
         <p>more here https://developer.mozilla.org/en-US/docs/Web/JavaScript/Closures</p>
     </section>
 
-
     <section>
         <h2>Closures</h2>
         <p>functions can run immediatly!</p>
@@ -382,7 +362,6 @@ b;  // ReferenceError
         </pre>
         <p>more here https://developer.mozilla.org/en-US/docs/Web/JavaScript/Closures</p>
     </section>
-
 
     <section>
 <h2>Create Modules via Closures</h2>
@@ -424,6 +403,7 @@ lib.module = (function () {
             <li>apply/call invocation</li>
         </ul>
     </section>
+</section>
 
 <section data-background-color="#ff7f00">
     <h2>In Java everything is an Object</h2>
