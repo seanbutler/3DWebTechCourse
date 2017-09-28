@@ -163,42 +163,8 @@ typeof null;        // 'object'     WTF?
 
 </section>
 
-<section>
-    <h2>Functions</h2>
 
-    <section>
-    <p>can be assigned and returned just like other variables</p>
 
-<pre><code data-trim>
-function () {}
-
-function add (a, b) {
-  return a + b;
-}
-
-var multiply = function (a, b) {
-  return a * b;
-};
-
-var recur = function rec (num) {
-  if (num === 0) { return num; }
-  return rec(num - 1);
-};
-</code></pre>
-    </section>
-
-    <section>
-        <p>can access their arguments, length and callee</p>
-<pre><code data-trim>function countArgs () {
-    return arguments.length;
-}
-
-countArgs();              // 0
-countArgs('one');         // 1
-countArgs('one', 'two');  // 2</code></pre>
-    </section>
-
-</section>
 
 <section>
     <h2>Scope</h2>
@@ -265,86 +231,50 @@ b;  // ReferenceError
 
     </section>
 
-    <section>
-        <p>Function Scope, not Block Scope you are used to</p>
-<pre><code data-trim>function () {
-    i;  // undefined    WTF?
-
-    for (var i = 0; i < 10; i++) {
-
-    }
-
-    i;  // ?
-}
-</code></pre>
-    </section>
-
 </section>
 
 
-<section>
-    <h2>Closures</h2>
 
-    <section>
-        <p>Functions can bind scope, even after their outer function has returned!</p>
-<pre><code data-trim>function makeAdder(x) {
-  return function(y) {
-    return x + y;
-  };
-}
-
-var add5 = makeAdder(5);
-var add10 = makeAdder(10);
-
-console.log(add5(2));  // 7
-console.log(add10(2)); // 12
-</code></pre>
-        <p>more here https://developer.mozilla.org/en-US/docs/Web/JavaScript/Closures</p>
-    </section>
-
-    <section>
-        <p>functions can run immediatly!</p>
-<pre><code data-trim>
-var inc = function () {
-  var i = 0;
-
-  return function () {
-    return i++;
-  };
-}();            // Note the trailing ()!
-
-inc();  // 0
-inc();  // 1
-</code></pre>
-        <p>more here https://developer.mozilla.org/en-US/docs/Web/JavaScript/Closures</p>
-    </section>
-
-    <section>
-<p>Used to Create Modules</p>
-<pre><code data-trim>
-var lib = {};
-lib.module = (function () {
-
-  var privateVariable;
-  var privateFunction = function () {};
-
-  return {
-    publicProperty: 1,
-    privilegedMethod: function (arg) {
-      // privateVariable = arg;
-    }
-  };
-})();</code></pre>
-    </section>
-
-</section>
 
 <section>
     <h2>Functions</h2>
 
     <section>
+    <p>can be assigned and returned just like other variables</p>
 
-        <p>Can run in different contexts</p>
+<pre><code data-trim>
+function () {}
+
+function add (a, b) {
+  return a + b;
+}
+
+var multiply = function (a, b) {
+  return a * b;
+};
+
+var recur = function rec (num) {
+  if (num === 0) { return num; }
+  return rec(num - 1);
+};
+</code></pre>
+    </section>
+
+    <section>
+        <p>can access their arguments, length and callee</p>
+<pre><code data-trim>function countArgs () {
+    return arguments.length;
+}
+
+countArgs();              // 0
+countArgs('one');         // 1
+countArgs('one', 'two');  // 2</code></pre>
+    </section>
+
+
+    <section>
+
+        <p>Can be run in different contexts</p>
         <p class = "fragment">Depending on how they are invoked</p>
         <p class = "fragment">May be invoked in 4 primary ways</p>
 
@@ -418,6 +348,71 @@ ed.name = 'fred';
     </section>
 
 </section>
+
+
+
+
+
+
+
+<section>
+    <h2>Closures</h2>
+
+    <section>
+        <p>Functions can bind scope, even after their outer function has returned!</p>
+<pre><code data-trim>function makeAdder(x) {
+  return function(y) {
+    return x + y;
+  };
+}
+
+var add5 = makeAdder(5);
+var add10 = makeAdder(10);
+
+console.log(add5(2));  // 7
+console.log(add10(2)); // 12
+</code></pre>
+        <p>more here https://developer.mozilla.org/en-US/docs/Web/JavaScript/Closures</p>
+    </section>
+
+    <section>
+        <p>functions can run immediatly!</p>
+<pre><code data-trim>
+var inc = function () {
+  var i = 0;
+
+  return function () {
+    return i++;
+  };
+}();            // Note the trailing ()!
+
+inc();  // 0
+inc();  // 1
+</code></pre>
+        <p>more here https://developer.mozilla.org/en-US/docs/Web/JavaScript/Closures</p>
+    </section>
+
+    <section>
+<p>Used to Create Modules</p>
+<pre><code data-trim>
+var lib = {};
+lib.module = (function () {
+
+  var privateVariable;
+  var privateFunction = function () {};
+
+  return {
+    publicProperty: 1,
+    privilegedMethod: function (arg) {
+      // privateVariable = arg;
+    }
+  };
+})();</code></pre>
+    </section>
+
+</section>
+
+
 
 
 <section>
@@ -564,34 +559,19 @@ arr; // [1, undefined, 3];
 
 <section>
     <h2>Main Differences Between Javascript and Java</h2>
-</section>
-
-<section>
-    <h2>Built In Types</h2>
-</section>
-
-<section>
-    <h2>Numbers</h2>
-</section>
-
-<section>
-    <h2>Strings</h2>
-</section>
-
-<section>
+    <p>Built In Types</p>
+    <p>Numbers</p>
+    <p>Strings</p>
     <h2>Prototype Objects rather than classes</h2>
     <p>a set of idioms for encapsulation that rely on the dynamic nature of the language. es2016 introduces class syntax for the traditional approach.</p>
-</section>
-
-<section>
     <h2>Untyped variables</h2>
     <p>var and hoisting</p>
     <p>es2016 introduced let</p>
 </section>
 
 <section>
-    <h2>Recent Introductions</h2>
-    <p>classes</p>
+    <h2>Recent Additions to JS</h2>
+    <p>classical classes (like c++)</p>
     <p>let</p>
     <p>new function syntax</p>
 </section>
