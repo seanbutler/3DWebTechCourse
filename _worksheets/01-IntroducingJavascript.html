@@ -366,8 +366,7 @@ b;  // ReferenceError
     <section>
 <h2>Create Modules via Closures</h2>
 
-<pre>
-    <code>
+<pre><code>
 var lib = {};
 lib.module = (function () {
 
@@ -383,8 +382,7 @@ lib.module = (function () {
   };
 
 })();
-</code>
-</pre>
+</code></pre>
     </section>
 
 </section>
@@ -403,6 +401,73 @@ lib.module = (function () {
             <li>apply/call invocation</li>
         </ul>
     </section>
+
+    <section>
+        <h2>Functions</h2>
+        <p>Function invocation / Called Directly</p>
+<pre><code>
+var countArgs = function () {
+  // this === window
+
+  return arguments.length;
+};
+
+countArgs();  // 0
+</code></pre>
+    </section>
+
+    <section>
+        <h2>Functions</h2>
+        <p>Constructor invocation / via the new Keyword</p>
+<pre><code>
+function Person (name) {
+  // this === instance of Person
+  this.name = name;
+}
+
+var bob = new Person('bob');
+var ed = new Person('ed');
+
+ed.name = 'fred';
+</code></pre>
+
+    </section>
+
+    <section>
+        <h2>Functions</h2>
+        <p>Method invocation / called on objects</p>
+<pre><code>
+    var obj = {
+      value: 1,
+      getValue: function () {
+        // this === obj
+
+        return this.value;
+      }
+    };
+
+    obj.getValue()  // 1
+</code></pre>
+
+    </section>
+
+
+    <section>
+        <h2>Functions</h2>
+        <p>Apply and Call / Applying functions to objects</p>
+<pre><code>
+    function doStuff () {
+      return this.speed;
+    }
+
+    var obj = { speed: 2 };
+    doStuff.apply(obj, [ arg1, arg2 ]);  // 2
+    doStuff.call(obj, arg1, arg2);     // 2
+</code></pre>
+
+    </section>
+
+
 </section>
 
 <section data-background-color="#ff7f00">
