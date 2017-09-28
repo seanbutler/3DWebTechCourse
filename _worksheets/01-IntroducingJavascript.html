@@ -61,8 +61,8 @@ date:   2017-09-13 23:46:24 +0100
 
 <section>
     <h2>DOM Access</h2>
-    <p class = "fragment">Access The internal model of web pages (DOM)</p>
-    <p>The DOM is big and complicated, vendors implemented it differently and its not completely standard</p>
+    <p class = "fragment">Access The internal model of web pages</p>
+    <p class = "fragment">The DOM is big and complicated, vendors implemented it differently and its not completely standard</p>
 </section>
 
 <section>
@@ -404,16 +404,16 @@ lib.module = (function () {
 
 
 <section>
-    <h2>Inheritance</h2>
-
     <section>
+        <h2>Inheritance</h2>
         <p>Prototypal Inheritance</p>
         <p>Pseudoclassical inheritance</p>
         <p>Functional inheritance</p>
     </section>
 
-    <section>
     <h2>Prototypal Inheritance</h2>
+
+    <section>
     <p>no classes like c++, inherit from other objects</p>
 <pre><code data-trim>var obj = {};
 obj.toString();  // '[object Object]'</code></pre>
@@ -430,7 +430,9 @@ Object.prototype = {
 var obj = new Object();
 obj.toString();  // '[object Object]'
     </code></pre>
+</section>
 
+<section>
     <pre><code data-trim>
 var first = new Object();
 // first.__proto__ = Object.prototype;
