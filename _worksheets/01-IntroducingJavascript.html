@@ -7,7 +7,7 @@ date:   2017-09-13 23:46:24 +0100
 <section data-background-color="#ff7f00">
     <h1>Javascript: The Good The Bad and the Ugly</h1>
     <p>part of 3d tech for the web course</p>
-    <p>see also: http://gnab.github.io/js-workshop/#1</p>
+    <p>stole a lot of this content from <a href = "http://gnab.github.io/js-workshop/#1">js-workshop</a></p>
 </section>
 
 <section>
@@ -17,6 +17,12 @@ date:   2017-09-13 23:46:24 +0100
     <p>Review The Differences from other Languages</p>
     <p>Be Familiar Enough to Migrate</p>
     <p>Review Several Common Pitfalls/Gotchas for new js programmers</p>
+</section>
+
+<section>
+    <h2>Audience</h2>
+    <p>Already a novice JS programmer javascript but want to up your ability and use the language mroe effectivly.</p>
+    <p>Competent programmer moving from another language.</p>
 </section>
 
 <section>
@@ -30,19 +36,28 @@ date:   2017-09-13 23:46:24 +0100
     <img src = "/3DWebTechCourse/worksheets/assets/java.png">
     <img src = "/3DWebTechCourse/worksheets/assets/javascript.png">
     <ul>
-        <li>Similar Yet Different</li>
-        <li>Derived from Self and C so might be familiar to _anyone_ coming from those languages.</li>
-        <li>There are several important differences from how you might expect a language to behave. Especially if coming from Java.</li>
+        <li class = "fragment">Similar Yet Different</li>
+        <li class = "fragment">Derived from Self and C so might be familiar to _anyone_ coming from those languages.</li>
+        <li class = "fragment">There are several important differences from how you might expect a language to behave. Especially if coming from Java.</li>
     </ul>
 </section>
 
 <section>
     <h2>Why Javascript?</h2>
     <ul>
-        <li>ubiquitous</li>
-        <li>www</li>
+        <li class = "fragment">ubiquitous</li>
+        <li class = "fragment">www</li>
         <li>Javascript is different from _whatever you were using before_</li>
         <li>May cause pain, but there is pain for all new language learning</li>
+    </ul>
+</section>
+
+<section>
+    <h2>Why Not Javascript?</h2>
+    <ul>
+        <li class = "fragment">Javascript is different from _whatever you were using before_</li>
+        <li class = "fragment">May cause pain, but there is pain for all new language learning</li>
+        <li class = "fragment">Other preferable languages compile into js</li>
     </ul>
 </section>
 
@@ -51,7 +66,7 @@ date:   2017-09-13 23:46:24 +0100
 </section>
 
 <section>
-    <h1>DOM Access</h1>
+    <h2>DOM Access</h2>
     <ul>
         <li>Access The internal model of web pages (DOM)</li>
         <li>The DOM is big and complicated, vendors implemented it differently and its not completely standard</li>
@@ -80,8 +95,11 @@ obj.key1;         // undefined
 </section>
 
 <section>
-    <h2>Arrays</h2>
 
+    <section>
+
+    <h2>Arrays</h2>
+<p>A collection of indexed properties.</p>
     <pre>
         <code>
 var arr = [1, "two", 3];
@@ -94,11 +112,17 @@ arr.length;     // 4
         </code>
     </pre>
 
-</section>
+    </section>
 
-<section>
     <section>
     <h2>Objects are Arrays</h2>
+
+    <p>Arrays are not "real":</p>
+
+    <ul>
+        <li>Objects in disguise</li>
+        <li>Operations are slow when number of elements are large</li>
+    </ul>
 
     <pre>
         <code>
@@ -117,6 +141,9 @@ obj.length;     // 3
 
     <section>
         <h2>Objects are Arrays</h2>
+
+<p>The for (... in ...) loops all properties of an object.<p>
+<p class = "fragment">Therefore it loops over the values of a 'fake' array just the same.<p>
 
         <pre>
             <code>
@@ -148,6 +175,11 @@ new Object();       // {}
 new Array();        // []
 new Number(1);      // 1
 new Boolean(true);  // true
+</code>
+</pre>
+
+<pre class = "fragment">
+    <code>
 
 typeof {};          // 'object'
 typeof [];          // 'object'     WTF?
@@ -164,6 +196,8 @@ typeof null;        // 'object'     WTF?
 
     <section>
     <h2>Functions</h2>
+    <p>are first order objects can be assigned and returned like any other variables</p>
+
     <pre>
         <code>
 function () {}
@@ -200,28 +234,12 @@ var recur = function rec (num) {
         </pre>
     </section>
 
-    <section>
-        <h2>Functions</h2>
-        <p>are first order objects can be assigned and returned like any other variable</p>
-        <pre>
-            <code>
-    function createFunction () {
-        return function () {
-        };
-    }
-
-    var anonymous = createFunction();
-    anonymous();  // undefined
-            </code>
-        </pre>
-    </section>
-
 </section>
 
 
 
 <section>
-    
+
     <section>
     <h2>Scope</h2>
     <p>Function Scope, not Block Scope you are used to</p>
@@ -236,14 +254,14 @@ function () {
 
     i;  // ?
 }
-</code>
-</pre>
-</section>
+        </code>
+    </pre>
+    </section>
 
-<section>
-<p>so we move all variable declarations to the top of their function</p>
-<pre>
-    <code>
+    <section>
+        <p>so we move all variable declarations to the top of their function</p>
+        <pre>
+            <code>
 
 function () {
   var i;
@@ -255,17 +273,17 @@ function () {
   i;  // 10
 }
 
-        </code>
-    </pre>
+            </code>
+        </pre>
+    </section>
 
-</section>
-</section>
 
-<section>
-    <h2>Scope</h2>
-    <p>External Access</p>
-    <pre>
-        <code>
+
+    <section>
+        <h2>Scope</h2>
+        <p>External Access</p>
+        <pre>
+            <code>
 var a = 1;
 
 function doSomething () {
@@ -275,54 +293,137 @@ function doSomething () {
     a;  // 1
   }
 }
-</code>
-</pre>
+    </code>
+    </pre>
+
+    </section>
 
     <section>
 
-    <p>but not the other way around</p>
-    <pre>
-        <code>
-    function doSomething () {
-      var b = 1;
+        <p>but not the other way around</p>
+        <pre>
+            <code>
+function doSomething () {
+    var b = 1;
 
-      function doMore () {
+    function doMore () {
         b;  // 1
-      }
     }
-    doSomething();
+}
+doSomething();
 
-    b;  // ReferenceError
+b;  // ReferenceError
             </code>
         </pre>
 
     </section>
 
+    <section>
+        <h2>Scope</h2>
+        <p>Function Scope, not Block Scope you are used to</p>
+        <pre>
+            <code>
+    function () {
+        i;  // undefined    WTF?
 
+        for (var i = 0; i < 10; i++) {
+
+        }
+
+        i;  // ?
+    }
+            </code>
+        </pre>
+    </section>
+
+</section>
 
 
 <section>
-    <h2>Scope</h2>
-    <p>Function Scope, not Block Scope you are used to</p>
-    <pre>
-        <code>
-function () {
-    i;  // undefined    WTF?
 
-    for (var i = 0; i < 10; i++) {
+    <section>
+        <h2>Closures</h2>
+        <p>Functions can bind scope, even after their outer function has returned!</p>
+        <pre>
+            <code>
+                function makeAdder(x) {
+                  return function(y) {
+                    return x + y;
+                  };
+                }
 
+                var add5 = makeAdder(5);
+                var add10 = makeAdder(10);
+
+                console.log(add5(2));  // 7
+                console.log(add10(2)); // 12
+            </code>
+        </pre>
+        <p>more here https://developer.mozilla.org/en-US/docs/Web/JavaScript/Closures</p>
+    </section>
+
+
+    <section>
+        <h2>Closures</h2>
+        <p>functions can run immediatly!</p>
+        <pre>
+            <code>
+                var inc = function () {
+                  var i = 0;
+
+                  return function () {
+                    return i++;
+                  };
+                }();            // Note the trailing ()!
+
+                inc();  // 0
+                inc();  // 1
+            </code>
+        </pre>
+        <p>more here https://developer.mozilla.org/en-US/docs/Web/JavaScript/Closures</p>
+    </section>
+
+
+    <section>
+<h2>Create Modules via Closures</h2>
+
+<pre>
+    <code>
+var lib = {};
+lib.module = (function () {
+
+  var privateVariable;
+
+  var privateFunction = function () {};
+
+  return {
+    publicProperty: 1,
+    privilegedMethod: function (arg) {
+      // privateVariable = arg;
     }
+  };
 
-    i;  // ?
-}
-        </code>
-    </pre>
-
-
-</section>
+})();
+</code>
+</pre>
+    </section>
 
 </section>
 
+<section>
+    <section>
+        <h2>Functions</h2>
+        <p>Functions run in different contexts</p>
+        <p class = "fragment">Depending on how they are invoked</p>
+        <p class = "fragment">May be invoked in 4 primary ways</p>
+
+        <ul class = "fragment">
+            <li>Function invocation</li>
+            <li>Constructor invocation</li>
+            <li>Method invocation</li>
+            <li>apply/call invocation</li>
+        </ul>
+    </section>
 
 <section data-background-color="#ff7f00">
     <h2>In Java everything is an Object</h2>
@@ -341,6 +442,21 @@ function () {
 
     <p>Why are globals evil?</p>
     <p>There are ways around this. Use them</p>
+</section>
+
+
+<section>
+    <h2>Arrays are weird</h2>
+    <pre>
+        <code>
+    var arr = [1, 2, 3];
+arr[999] = 0; // WTF
+arr.length;   // 1000
+
+delete arr[1];
+arr; // [1, undefined, 3];
+        </code>
+    </pre>
 </section>
 
 <section>
@@ -437,8 +553,10 @@ function () {
 
 <section>
     <h2>Further Reading</h2>
-    <p>Crockford, D. (2008) Javascript: The Good Parts. Oreilly YAHOO Press.</p>
-    <p>https://www.d.umn.edu/~gshute/webdev/javascript/javascript.xhtml</p>
-    <p>http://blog.angular-university.io/javascript-for-java-developers/</p>
-    <p>http://blog.firetree.net/2005/06/16/object-orientated-javascript/</p>
+    <small>
+        <p>Crockford, D. (2008) Javascript: The Good Parts. Oreilly YAHOO Press.</p>
+        <p>https://www.d.umn.edu/~gshute/webdev/javascript/javascript.xhtml</p>
+        <p>http://blog.angular-university.io/javascript-for-java-developers/</p>
+        <p>http://blog.firetree.net/2005/06/16/object-orientated-javascript/</p>
+    </small>
 </section>
