@@ -44,19 +44,15 @@ date:   2017-09-13 23:46:24 +0100
 
 <section>
     <h2>Why Javascript?</h2>
-    <ul>
-        <li class = "fragment">ubiquitous</li>
-        <li class = "fragment">www</li>
-    </ul>
+    <p class = "fragment">ubiquitous</p>
+    <p class = "fragment">www</p>
 </section>
 
 <section>
     <h2>Why Not Javascript?</h2>
-    <ul>
-        <li class = "fragment">Javascript is different from <em>whatever you were using before</em></li>
-        <li class = "fragment">May cause pain, but there is pain for all new language learning</li>
-        <li class = "fragment">Other <em>preferable</em> languages compile into js</li>
-    </ul>
+    <p class = "fragment">Javascript is different from <em>whatever you were using before</em></p>
+    <p class = "fragment">May cause pain, but there is pain for all new language learning</p>
+    <p class = "fragment">Other <em>preferable</em> languages compile into js</p>
 </section>
 
 <section data-background-color="#ff7f00">
@@ -65,10 +61,8 @@ date:   2017-09-13 23:46:24 +0100
 
 <section>
     <h2>DOM Access</h2>
-    <ul>
-        <li>Access The internal model of web pages (DOM)</li>
-        <li>The DOM is big and complicated, vendors implemented it differently and its not completely standard</li>
-    </ul>
+    <p class = "fragment">Access The internal model of web pages (DOM)</p>
+    <p>The DOM is big and complicated, vendors implemented it differently and its not completely standard</p>
 </section>
 
 <section>
@@ -317,19 +311,16 @@ ed.name = 'fred';
 
     <section>
         <p>Method invocation / called on objects</p>
-<pre><code data-trim>
-    var obj = {
-      value: 1,
-      getValue: function () {
-        // this === obj
+<pre><code data-trim>var obj = {
+  value: 1,
+  getValue: function () {
+    // this === obj
 
-        return this.value;
-      }
-    };
+    return this.value;
+  }
+};
 
-    obj.getValue()  // 1
-</code></pre>
-
+obj.getValue()  // 1</code></pre>
     </section>
 
 
@@ -350,11 +341,6 @@ ed.name = 'fred';
 </section>
 
 
-
-
-
-
-
 <section>
     <h2>Closures</h2>
 
@@ -372,7 +358,6 @@ var add10 = makeAdder(10);
 console.log(add5(2));  // 7
 console.log(add10(2)); // 12
 </code></pre>
-        <p>more here https://developer.mozilla.org/en-US/docs/Web/JavaScript/Closures</p>
     </section>
 
     <section>
@@ -389,7 +374,6 @@ var inc = function () {
 inc();  // 0
 inc();  // 1
 </code></pre>
-        <p>more here https://developer.mozilla.org/en-US/docs/Web/JavaScript/Closures</p>
     </section>
 
     <section>
@@ -409,6 +393,10 @@ lib.module = (function () {
   };
 })();</code></pre>
     </section>
+
+<section>
+    <p>more here https://developer.mozilla.org/en-US/docs/Web/JavaScript/Closures</p>
+</section>
 
 </section>
 
