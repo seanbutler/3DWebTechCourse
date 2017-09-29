@@ -161,6 +161,7 @@ take a look at the following code type, not copy it into the script tags of the 
     animate();
 ~~~
 
+
 ## Notes
 
 
@@ -169,7 +170,8 @@ take a look at the following code type, not copy it into the script tags of the 
 As for web browsers, both Google Chrome and Mozilla Firefox have excellent WebGL support. Google Chrome has a particularly helpful set of built-in developer tools that can greatly simplify the workflow process, such as a console that can be used for debugging and inspecting Javascript values and objects, and Workspace settings that allow you to edit and save source files from within the browser. More details can be found at the Chrome DevTools site.
 
 
-### Online Code Editing
+### Online Code Editing
+
 
 It is also possible to write code using Three.js entirely online, using services such as cloud9 or jsFiddle. This option is typically only used for sharing examples or demonstrations with small amounts of code.
 
