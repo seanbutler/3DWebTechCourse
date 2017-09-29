@@ -78,8 +78,11 @@ it may work for you, you might have to visit your preferences and switch it on (
 #### python
 
 in a terminal/xtern/console
-~~~ python
+
+~~~
+
 python -m SimpleHTTPServer
+
 ~~~
 
 
@@ -160,9 +163,11 @@ take a look at the following code type, not copy it into the script tags of the 
 
 ## Notes
 
+
 ### Debugging Support in Browser
 
 As for web browsers, both Google Chrome and Mozilla Firefox have excellent WebGL support. Google Chrome has a particularly helpful set of built-in developer tools that can greatly simplify the workflow process, such as a console that can be used for debugging and inspecting Javascript values and objects, and Workspace settings that allow you to edit and save source files from within the browser. More details can be found at the Chrome DevTools site.
+
 
 ### Online Code Editing
 
