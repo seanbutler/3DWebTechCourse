@@ -32,6 +32,13 @@ Please take the time to review a few of the featured projects. You will get a fe
 
 <http://www.georgeandjonathan.com/#1>
 
+<https://www.cubeslam.com/qucjla>
+
+<http://mrdoob.com/files/temp/xplsv_obsidian/>
+
+<http://ericrius1.github.io/IndrasNet/public/>
+
+
 Q. Given what you've seen. What possibilities are you interested in making?
 
 Q. Aw we have close integrated access to all the other web technologies, what other interesting things could we do with that 3D rendering?
