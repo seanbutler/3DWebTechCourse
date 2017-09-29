@@ -1,12 +1,16 @@
 ---
 layout: post
-title:  "Setting Up & Tool Overview"
+title:  "Tooling Up & Getting Started"
 date:   2017-09-13 23:46:24 +0100
 ---
 
 ## Aims & Objectives
 - Discover Three.js
-- Download and Install Chrome
+- Download and Install Tools
+- Download and Three.js code library
+- Make a simple project in a dir
+- Type in the code which should get you a cube spinning on screen
+- Celebrate
 
 
 ## Introduction
@@ -64,18 +68,38 @@ Make yourself a project. We recommend you make a project for every piece of work
 ![](/3DWebTechCourse/assets/getatm.png)
 
 
+## Step 6
+
+#### built into the OS
+
+some operating systems have them built into the file browser/desktop just double click on the index.html
+it may work for you, you might have to visit your preferences and switch it on (dont ask me how).
+
+#### python
+
+in a terminal/xtern/console
+~~~ python
+python -m SimpleHTTPServer
+~~~
 
 
-## Discussion
+#### mongoose
 
-As for web browsers, both Google Chrome and Mozilla Firefox have excellent WebGL support. Google Chrome has a particularly helpful set of built-in developer tools that can greatly simplify the workflow process, such as a console that can be used for debugging and inspecting Javascript values and objects, and Workspace settings that allow you to edit and save source files from within the browser. More details can be found at the Chrome DevTools site.
+donwload and install mongoose from here: https://cesanta.com/binary.html
+can be installed in the user space, and run directly.
+looks pretty simple, you should be able to work it out.
 
-Tip: It is also possible to write code using Three.js entirely online, using services such as cloud9 or jsFiddle. This option is typically only used for sharing examples or demonstrations with small amounts of code.
 
-(from: https://gamedevelopment.tutsplus.com/articles/how-to-learn-threejs-for-game-development--gamedev-11787)
 
 ## Step 5
-- I'm assuming you know html and css at this point.
+
+- create a project dir call it "3dtech/wk1/ex1" or something similar
+- go to github and download the three.js files from mr doob
+- put them in a sub dir of your project dir
+
+##  Step 6
+
+- make a index.html file and type in, not copy the following code...
 
 ~~~ html
     <!DOCTYPE html>
@@ -89,13 +113,17 @@ Tip: It is also possible to write code using Three.js entirely online, using ser
     		</style>
     	</head>
     	<body>
-    		<script src="js/three.js"></script>
+    		<script src="pathtomy-threedotjsfile"></script>
     		<script>
     			// Our Javascript will go here.
     		</script>
         </body>
     </html>
 ~~~    
+
+## Step 7
+
+take a look at the following code type, not copy it into the script tags of the html we put in the index.html file from earlier.
 
 ~~~ javascript
     var scene = new THREE.Scene();
@@ -107,9 +135,7 @@ Tip: It is also possible to write code using Three.js entirely online, using ser
     renderer.setSize( window.innerWidth,
                         window.innerHeight );
     document.body.appendChild( renderer.domElement );
-~~~
 
-~~~ javascript
     var geometry = new THREE.BoxGeometry( 1, 1, 1 );
     var material = new THREE.MeshBasicMaterial( {
         color: 0x00ff00
@@ -119,9 +145,7 @@ Tip: It is also possible to write code using Three.js entirely online, using ser
     scene.add( cube );
 
     camera.position.z = 5;
-~~~
 
-~~~ javascript
     var animate = function () {
         requestAnimationFrame( animate );
 
@@ -133,3 +157,15 @@ Tip: It is also possible to write code using Three.js entirely online, using ser
 
     animate();
 ~~~
+
+## Notes
+
+### Debugging Support in Browser
+
+As for web browsers, both Google Chrome and Mozilla Firefox have excellent WebGL support. Google Chrome has a particularly helpful set of built-in developer tools that can greatly simplify the workflow process, such as a console that can be used for debugging and inspecting Javascript values and objects, and Workspace settings that allow you to edit and save source files from within the browser. More details can be found at the Chrome DevTools site.
+
+### Online Code Editing
+
+It is also possible to write code using Three.js entirely online, using services such as cloud9 or jsFiddle. This option is typically only used for sharing examples or demonstrations with small amounts of code.
+
+https://gamedevelopment.tutsplus.com/articles/how-to-learn-threejs-for-game-development--gamedev-11787
