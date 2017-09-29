@@ -79,8 +79,7 @@ it may work for you, you might have to visit your preferences and switch it on (
 
 in a terminal/xtern/console
 
-~~~
-
+~~~ javascript
 python -m SimpleHTTPServer
 
 ~~~
