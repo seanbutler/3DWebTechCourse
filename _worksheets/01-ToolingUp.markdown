@@ -12,7 +12,6 @@ date:   2017-09-13 23:46:24 +0100
 - Type in the code which should get you a cube spinning on screen
 - Celebrate!
 
-
 ## Introduction
 
 Three.js is a Javascript library, which means setting up your development environment is very easy. Javascript the only requirements are a text editor and a web browser. That being said, text editors with features such as syntax highlighting/folding, bracket matching, a document map, and so on - such as Notepad++ or Sublime Text - will provide a better coding experience.
