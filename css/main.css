@@ -38,7 +38,7 @@ h2, h3, h4, h5, h6{
     padding: 1vw;
     margin-top: 1vw;
     background-color: #EEE;
-    display: inline-block;
+    display: block;
 }
 
 p, ul, ol {
@@ -49,7 +49,7 @@ p, ul, ol {
 p {
     /*padding: 1vw;*/
     margin: 0;
-    /*border: 1px dashed blue;*/
+    border: 1px dashed blue;
 }
 
 a {
