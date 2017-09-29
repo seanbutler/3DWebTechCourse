@@ -10,7 +10,7 @@ date:   2017-09-13 23:46:24 +0100
 - Download and Three.js code library
 - Make a simple project in a dir
 - Type in the code which should get you a cube spinning on screen
-- Celebrate
+- Celebrate!
 
 
 ## Introduction
