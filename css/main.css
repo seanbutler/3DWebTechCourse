@@ -47,8 +47,7 @@ p, ul, ol {
 }
 
 p {
-    /*padding: 1vw;*/
-    margin: 0;
+    margin-left: 10vw;
     border: 1px dashed blue;
 }
 
@@ -80,6 +79,7 @@ img{
     width: 60vw;
 }
 
+.language-python,
 .language-javascript,
 .language-html {
     margin-left: 10vw;

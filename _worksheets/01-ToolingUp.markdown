@@ -80,8 +80,7 @@ it may work for you, you might have to visit your preferences and switch it on (
 in a terminal/xtern/console
 
 ~~~ javascript
-python -m SimpleHTTPServer
-
+    python -m SimpleHTTPServer
 ~~~
 
 
@@ -175,3 +174,8 @@ As for web browsers, both Google Chrome and Mozilla Firefox have excellent WebGL
 It is also possible to write code using Three.js entirely online, using services such as cloud9 or jsFiddle. This option is typically only used for sharing examples or demonstrations with small amounts of code.
 
 https://gamedevelopment.tutsplus.com/articles/how-to-learn-threejs-for-game-development--gamedev-11787
+
+
+## Step 8
+
+Add in some more cubes.
