@@ -178,4 +178,12 @@ https://gamedevelopment.tutsplus.com/articles/how-to-learn-threejs-for-game-deve
 
 ## Step 8
 
-Add in some more cubes.
+Try to do as many of the following as you can.
+- Add in some more cubes
+- Try the cubes in different positions
+    - grid
+    - random
+- Move the Camera around
+- Change the colours of the cubes
+    - enmass
+    - individually
