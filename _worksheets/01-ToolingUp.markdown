@@ -14,7 +14,9 @@ date:   2017-09-13 23:46:24 +0100
 
 ## Introduction
 
-Three.js is a Javascript library, which means setting up your development environment is very easy. Javascript the only requirements are a text editor and a web browser. That being said, text editors with features such as syntax highlighting/folding, bracket matching, a document map, and so on - such as Notepad++ or Sublime Text - will provide a better coding experience.
+Three.js is a Javascript library for creating 3d graphics on web pages. Javascript libraries are text which means setting up your development environment is very easy. 
+
+For javascript development, the only requirements are a text editor and a web browser. That being said, text editors with features such as syntax highlighting/folding, bracket matching, a document map, and so on - such as Notepad++ or Sublime Text - will provide a better coding experience.
 
 ## Step 1 - Discover Three.js
 
@@ -39,9 +41,9 @@ Please take the time to review a few of the featured projects. You will get a fe
 <http://ericrius1.github.io/IndrasNet/public/>
 
 
-Q. Given what you've seen. What possibilities are you interested in making?
+Q. Given what you've seen. What possibilities are __you__ interested in making?
 
-Q. Aw we have close integrated access to all the other web technologies, what other interesting things could we do with that 3D rendering?
+Q. As we have close integrated access to all the other web technologies, what other interesting things could we do with that 3D rendering?
 
 While you think about those questions, move on through the next few steps.
 
@@ -55,56 +57,66 @@ Otherwise, please visit <https://www.google.com/chrome/> where you will see a la
 
 You may use other browsers, all the major ones have the necessary debugging and inspection tools built in. It doesn't however make the course simpler to administer if we all use the same tools.
 
-## Step 3
+## Step 3 Github for Backups
+
+This step is optional. If you are using one of the lab machines on campus then various git clients should already be installed.
+
 - Signup for Github (Educational for Privacy)
 ![](/3DWebTechCourse/assets/githubwecme.png)
 
-Make yourself a project. We recommend you make a project for every piece of work you carry out. Keep your work there and push/sync all the changes you make. If you get in a pickle then you can roll back and get your earlier work.
+You dont have to, but consider making yourself a project to keep your work in. We recommend you make a project for every piece of work you carry out. Keep your work there and push/sync all the changes you make. If you get in a pickle then you can roll back and get your earlier work.
 
-## Step 4
+You can of course use a USB stick and keep your work backed up on that. Just dont lose it.
+
+## Step 3.5
+
+The easiest and simplest way to access github and use it to keep your code backed up and secure is Github Desktop Client.
+
 - Download and Install Github Desktop Client
 - https://desktop.github.com/
 ![](/3DWebTechCourse/assets/getgthubdesktp.png)
 
+Again, this is optional, but the best way. Later in your career if you continue to work in design tech you will use tools like this and their more complicated cousins.
 
-## Step 5
-- Download and Install Atom or similar
+## Step 4 - Text Editor
+Download and Install Atom or similar. Feel free to use whatever text exitor you like.
 - https://atom.io/
 - https://code.visualstudio.com/
 ![](/3DWebTechCourse/assets/getatm.png)
 
 
-## Step 6
+## Step 5
+
+Running a simple web server locally on your machine. Its doesnt let us install software, so we have various choices.
 
 #### built into the OS
 
-some operating systems have them built into the file browser/desktop just double click on the index.html
+Some operating systems have simple web servers built into the file browser/desktop just double click on the index.html
 it may work for you, you might have to visit your preferences and switch it on (dont ask me how).
 
 #### python
 
-in a terminal/xtern/console
+If you are on a mac or linux machine you most likely already have python installed.
+
+in a terminal/xterm/console
 
 ~~~ javascript
     python -m SimpleHTTPServer
 ~~~
 
-
 #### mongoose
 
-donwload and install mongoose from here: https://cesanta.com/binary.html
-can be installed in the user space, and run directly.
-looks pretty simple, you should be able to work it out.
+download and install mongoose from here: https://cesanta.com/binary.html
+can be installed in the user space, and run directly. pretty simple, you should be able to work it out. run it once an you have a web server running on your machines. you can use this in the labs or at home very easily. once its running you can see your local server if you point your browser at localhost:8080
 
-
-
-## Step 5
+## Step 6
 
 - create a project dir call it "3dtech/wk1/ex1" or something similar
-- go to github and download the three.js files from mr doob
+- go to Please visit <https://threejs.org/> follow the link to the source code on github and scroll down to usage, there you will find instructions on how to get a three.hs library file for use in your own projects. 
+- download the three.js file
 - put them in a sub dir of your project dir
 
-##  Step 6
+##  Step 7
 
 - make a index.html file and type in, not copy the following code...
 
@@ -128,9 +140,9 @@ looks pretty simple, you should be able to work it out.
     </html>
 ~~~    
 
-## Step 7
+## Step 8
 
-take a look at the following code type, not copy it into the script tags of the html we put in the index.html file from earlier.
+take a look at the following code __type, not copy__ it into the script tags of the html we put in the index.html file from earlier.
 
 ~~~ javascript
     var scene = new THREE.Scene();
@@ -165,9 +177,13 @@ take a look at the following code type, not copy it into the script tags of the 
     animate();
 ~~~
 
+- you will need to patch up the filename of the library so it refers to the file you downloaded from the internet and saved locally
+
+If it doesnt work, check your spelling. Check the locations of your files.
+If you are using chrome, open the inspector and go to the console to see if it has generated any errors.
+
 
 ## Notes
-
 
 ### Debugging Support in Browser
 
@@ -182,7 +198,7 @@ It is also possible to write code using Three.js entirely online, using services
 https://gamedevelopment.tutsplus.com/articles/how-to-learn-threejs-for-game-development--gamedev-11787
 
 
-## Step 8
+## Step 9
 
 Try to do as many of the following as you can.
 - Add in some more cubes
