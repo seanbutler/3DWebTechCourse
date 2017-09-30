@@ -201,11 +201,10 @@ https://gamedevelopment.tutsplus.com/articles/how-to-learn-threejs-for-game-deve
 ## Step 9
 
 Try to do as many of the following as you can.
+
+- Change the colour of your cube
+- Change the size of your cube
+- Move the cube around
+
 - Add in some more cubes
-- Try the cubes in different positions
-    - grid
-    - random
-- Move the Camera around
-- Change the colours of the cubes
-    - enmass
-    - individually
+- Try the cubes in different positions ( a grid, random)
