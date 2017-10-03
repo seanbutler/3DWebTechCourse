@@ -48,9 +48,9 @@ p, ul, ol {
     background-color: #EEE;
 }
 
-ul {
+ul, ol {
     border: 1px solid orange;
-    /*border: 1px dashed blue;*/
+    padding: 1vw;
 }
 
 li {
