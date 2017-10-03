@@ -61,7 +61,7 @@ You may use other browsers, all the major ones have the necessary debugging and 
 
 This step is optional. If you are using one of the lab machines on campus then various git clients should already be installed.
 
-- Signup for Github (Educational for Privacy)
+Signup for Github (Educational for Privacy)
 ![](/3DWebTechCourse/assets/githubwecme.png)
 
 You dont have to, but consider making yourself a project to keep your work in. We recommend you make a project for every piece of work you carry out. Keep your work there and push/sync all the changes you make. If you get in a pickle then you can roll back and get your earlier work.
@@ -72,16 +72,15 @@ You can of course use a USB stick and keep your work backed up on that. Just don
 
 The easiest and simplest way to access github and use it to keep your code backed up and secure is Github Desktop Client.
 
-- Download and Install Github Desktop Client
-- https://desktop.github.com/
+Download and Install Github Desktop Client: https://desktop.github.com/
 ![](/3DWebTechCourse/assets/getgthubdesktp.png)
 
 Again, this is optional, but the best way. Later in your career if you continue to work in design tech you will use tools like this and their more complicated cousins.
 
 ## Step 4 - Text Editor
-Download and Install Atom or similar. Feel free to use whatever text exitor you like.
-- https://atom.io/
-- https://code.visualstudio.com/
+Download and Install Atom or similar. Feel free to use whatever text editor you like.
+https://atom.io/
+https://code.visualstudio.com/
 ![](/3DWebTechCourse/assets/getatm.png)
 
 
@@ -118,7 +117,7 @@ can be installed in the user space, and run directly. pretty simple, you should 
 
 ##  Step 7
 
-- make a index.html file and type in, not copy the following code...
+make a index.html file and type in, not copy the following code...
 
 ~~~ html
     <!DOCTYPE html>
@@ -177,7 +176,7 @@ take a look at the following code __type, not copy__ it into the script tags of 
     animate();
 ~~~
 
-- you will need to patch up the filename of the library so it refers to the file you downloaded from the internet and saved locally
+you will need to patch up the filename of the library so it refers to the file you downloaded from the internet and saved locally
 
 If it doesnt work, check your spelling. Check the locations of your files.
 If you are using chrome, open the inspector and go to the console to see if it has generated any errors.

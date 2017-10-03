@@ -55,10 +55,9 @@ ul, ol {
 
 li {
     border: 1px dashed orange;
+    padding-left: 1vw;
     /*border: 1px dashed blue;*/
 }
-
-
 
 a {
     background-color: #EEE;
