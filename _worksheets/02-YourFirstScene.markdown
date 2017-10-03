@@ -9,6 +9,7 @@ date:   2017-09-13 23:46:24 +0100
 - Got Some Tools
 - Got The Library
 - Make a Simple Project in a dir
+- Got a rotating cube
 - Tweak the Code to change what it does
 
 
