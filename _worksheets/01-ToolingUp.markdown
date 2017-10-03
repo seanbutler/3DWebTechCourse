@@ -4,6 +4,7 @@ title:  "Tooling Up & Getting Started"
 date:   2017-09-13 23:46:24 +0100
 ---
 
+
 ## Aims & Objectives
 - Discover Three.js
 - Download and Install Tools
@@ -30,15 +31,11 @@ Keep this bookmarked somewhere convenient. Over the rest of the module you will 
 
 Please take the time to review a few of the featured projects. You will get a feel for the possabilities tha are achievable using three.js and webgl.
 
-<http://hexgl.bkcore.com/>
-
-<http://www.georgeandjonathan.com/#1>
-
-<https://www.cubeslam.com/qucjla>
-
-<http://mrdoob.com/files/temp/xplsv_obsidian/>
-
-<http://ericrius1.github.io/IndrasNet/public/>
+- <http://hexgl.bkcore.com/>
+- <http://www.georgeandjonathan.com/#1>
+- <https://www.cubeslam.com/qucjla>
+- <http://mrdoob.com/files/temp/xplsv_obsidian/>
+- <http://ericrius1.github.io/IndrasNet/public/>
 
 
 Q. Given what you've seen. What possibilities are __you__ interested in making?
