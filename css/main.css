@@ -55,6 +55,8 @@ ul, ol {
 
 li {
     border: 1px dashed orange;
+
+    margin-left: 1vw;
     padding-left: 1vw;
     /*border: 1px dashed blue;*/
 }
