@@ -14,7 +14,7 @@ date:   2017-09-13 23:46:24 +0100
 
 ## Introduction
 
-Three.js is a Javascript library for creating 3d graphics on web pages. Javascript libraries are text which means setting up your development environment is very easy. 
+Three.js is a Javascript library for creating 3d graphics on web pages. Javascript libraries are text which means setting up your development environment is very easy.
 
 For javascript development, the only requirements are a text editor and a web browser. That being said, text editors with features such as syntax highlighting/folding, bracket matching, a document map, and so on - such as Notepad++ or Sublime Text - will provide a better coding experience.
 
@@ -112,7 +112,7 @@ can be installed in the user space, and run directly. pretty simple, you should 
 ## Step 6
 
 - create a project dir call it "3dtech/wk1/ex1" or something similar
-- go to Please visit <https://threejs.org/> follow the link to the source code on github and scroll down to usage, there you will find instructions on how to get a three.hs library file for use in your own projects. 
+- go to Please visit <https://threejs.org/> follow the link to the source code on github and scroll down to usage, there you will find instructions on how to get a three.hs library file for use in your own projects.
 - download the three.js file
 - put them in a sub dir of your project dir
 
@@ -205,6 +205,5 @@ Try to do as many of the following as you can.
 - Change the colour of your cube
 - Change the size of your cube
 - Move the cube around
-
 - Add in some more cubes
 - Try the cubes in different positions ( a grid, random)

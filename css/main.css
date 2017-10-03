@@ -41,15 +41,24 @@ h2, h3, h4, h5, h6{
     display: block;
 }
 
+
 p, ul, ol {
+    margin-left: 10vw;
     padding: 1vw;
     background-color: #EEE;
 }
 
-p, ul {
-    margin-left: 10vw;
+ul {
+    border: 1px solid orange;
     /*border: 1px dashed blue;*/
 }
+
+li {
+    border: 1px dashed orange;
+    /*border: 1px dashed blue;*/
+}
+
+
 
 a {
     background-color: #EEE;
