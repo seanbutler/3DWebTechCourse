@@ -58,11 +58,55 @@ date:   2017-09-13 23:46:24 +0100
     </ul>
 </section>
 
+
 <section>
     <h2>Game Loop</h2>
+    <section>
+        <table>
+          <tr class = "fragment"><td>Description</td><td>A game loop runs continuously during gameplay. Each turn of the loop, it processes user input without blocking, updates the game state, and renders the game. It tracks the passage of time to control the rate of gameplay</td></tr>
+          <tr class = "fragment"><td>Purpose</td><td>Decouple the progression of game time from user input and processor speed. Real Time systems run continuously, updating subsystems eg the screen regularly at tiny intervals to create the illusion of continuous reality</td></tr>
+          <tr class = "fragment"><td>When to Use It</td><td>Every realtime game requires its use in some form</td></tr>
+        </table>
+    </section>
+
+
+    <section>
+        <p>in browser</p>
+        <code>
+            var animate = function () {
+                requestAnimationFrame( animate );
+
+                processInput();
+                update();
+                renderer(scene, camera);
+            };
+        </code>
+    </section>
+
+    
+    <section>
+        <p>traditional</p>
+        <code>
+            while (true)
+            {
+              double start = getCurrentTime();
+              processInput();
+              update();
+              render();
+
+              sleep(start + MS_PER_FRAME - getCurrentTime());
+            }
+        </code>
+    </section>
+
+
+</section>
+
+<section>
+    <h2>Singeton</h2>
     <table>
-      <tr class = "fragment"><td>Description</td><td>The singleton pattern is a software design pattern that restricts the instantiation of a class to one object</td></tr>
-      <tr class = "fragment"><td>Motivation</td><td>Is useful when exactly one object is needed to coordinate actions across the system</td></tr>
+      <tr class = "fragment"><td>Description</td><td>Ensure a class has only one instance, and provide a global point of access to it</td></tr>
+      <tr class = "fragment"><td>Motivation</td><td>Useful when exactly one object is needed to coordinate actions across the entire system</td></tr>
       <tr class = "fragment"><td>Example</td><td>Example</td></tr>
     </table>
 </section>
