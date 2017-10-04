@@ -11,7 +11,7 @@ date:   2017-09-13 23:46:24 +0100
 - Type in the code which should get you a cube spinning on screen
 
 ## Aims and Objectives
-- Mre aprprate file structure
+- More appropriate file structure
 - Build a More Complex Scene
 - Core Loop
 - Input
@@ -45,13 +45,11 @@ If your code doesn't work, there are a few possible sources of errors.
 - Make sure you don't leave the <script></script> tags behind in the HTML.
 - Make sure you your filename and relative path to the css is correct.
 
-
 ## Step 3 - Separate JS File
 
 Now we are going to separate out the js so we can more easily manage the project.
 
 Using google search for "how to include js in html page". Find the stackoverflow link.
-
 
 - Create a new file game.js in the same folder/dir as your index.html
 - Cut and paste the js from your original file into this new file.
@@ -66,12 +64,34 @@ If your code doesn't work, there are a few possible sources of errors.
 - Make sure you your filename and relative path to the css is correct.
 
 
-## Add a Sphere
 ## Add a Plane
+
+Goto https://threejs.org/ and select 'documents'. In the search box type 'plane'.
+
+~~~ javascript
+
+var planeGeometry = new THREE.PlaneGeometry(60,20,1,1);
+var planeMaterial = new THREE.MeshBasicMaterial({color: 0xcccccc});
+var plane = new THREE.Mesh(planeGeometry,planeMaterial);
+
+plane.rotation.x =- 0.5 * Math.PI;
+
+plane.position.x = 15;
+plane.position.y = 0;
+plane.position.z = 0;
+scene.add(plane);
+
+~~~
+
+
+## Add a Sphere
+
 ## Add a Column
 
+## Make the Sphere Move On Input
 
-## Make the Spere Move On Input
+
+
 
 ## Adding More Columns
 
