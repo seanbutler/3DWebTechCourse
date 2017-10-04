@@ -56,10 +56,7 @@ Using google search for "how to include js in html page". Find the stackoverflow
 - Create a new file game.js in the same folder/dir as your index.html
 - Cut and paste the js from your original file into this new file.
 - Follow the instructions from the stack overflow and create a link to the js in the new file.
-
-https://stackoverflow.com/questions/196702/where-to-place-javascript-in-an-html-file
-
-
+- https://stackoverflow.com/questions/196702/where-to-place-javascript-in-an-html-file
 - Test that your code works.
 
 If your code doesn't work, there are a few possible sources of errors.
@@ -67,7 +64,6 @@ If your code doesn't work, there are a few possible sources of errors.
 - Make sure you don't copy the <script></script> tags around the css.
 - Make sure you don't leave the <script></script> tags behind in the HTML.
 - Make sure you your filename and relative path to the css is correct.
-
 
 
 ##  Step 7
