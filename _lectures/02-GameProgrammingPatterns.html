@@ -71,32 +71,36 @@ date:   2017-09-13 23:46:24 +0100
 
 
     <section>
-        <p>in browser</p>
-        <code>
-            var animate = function () {
-                requestAnimationFrame( animate );
+<code>
+<pre>
+var animate = function () {
+    requestAnimationFrame( animate );
 
-                processInput();
-                update();
-                renderer(scene, camera);
-            };
-        </code>
+    processInput();
+    update();
+    renderer(scene, camera);
+};
+</pre>
+</code>
+<p>(in browser)</p>
     </section>
 
-    
-    <section>
-        <p>traditional</p>
-        <code>
-            while (true)
-            {
-              double start = getCurrentTime();
-              processInput();
-              update();
-              render();
 
-              sleep(start + MS_PER_FRAME - getCurrentTime());
-            }
-        </code>
+    <section>
+<code>
+<pre>
+while (true)
+{
+    double start = getCurrentTime();
+    processInput();
+    update();
+    render();
+
+    sleep(start + MS_PER_FRAME - getCurrentTime());
+}
+</pre>
+</code>
+<p>(traditional)</p>
     </section>
 
 
