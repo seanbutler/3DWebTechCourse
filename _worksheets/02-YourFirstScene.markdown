@@ -21,7 +21,7 @@ date:   2017-09-13 23:46:24 +0100
 
 Last week you built the hello world of graphics, a spinning cube. Seen everywhere since the 1950s.
 
-## Step 1 - New Project
+## Step 1 - Dupliate Project
 
 Take Last weeks Project, Duplicate it into a new directory 3DTech/Week2, 3DTFTW/Ex2 or something similar. Its your choice.
 
@@ -48,79 +48,27 @@ If your code doesn't work, there are a few possible sources of errors.
 
 ## Step 3 - Separate JS File
 
-Q. Given what you've seen. What possibilities are __you__ interested in making?
+Now we are going to separate out the js so we can more easily manage the project.
 
-Q. As we have close integrated access to all the other web technologies, what other interesting things could we do with that 3D rendering?
-
-While you think about those questions, move on through the next few steps.
-
-## Step 2 - Download and Install Chrome
-
-If you are using one of the lab machines on campus then chrome should already be installed.
-
-Otherwise, please visit <https://www.google.com/chrome/> where you will see a large blue button. Download and install Chrome by following the instructions.
-
-![](/3DWebTechCourse/assets/getchrome.png)
-
-You may use other browsers, all the major ones have the necessary debugging and inspection tools built in. It doesn't however make the course simpler to administer if we all use the same tools.
-
-## Step 3 Github for Backups
-
-This step is optional. If you are using one of the lab machines on campus then various git clients should already be installed.
-
-Signup for Github (Educational for Privacy)
-![](/3DWebTechCourse/assets/githubwecme.png)
-
-You dont have to, but consider making yourself a project to keep your work in. We recommend you make a project for every piece of work you carry out. Keep your work there and push/sync all the changes you make. If you get in a pickle then you can roll back and get your earlier work.
-
-You can of course use a USB stick and keep your work backed up on that. Just dont lose it.
-
-## Step 3.5
-
-The easiest and simplest way to access github and use it to keep your code backed up and secure is Github Desktop Client.
-
-Download and Install Github Desktop Client: https://desktop.github.com/
-![](/3DWebTechCourse/assets/getgthubdesktp.png)
-
-Again, this is optional, but the best way. Later in your career if you continue to work in design tech you will use tools like this and their more complicated cousins.
-
-## Step 4 - Text Editor
-Download and Install Atom or similar. Feel free to use whatever text editor you like.
-https://atom.io/
-https://code.visualstudio.com/
-![](/3DWebTechCourse/assets/getatm.png)
+Using google search for "how to include js in html page". Find the stackoverflow link.
 
 
-## Step 5
+- Create a new file game.js in the same folder/dir as your index.html
+- Cut and paste the js from your original file into this new file.
+- Follow the instructions from the stack overflow and create a link to the js in the new file.
 
-Running a simple web server locally on your machine. Its doesnt let us install software, so we have various choices.
+https://stackoverflow.com/questions/196702/where-to-place-javascript-in-an-html-file
 
-#### built into the OS
 
-Some operating systems have simple web servers built into the file browser/desktop just double click on the index.html
-it may work for you, you might have to visit your preferences and switch it on (dont ask me how).
+- Test that your code works.
 
-#### python
+If your code doesn't work, there are a few possible sources of errors.
 
-If you are on a mac or linux machine you most likely already have python installed.
+- Make sure you don't copy the <script></script> tags around the css.
+- Make sure you don't leave the <script></script> tags behind in the HTML.
+- Make sure you your filename and relative path to the css is correct.
 
-in a terminal/xterm/console
 
-~~~ javascript
-    python -m SimpleHTTPServer
-~~~
-
-#### mongoose
-
-download and install mongoose from here: https://cesanta.com/binary.html
-can be installed in the user space, and run directly. pretty simple, you should be able to work it out. run it once an you have a web server running on your machines. you can use this in the labs or at home very easily. once its running you can see your local server if you point your browser at localhost:8080
-
-## Step 6
-
-- create a project dir call it "3dtech/wk1/ex1" or something similar
-- go to Please visit <https://threejs.org/> follow the link to the source code on github and scroll down to usage, there you will find instructions on how to get a three.hs library file for use in your own projects.
-- download the three.js file
-- put them in a sub dir of your project dir
 
 ##  Step 7
 
