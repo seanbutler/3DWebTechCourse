@@ -29,18 +29,14 @@ You should have a single HTML file with html, css and js all embedded.
 
 ## Step 2 - Separate CSS File
 
-Usually we dont amalgamate our js, html and css into the same file. In all but the smallest projects its too unwieldy to manage.
+Usually we don't amalgamate our js, html and css into the same file. In all but the smallest projects its too unwieldy to manage.
 
 Using google search for "how to include a css file in html". Somewhere on the first page you will usually find a link to stack overflow. This is your goto site for programming/tech enginnering knowledge. (Also Mr Doob and Mozilla)
 
 - Create a new file game.css in the same folder/dir as your index.html
-
 - Cut and paste the CSS from your original file into this new file.
-
 - Follow the instructions from the stack overflow and create a link to the css in the new file.
-
 - https://stackoverflow.com/questions/1947878/adding-external-css-in-an-html-file
-
 - Test that your code works.
 
 If your code doesn't work, there are a few possible sources of errors.
