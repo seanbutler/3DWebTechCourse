@@ -4,51 +4,53 @@ title:  "Your First Scene"
 date:   2017-09-13 23:46:24 +0100
 ---
 
-
 ## Previously on 3DTFTW
-- Got Some Tools
-- Got The Library
-- Make a Simple Project in a dir
-- Got a rotating cube
-- Tweak the Code to change what it does
-
-
-## Aims & Objectives
-- Discover Three.js
 - Download and Install Tools
 - Download and Three.js code library
 - Make a simple project in a dir
 - Type in the code which should get you a cube spinning on screen
-- Celebrate!
+
+## Aims and Objectives
+- Build a More Complex Scene
+- Separate Tech into HTML, CSS and JS files
+- Core Loop
+- Input
+- Movement
 
 ## Introduction
 
-Three.js is a Javascript library for creating 3d graphics on web pages. Javascript libraries are text which means setting up your development environment is very easy.
+Last week you built the hello world of graphics, a spinning cube. Seen everywhere since the 1950s.
 
-For javascript development, the only requirements are a text editor and a web browser. That being said, text editors with features such as syntax highlighting/folding, bracket matching, a document map, and so on - such as Notepad++ or Sublime Text - will provide a better coding experience.
+## Step 1 - New Project
 
-## Step 1 - Discover Three.js
+Take Last weeks Project, Duplicate it into a new directory 3DTech/Week2, 3DTFTW/Ex2 or something similar. Its your choice.
 
-Please visit <https://threejs.org/>.
+You should have a single HTML file with html, css and js all embedded.
 
-This is the home of three.js on the web. There you can find an array of featured projects, the api documentation, lots of examples, forums, links to recommended books and websites.
+## Step 2 - Separate CSS File
 
-![](/3DWebTechCourse/assets/threejs.png)
+Usually we dont amalgamate our js, html and css into the same file. In all but the smallest projects its too unwieldy to manage.
 
-Keep this bookmarked somewhere convenient. Over the rest of the module you will visit this website many times.
+Using google search for "how to include a css file in html". Somewhere on the first page you will usually find a link to stack overflow. This is your goto site for programming/tech enginnering knowledge. (Also Mr Doob and Mozilla)
 
-Please take the time to review a few of the featured projects. You will get a feel for the possabilities tha are achievable using three.js and webgl.
+- Create a new file game.css in the same folder/dir as your index.html
 
-<http://hexgl.bkcore.com/>
+- Cut and paste the CSS from your original file into this new file.
 
-<http://www.georgeandjonathan.com/#1>
+- Follow the instructions from the stack overflow and create a link to the css in the new file.
 
-<https://www.cubeslam.com/qucjla>
+- https://stackoverflow.com/questions/1947878/adding-external-css-in-an-html-file
 
-<http://mrdoob.com/files/temp/xplsv_obsidian/>
+- Test that your code works.
 
-<http://ericrius1.github.io/IndrasNet/public/>
+If your code doesn't work, there are a few possible sources of errors.
 
+- Make sure you don't copy the <script></script> tags around the css.
+- Make sure you don't leave the <script></script> tags behind in the HTML.
+- Make sure you your filename and relative path to the css is correct.
+
+
+## Step 3 - Separate JS File
 
 Q. Given what you've seen. What possibilities are __you__ interested in making?
 
