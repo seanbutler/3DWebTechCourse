@@ -62,11 +62,13 @@ date:   2017-09-13 23:46:24 +0100
 <section>
     <h2>Game Loop</h2>
     <section>
+        <small>
         <table>
           <tr class = "fragment"><td>Description</td><td>A game loop runs continuously during gameplay. Each turn of the loop, it processes user input without blocking, updates the game state, and renders the game. It tracks the passage of time to control the rate of gameplay</td></tr>
           <tr class = "fragment"><td>Purpose</td><td>Decouple the progression of game time from user input and processor speed. Real Time systems run continuously, updating subsystems eg the screen regularly at tiny intervals to create the illusion of continuous reality</td></tr>
           <tr class = "fragment"><td>When to Use It</td><td>Every realtime game requires its use in some form</td></tr>
         </table>
+    </small>
     </section>
 
 
@@ -77,32 +79,13 @@ var animate = function () {
     requestAnimationFrame( animate );
 
     processInput();
-    update();
-    renderer(scene, camera);
+    updateEntities();
+    renderScene(scene, camera);
 };
 </pre>
 </code>
 <p>(in browser)</p>
     </section>
-
-
-    <section>
-<code>
-<pre>
-while (true)
-{
-    double start = getCurrentTime();
-    processInput();
-    update();
-    render();
-
-    sleep(start + MS_PER_FRAME - getCurrentTime());
-}
-</pre>
-</code>
-<p>(traditional)</p>
-    </section>
-
 
 </section>
 
