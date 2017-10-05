@@ -45,12 +45,13 @@ date:   2017-09-13 23:46:24 +0100
 
 <section>
     <h2>Types of Patterns</h2>
-    <ul>
-        <li>Structural</li>
-        <li>Sequence</li>
-        <li>Decoupling</li>
-        <li>Optimisation</li>
-    </ul>
+
+    <table>
+        <tr><td>Structural</td><td class = "fragment">The arrangement, hierarchy or structure of the code, the software objects and/or types</td></tr>
+        <tr><td>Sequence</td><td class = "fragment">Maintaining a specific order of execution</td></tr>
+        <tr><td>Decoupling</td><td class = "fragment">Separation of software objects and types so they can be manipulated independantly</td></tr>
+        <tr><td>Optimisation</td><td class = "fragment">Reducing computation, speeding up execution, reducing memory use.</td></tr>
+    </table>
 </section>
 
 <section>
@@ -82,7 +83,7 @@ var animate = function () {
 
 
 <section>
-    <p>Game Object</p>
+    <h2>Game Object</h2>
 
     <section>
     <code>
@@ -102,7 +103,6 @@ class Enemy extends GameObject { constructor(){}; }
 class Nazi extends Enemy { constructor(){}; }
         </pre>
     </code>
-        <p>(pseudocode)</p>
     </section>
 
     <section>
@@ -114,7 +114,7 @@ class Nazi extends Enemy { constructor(){}; }
 </section>
 
 <section>
-    <p>Update Method</p>
+    <h2>Update Method</h2>
 
     <section>
     <code>
@@ -155,35 +155,34 @@ while (gameOn==true)
     <section>
     <code>
         <pre>
-class Particle
+class Footprint
 {
     constructor() {this.initialise(0, 0, 0);}
-    initialise(x, y, colour) {this.x = x; this.y=y; this.colour = colour;}
+    initialise(x, z, colour) {this.x = x; this.z=z; this.colour = colour;}
 }
 
 class ParticlePool {
     constructor(size) {
         this.size = size; this.new = 0;
         for (var n=0; n < this.size; n++) {
-            this.poolArray.push(new Particle(0,0,0));
+            this.poolArray.push(new Footprint(0,0,0));
         }
     };
 
-    NewParticle(x, y, z, col) {
-        this.poolArray[new].initialise(x, y, z, col);
-        this.new++;
+    NewFootprint(x, y, z, c) {
+        this.poolArray[new].initialise(x, z, c);
+        this.new = this.new + 1;
         if (this.new>=this.size) {this.new = 0;}
     }
 }
         </pre>
-        <p>(pseudocode)</p>
     </code>
     </section>
 
     <section>
         <table>
-          <tr><td>What</td><td class = "fragment">The game world maintains a collection of objects. Each object implements an update method that simulates one frame of the object’s behavior. Each frame, the game updates every object in the collection.</td></tr>
-          <tr><td>Why</td><td class = "fragment">Your game has a number of objects or systems that need to run simultaneously. Each object’s behavior is mostly independent of the others. The objects need to be simulated over time.</td></tr>
+          <tr><td>What</td><td class = "fragment">Efficiently use memory for a large set of very similar objects likely with a short lifetime.</td></tr>
+          <tr><td>Why</td><td class = "fragment">Reducing memory fragmentation through reusing the same object again and again.</td></tr>
         </table>
     </section>
 </section>
