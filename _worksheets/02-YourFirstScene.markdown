@@ -21,7 +21,7 @@ date:   2017-09-13 23:46:24 +0100
 
 Last week you built the hello world of graphics, a spinning cube. Seen everywhere since the 1950s.
 
-This week we are ging t add mre t the scene and as make it interactive! But first, ets structure the prject sighty by separating the cde int different fies and making them reference each ther
+This week we are going to add more to the scene and as make it interactive! But first, lets re-structure the project slightly by separating the code int different files and making them reference each other
 
 ## Step 1 - Duplicate Project
 
@@ -70,16 +70,16 @@ Goto https://threejs.org/ and select 'documents'. In the search box type 'plane'
 
 ~~~ javascript
 
-var planeGeometry = new THREE.PlaneGeometry(60,20,1,1);
-var planeMaterial = new THREE.MeshBasicMaterial({color: 0xcccccc});
-var plane = new THREE.Mesh(planeGeometry,planeMaterial);
+    var planeGeometry = new THREE.PlaneGeometry(60,20,1,1);
+    var planeMaterial = new THREE.MeshBasicMaterial({color: 0xcccccc});
+    var plane = new THREE.Mesh(planeGeometry,planeMaterial);
 
-plane.rotation.x =- 0.5 * Math.PI;
+    plane.rotation.x =- 0.5 * Math.PI;
 
-plane.position.x = 15;
-plane.position.y = 0;
-plane.position.z = 0;
-scene.add(plane);
+    plane.position.x = 15;
+    plane.position.y = 0;
+    plane.position.z = 0;
+    scene.add(plane);
 
 ~~~
 
