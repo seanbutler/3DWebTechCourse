@@ -230,47 +230,61 @@ var Singleton = (function () {
 
 
 <section>
-<h2>Prototype/Spawner</h2>
 
+<h2>Prototype Spawner</h2>
 
 <section>
     <img src = "../../assets/prototype-spawner.png">
 </section>
 
 <section>
-    <code><pre>
-class Spawner
-{
-public:
-  Spawner(Monster* prototype)
-  : prototype_(prototype)
-  {}
+<em>this is c++ convert to js</em>
+        <code><pre>
+    class Spawner
+    {
+    public:
+      Spawner(Monster* prototype)
+      : prototype_(prototype)
+      {}
 
-  Monster* spawnMonster()
-  {
-    return prototype_->clone();
-  }
+      Monster* spawnMonster()
+      {
+        return prototype->clone();
+      }
 
-private:
-  Monster* prototype_;
-};
-</pre></code>
+    private:
+      Monster* prototype_;
+    };
+    </pre></code>
 </section>
+
+</section>
+
+
+
+<section>
+
+<h2>Component</h2>
+
+<section>
+    <img src = "../../assets/component-uml.png">
 </section>
 
 <section>
+
+        <code><pre>
+TODO: add simple js entity component here
+    </pre></code>
+</section>
+
+</section>
+
+
+<section>
     <h2>Advanced Patterns</h2>
-
-    <section>
-        <table>
-          <tr><td>Component</td><td class = "fragment"></td></tr>
-        </table>
-    </section>
-
     <section>
         <table>
           <tr><td>Service</td><td class = "fragment">Like a Game Loop, but instead of handling Entities, handles specific behaviours within components</td></tr>
-          <tr><td>Prototype</td><td class = "fragment"></td></tr>
           <tr><td>Flyweight</td><td class = "fragment">Move all the common logic and shared data of a class into a single larger object. Maintain separate simpler objects only for the unique features.</td></tr>
           <tr><td>Spatial Partition</td><td class = "fragment">Cut the space of the world into smaller parts and deal with them only when necessary</td></tr>
           <tr><td>Scene Graph</td><td class = "fragment">Linked Structure of every Entity/Object in your world</td></tr>
