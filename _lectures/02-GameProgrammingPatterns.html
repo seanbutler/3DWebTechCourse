@@ -39,6 +39,7 @@ date:   2017-09-13 23:46:24 +0100
     <ul>
         <li>Game Loop</li>
         <li>Update Method</li>
+        <li>Update Method</li>
         <li>Entity</li>
         <li>Singleton</li>
         <li>Object Pool</li>
@@ -86,6 +87,68 @@ var animate = function () {
 
 </section>
 
+
+<section>
+    <p>Entity</p>
+</section>
+
+<section>
+    <p>Update Method</p>
+
+    <section>
+    <code>
+        <pre>
+class Entity
+{
+    constructor(_z, _y) {this.x = _x; this.y=_y}
+    Update() {}
+}
+
+while (gameOn==true)
+{
+    handleInput();
+
+    for (int i = 0; i < numEntities_; i++)
+    {
+      entities_[i]->update();
+    }
+
+    renderScene(camera, scene);
+}
+        </pre>
+    </code>
+    </section>
+
+        <section>
+            <table>
+              <tr class = "fragment"><td>Description</td><td>The game world maintains a collection of objects. Each object implements an update method that simulates one frame of the object’s behavior. Each frame, the game updates every object in the collection.</td></tr>
+              <tr class = "fragment"><td>Motivation</td><td>Your game has a number of objects or systems that need to run simultaneously. Each object’s behavior is mostly independent of the others. The objects need to be simulated over time.</td></tr>
+            </table>
+        </section>
+    </section>
+
+
+
+
+
+<section>
+    <p>Object Pool</p>
+</section>
+
+<section>
+    <p>Prototype</p>
+</section>
+
+<section>
+    <p>Component</p>
+</section>
+
+<section>
+    <p>Service</p>
+</section>
+
+
+
 <section>
     <h2>Singeton</h2>
 
@@ -120,32 +183,8 @@ var Singleton = (function () {
           <tr class = "fragment"><td>Example</td><td>Example</td></tr>
         </table>
     </section>
-
-<section>
-    <p>Entity</p>
 </section>
 
-<section>
-    <h2>Singleton</h2>
-    <p>"the singleton pattern is a software design pattern that restricts the instantiation of a class to one object." Wikipedia</p>
-    <p>"is useful when exactly one object is needed to coordinate actions across the system" Wikipedia</p>
-</section>
-
-<section>
-    <p>Object Pool</p>
-</section>
-
-<section>
-    <p>Prototype</p>
-</section>
-
-<section>
-    <p>Component</p>
-</section>
-
-<section>
-    <p>Service</p>
-</section>
 
 
 <section>
