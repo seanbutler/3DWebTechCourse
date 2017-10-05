@@ -94,8 +94,7 @@ class GameObject {
         this.y = y;
         this.z = z;
     };
-    Render(){};
-    Logic(){};
+    //...
 }
 
 class Player extends GameObject { constructor(){}; }
@@ -117,23 +116,27 @@ class Nazi extends Enemy { constructor(){}; }
     <h2>Update Method</h2>
 
     <section>
+        <img src = "../../assets/update-method.png">
+    </section>
+
+    <section>
+
     <code>
         <pre>
-class Player
-{
-    constructor(_z, _y) {this.x = _x; this.y=_y}
-    Update() {}
+class GameObject {
+    constructor(x, y) {this.x = x; this.y=y}
+    Update() {
+        //...
+    }
 }
 
-while (gameOn==true)
+while (gameOn)
 {
     handleInput();
-
-    for (int i = 0; i < numEntities_; i++)
+    for (int i = 0; i < numEntities; i++)
     {
-      entities_[i]->update();
+      entities[i]->update();
     }
-
     renderScene(camera, scene);
 }
         </pre>
@@ -155,13 +158,12 @@ while (gameOn==true)
     <section>
     <code>
         <pre>
-class Footprint
-{
+class Footprint {
     constructor() {this.initialise(0, 0, 0);}
     initialise(x, z, colour) {this.x = x; this.z=z; this.colour = colour;}
 }
 
-class ParticlePool {
+class FootprintPool {
     constructor(size) {
         this.size = size; this.new = 0;
         for (var n=0; n < this.size; n++) {
@@ -227,29 +229,22 @@ var Singleton = (function () {
     <h2>More Patterns</h2>
 
     <section>
-        <p>Prototype</p>
+        <table>
+          <tr><td>Prototype</td><td class = "fragment"></td></tr>
+          <tr><td>Component</td><td class = "fragment"></td></tr>
+          <tr><td>Service</td><td class = "fragment"></td></tr>
+        </table>
     </section>
 
     <section>
-        <p>Component</p>
+        <table>
+          <tr><td>Flyweight</td><td class = "fragment">Move all the common logic and shared data of a class into a single larger object. Maintain separate simpler objects only for the unique features.</td></tr>
+          <tr><td>Spatial Partition</td><td class = "fragment">Cut the space of the world into smaller parts and deal with them only when necessary</td></tr>
+          <tr><td>Scene Graph</td><td class = "fragment">Linked Structure of every Entity/Object in your world</td></tr>
+        </table>
     </section>
 
-    <section>
-        <p>Service</p>
-    </section>
 </section>
-
-<section>
-    <h2>More Patterns</h2>
-
-    <table>
-      <tr><td>Flyweight</td><td class = "fragment">Move all the common logic and shared data of a class into a single larger object. Maintain separate simpler objects only for the unique features.</td></tr>
-      <tr><td>Spatial Partition</td><td class = "fragment">Cut the space of the world into smaller parts and deal with them only when necessary</td></tr>
-      <tr><td>Scene Graph</td><td class = "fragment">Linked Structure of every Entity/Object in your world</td></tr>
-    </table>
-</section>
-
-
 <section>
     <h2>Further Reading</h2>
     <small>
