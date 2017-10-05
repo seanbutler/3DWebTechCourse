@@ -25,20 +25,14 @@ date:   2017-09-13 23:46:24 +0100
 <section>
     <h2>Definition</h2>
     <p>What is a Pattern?</p>
-    <p>What is a Software Design Pattern?</p>
-    <p>What is a Game Programming Pattern?</p>
-</section>
-
-<section>
-    <h2>Definition</h2>
-    <p></p>
+    <p class = "fragment">What is a Software Design Pattern?</p>
+    <p class = "fragment">What is a Game Programming Pattern?</p>
 </section>
 
 <section>
     <h2>Some Patterns</h2>
     <ul>
         <li>Game Loop</li>
-        <li>Update Method</li>
         <li>Update Method</li>
         <li>Entity</li>
         <li>Singleton</li>
@@ -94,22 +88,22 @@ var animate = function () {
     <section>
     <code>
         <pre>
-            class GameObject {
-                constructor(x, y, z){
-                    this.x = x;
-                    this.y = y;
-                    this.z = z;
-                };
-                Render(){};
-                Logic(){};
+class GameObject {
+    constructor(x, y, z){
+        this.x = x;
+        this.y = y;
+        this.z = z;
+    };
+    Render(){};
+    Logic(){};
+}
 
-            }
-
-            class Player extends GameObject { constructor(){}; }
-            class Enemy extends GameObject { constructor(){}; }
-            class Nazi extends Enemy { constructor(){}; }
+class Player extends GameObject { constructor(){}; }
+class Enemy extends GameObject { constructor(){}; }
+class Nazi extends Enemy { constructor(){}; }
         </pre>
     </code>
+        <p>(pseudocode)</p>
     </section>
 
     <section>
@@ -145,29 +139,64 @@ while (gameOn==true)
 }
         </pre>
     </code>
+        <p>(pseudocode)</p>
     </section>
 
-        <section>
-            <table>
-              <tr class = "fragment"><td>Description</td><td>The game world maintains a collection of objects. Each object implements an update method that simulates one frame of the object’s behavior. Each frame, the game updates every object in the collection.</td></tr>
-              <tr class = "fragment"><td>Motivation</td><td>Your game has a number of objects or systems that need to run simultaneously. Each object’s behavior is mostly independent of the others. The objects need to be simulated over time.</td></tr>
-            </table>
-        </section>
+    <section>
+        <table>
+          <tr class = "fragment"><td>Description</td><td>The game world maintains a collection of objects. Each object implements an update method that simulates one frame of the object’s behavior. Each frame, the game updates every object in the collection.</td></tr>
+          <tr class = "fragment"><td>Motivation</td><td>Your game has a number of objects or systems that need to run simultaneously. Each object’s behavior is mostly independent of the others. The objects need to be simulated over time.</td></tr>
+        </table>
     </section>
-
-
-
-
+</section>
 
 <section>
     <p>Object Pool</p>
+
+    <section>
+    <code>
+        <pre>
+class Particle
+{
+    constructor() {this.initialise(0, 0, 0);}
+    initialise(x, y, colour) {this.x = x; this.y=y; this.colour = colour;}
+}
+
+class ParticlePool {
+    constructor(size) {
+        this.size = size; this.new = 0; this.old = 0
+        for (var n=0; n < this.size; n++)
+        {
+            this.poolArray.push(new Particle(0,0,0));
+        }
+    };
+
+    NewParticle(x, y, z, col) {
+        this.old = new;
+        this.poolArray[new].initialise(x, y, z, col);
+        this.new++;
+        if (this.new>=this.size) {this.new = 0;}
+    }
+}
+        </pre>
+        <p>(pseudocode)</p>
+    </code>
+    </section>
+
+    <section>
+        <table>
+          <tr class = "fragment"><td>Description</td><td>The game world maintains a collection of objects. Each object implements an update method that simulates one frame of the object’s behavior. Each frame, the game updates every object in the collection.</td></tr>
+          <tr class = "fragment"><td>Motivation</td><td>Your game has a number of objects or systems that need to run simultaneously. Each object’s behavior is mostly independent of the others. The objects need to be simulated over time.</td></tr>
+        </table>
+    </section>
 </section>
+
+
+
 
 <section>
     <p>Prototype</p>
 </section>
-
-
 
 <section>
     <p>Component</p>
