@@ -89,7 +89,35 @@ var animate = function () {
 
 
 <section>
-    <p>Entity</p>
+    <p>Game Object</p>
+
+    <section>
+    <code>
+        <pre>
+            class GameObject {
+                constructor(x, y, z){
+                    this.x = x;
+                    this.y = y;
+                    this.z = z;
+                };
+                Render(){};
+                Logic(){};
+
+            }
+
+            class Player extends GameObject { constructor(){}; }
+            class Enemy extends GameObject { constructor(){}; }
+            class Nazi extends Enemy { constructor(){}; }
+        </pre>
+    </code>
+    </section>
+
+    <section>
+        <table>
+          <tr class = "fragment"><td>Description</td><td>Many (most) of the objects in your system will have something in common which is necessary for them to participate in the simulation.</td></tr>
+          <tr class = "fragment"><td>Motivation</td><td>Because they all are part of the same simulation you dont want to re-write the code each time.</td></tr>
+        </table>
+    </section>
 </section>
 
 <section>
@@ -98,7 +126,7 @@ var animate = function () {
     <section>
     <code>
         <pre>
-class Entity
+class Player
 {
     constructor(_z, _y) {this.x = _x; this.y=_y}
     Update() {}
@@ -138,6 +166,8 @@ while (gameOn==true)
 <section>
     <p>Prototype</p>
 </section>
+
+
 
 <section>
     <p>Component</p>
