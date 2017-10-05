@@ -163,15 +163,13 @@ class Particle
 
 class ParticlePool {
     constructor(size) {
-        this.size = size; this.new = 0; this.old = 0
-        for (var n=0; n < this.size; n++)
-        {
+        this.size = size; this.new = 0;
+        for (var n=0; n < this.size; n++) {
             this.poolArray.push(new Particle(0,0,0));
         }
     };
 
     NewParticle(x, y, z, col) {
-        this.old = new;
         this.poolArray[new].initialise(x, y, z, col);
         this.new++;
         if (this.new>=this.size) {this.new = 0;}
@@ -189,9 +187,6 @@ class ParticlePool {
         </table>
     </section>
 </section>
-
-
-
 
 
 <section>
@@ -229,9 +224,9 @@ var Singleton = (function () {
     </section>
 </section>
 
-
 <section>
     <h2>More Patterns</h2>
+
     <section>
         <p>Prototype</p>
     </section>
@@ -249,7 +244,7 @@ var Singleton = (function () {
     <h2>More Patterns</h2>
 
     <table>
-      <tr><td>Flyweight</td><td class = "fragment">Move all the common logic and shared data of a class into a separate object. Maintain separate objects only for the unique features.</td></tr>
+      <tr><td>Flyweight</td><td class = "fragment">Move all the common logic and shared data of a class into a single larger object. Maintain separate simpler objects only for the unique features.</td></tr>
       <tr><td>Spatial Partition</td><td class = "fragment">Cut the space of the world into smaller parts and deal with them only when necessary</td></tr>
       <tr><td>Scene Graph</td><td class = "fragment">Linked Structure of every Entity/Object in your world</td></tr>
     </table>
