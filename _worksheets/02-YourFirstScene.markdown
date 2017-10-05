@@ -1,6 +1,6 @@
 ---
 layout: worksheet
-title:  "Your First Scene"
+title:  "A More Complex Scene"
 date:   2017-09-13 23:46:24 +0100
 ---
 
@@ -70,7 +70,7 @@ Goto https://threejs.org/ and select 'documents'. In the search box type 'plane'
 
 ~~~ javascript
 
-    var planeGeometry = new THREE.PlaneGeometry(60,20,1,1);
+    var planeGeometry = new THREE.PlaneGeometry(60, 20, 1, 1);
     var planeMaterial = new THREE.MeshBasicMaterial({color: 0xcccccc});
     var plane = new THREE.Mesh(planeGeometry,planeMaterial);
 
@@ -83,12 +83,20 @@ Goto https://threejs.org/ and select 'documents'. In the search box type 'plane'
 
 ~~~
 
+- Move the plane so it is at coordinates 0, 0, 0.
+- Scale the plane so it is very large.
+- Rotate the plane so it is horizontal.
 
-## Add a Sphere
 
 ## Add a Column
 
-## Make the Sphere Move On Input
+Like the sphere, but use new THREE.CylinderGeometry().
+Check the documentation to see what the parameters mean.
+Try to make it 1x1x2 with fewer than 20 sides.
+
+
+
+## Make the Cube Move On Input
 
 
 
