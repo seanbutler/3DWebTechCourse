@@ -73,9 +73,8 @@ var animate = function () {
 
     <section>
         <table>
-            <tr class = "fragment"><td>What</td><td>Runs continuously, processes user input without blocking, updates game state, and renders the game. Tracks the passage of time to control the rate of gameplay</td></tr>
-            <tr class = "fragment"><td>Why</td><td>Decouple game time from user input and processor speed. Real Time systems run continuously and very quickly to create an illusion of continuous reality</td></tr>
-            <tr class = "fragment"><td>When</td><td>Every realtime game requires its use in some form</td></tr>
+            <tr><td>What</td><td class = "fragment">Runs continuously, processes user input without blocking, updates game state, and renders the game. Tracks the passage of time to control the rate of gameplay</td></tr>
+            <tr><td>Why</td><td class = "fragment">Decouple game time from user input and processor speed. Real Time systems run continuously and very quickly to create an illusion of continuous reality</td></tr>
         </table>
     </section>
 
@@ -108,8 +107,8 @@ class Nazi extends Enemy { constructor(){}; }
 
     <section>
         <table>
-          <tr class = "fragment"><td>Description</td><td>Many (most) of the objects in your system will have something in common which is necessary for them to participate in the simulation.</td></tr>
-          <tr class = "fragment"><td>Motivation</td><td>Because they all are part of the same simulation you dont want to re-write the code each time.</td></tr>
+          <tr><td>What</td><td class = "fragment"><td>Many (most) of the objects in your system will have something in common which is necessary for them to participate in the simulation.</td></tr>
+          <tr><td>Why</td><td class = "fragment"><td>Because they all are part of the same simulation you dont want to re-write the code each time.</td></tr>
         </table>
     </section>
 </section>
@@ -144,8 +143,8 @@ while (gameOn==true)
 
     <section>
         <table>
-          <tr class = "fragment"><td>Description</td><td>The game world maintains a collection of objects. Each object implements an update method that simulates one frame of the object’s behavior. Each frame, the game updates every object in the collection.</td></tr>
-          <tr class = "fragment"><td>Motivation</td><td>Your game has a number of objects or systems that need to run simultaneously. Each object’s behavior is mostly independent of the others. The objects need to be simulated over time.</td></tr>
+          <tr><td>What</td><td class = "fragment">The game world maintains a collection of objects. Each object implements an update method that simulates one frame of the object’s behavior. Each frame, the game updates every object in the collection.</td></tr>
+          <tr><td>Why</td><td class = "fragment">Your game has a number of objects or systems that need to run simultaneously. Each object’s behavior is mostly independent of the others. The objects need to be simulated over time.</td></tr>
         </table>
     </section>
 </section>
@@ -185,26 +184,13 @@ class ParticlePool {
 
     <section>
         <table>
-          <tr class = "fragment"><td>Description</td><td>The game world maintains a collection of objects. Each object implements an update method that simulates one frame of the object’s behavior. Each frame, the game updates every object in the collection.</td></tr>
-          <tr class = "fragment"><td>Motivation</td><td>Your game has a number of objects or systems that need to run simultaneously. Each object’s behavior is mostly independent of the others. The objects need to be simulated over time.</td></tr>
+          <tr><td>What</td><td class = "fragment">The game world maintains a collection of objects. Each object implements an update method that simulates one frame of the object’s behavior. Each frame, the game updates every object in the collection.</td></tr>
+          <tr><td>Why</td><td class = "fragment">Your game has a number of objects or systems that need to run simultaneously. Each object’s behavior is mostly independent of the others. The objects need to be simulated over time.</td></tr>
         </table>
     </section>
 </section>
 
 
-
-
-<section>
-    <p>Prototype</p>
-</section>
-
-<section>
-    <p>Component</p>
-</section>
-
-<section>
-    <p>Service</p>
-</section>
 
 
 
@@ -237,22 +223,36 @@ var Singleton = (function () {
 
     <section>
         <table>
-          <tr class = "fragment"><td>Description</td><td>Ensure a class has only one instance, and provide a global point of access to it</td></tr>
-          <tr class = "fragment"><td>Motivation</td><td>Useful when exactly one object is needed to coordinate actions across the entire system</td></tr>
-          <tr class = "fragment"><td>Example</td><td>Example</td></tr>
+          <tr><td>What</td><td class = "fragment">Ensure a class has only one instance, and provide a global point of access to it</td></tr>
+          <tr><td>Why</td><td class = "fragment">Useful when exactly one object is needed to coordinate actions across the entire system</td></tr>
         </table>
     </section>
 </section>
 
 
+<section>
+    <h2>More Patterns</h2>
+    <section>
+        <p>Prototype</p>
+    </section>
+
+    <section>
+        <p>Component</p>
+    </section>
+
+    <section>
+        <p>Service</p>
+    </section>
+</section>
 
 <section>
     <h2>More Patterns</h2>
-    <ul>
-        <li>Flyweight</li>
-        <li>Spatial Partition</li>
-        <li>Scene Graph</li>
-    </ul>
+
+    <table>
+      <tr><td>Flyweight</td><td class = "fragment">Move all the common logic and shared data of a class into a separate object. Maintain separate objects only for the unique features.</td></tr>
+      <tr><td>Spatial Partition</td><td class = "fragment">Cut the space of the world into smaller parts and deal with them only when necessary</td></tr>
+      <tr><td>Scene Graph</td><td class = "fragment">Linked Structure of every Entity/Object in your world</td></tr>
+    </table>
 </section>
 
 
