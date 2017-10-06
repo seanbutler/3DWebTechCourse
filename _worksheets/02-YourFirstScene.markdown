@@ -76,7 +76,7 @@ Goto https://threejs.org/ and select 'documents'. In the search box type 'plane'
 
     plane.rotation.x =- 0.5 * Math.PI;
 
-    plane.position.x = 15;
+    plane.position.x = 0;
     plane.position.y = 0;
     plane.position.z = 0;
     scene.add(plane);
