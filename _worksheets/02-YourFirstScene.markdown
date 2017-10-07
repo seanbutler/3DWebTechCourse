@@ -210,6 +210,8 @@ Take a look at the following.
 
 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/sin
 
+![](./assets/sine_waves_different_frequencies.svg.png)
+
 Can you make them appear in a winding row?
 Can you make them appear in 2 winding parallel rows?
 
