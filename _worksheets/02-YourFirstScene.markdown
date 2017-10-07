@@ -204,7 +204,7 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for
 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array
 
 
-## Wavy Path
+## Exercises
 
 Take a look at the following.
 
@@ -214,12 +214,7 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects
 
 ![](../../assets/sine_waves_different_frequencies.svg.png)
 
-Can you make the obstacles them appear in a winding row?
-Can you make them appear in 2 winding parallel rows?
-
-
-## Exercises
-
-Try to do as many of the following as you can.
-Use the update function to slide the obstacles or the player along the ground automatically?
-Can you use the random numbers to make the obstacles appear with a clear path between them?
+- Can you make the obstacles them appear in a winding row?
+- Can you make them appear in 2 winding parallel rows?
+- Use the update function to slide the obstacles or the player along the ground automatically?
+- Can you use the random numbers to make the obstacles appear with a clear path between them?
