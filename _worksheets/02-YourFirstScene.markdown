@@ -63,30 +63,44 @@ If your code doesn't work, there are a few possible sources of errors.
 - Make sure you don't leave the <script></script> tags behind in the HTML.
 - Make sure you your filename and relative path to the css is correct.
 
-
 ## Add a Plane
 
-Goto https://threejs.org/ and select 'documents'. In the search box type 'plane'.
+Goto https://threejs.org/ and select 'documents'. In the search box type 'plane'. Then under geometries select 'PlaneGeometry'. This will take you to a page where you can see a demo of a plane, a source code example of a plane being made, and also a description of the parameters for the function that constructs a plane.
 
 ~~~ javascript
 
-    var planeGeometry = new THREE.PlaneGeometry(60, 20, 1, 1);
-    var planeMaterial = new THREE.MeshBasicMaterial({color: 0xcccccc});
+    var planeGeometry = new THREE.PlaneGeometry(100, 100, 50, 50);
+    var planeMaterial = new THREE.MeshBasicMaterial({color: 0xFF7F00});
     var plane = new THREE.Mesh(planeGeometry,planeMaterial);
 
-    plane.rotation.x =- 0.5 * Math.PI;
+    plane.position.x = 15;
+    plane.position.y = 0;
+    plane.position.z = 0;
 
+    scene.add(plane);
+~~~
+
+You may not see the plane from the above code initially, its too large to show on screen. So, you will have to make the plane small enough to see and not so small its hidden inside your cube.
+
+If you still cant see the plane, check where it is positioned? Perhaps it is out of view of the camera. Move it to the origin of the scene, this is also the middle of the scene and located at coords (0, 0, 0).
+
+~~~ javascript
     plane.position.x = 0;
     plane.position.y = 0;
     plane.position.z = 0;
-    scene.add(plane);
-
 ~~~
+
+Try changing the above code so that the plane is medium, say 5 * 5 and has only 1 subdivision/segments in each direction.
+
+~~~ javascript
+    var planeGeometry = new THREE.PlaneGeometry(5, 5, 1, 1);
+~~~
+
+Next...
 
 - Move the plane so it is at coordinates 0, 0, 0.
 - Scale the plane so it is very large.
 - Rotate the plane so it is horizontal.
-
 
 ## Add a Column
 
@@ -155,23 +169,23 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes
 ~~~ javascript
 class Obstacle {
     constructor() {
-        this.geometry =
-        this.material =
-        this.mesh =  
+        this.geometry = //...
+        this.material = //...
+        this.mesh = //...
 
         scene.add( this.mesh );
-        this.reset();
     }
 
     update() {
-
+        //...
     }
 }
 ~~~
 
+
 ## Lots of obstacles
 
-Use the new command to instantiate a few columns.
+Use the new more than once command to instantiate a few columns.
 where do they all appear?
 
 Take a look at the following.
@@ -179,6 +193,7 @@ Take a look at the following.
 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random
 
 Can you make them appear in random places?
+
 
 ## Array of obstacles
 
