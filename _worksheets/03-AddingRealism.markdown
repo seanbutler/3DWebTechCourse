@@ -30,7 +30,7 @@ Materials are the way we tell computer graphics how a surface responds to lighti
 
 if you go to threejs.org and within the documentation search for "Material" you should see a long list of Material types:
 
-~~~
+~~~ javascript
 LineBasicMaterial
 LineDashedMaterial
 Material
