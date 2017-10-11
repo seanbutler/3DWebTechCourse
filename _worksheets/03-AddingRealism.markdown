@@ -88,10 +88,10 @@ Note, the ambient light doesn't have a position, just a colour, this is because 
 Next we can add a directional light.
 
 ~~~ javascript
-var light = new THREE.DirectionalLight( 0xff0000, 2 );
-light.position.set( 100, 0, -100 );
-light.castShadow = false;
-scene.add( light );
+    var light = new THREE.DirectionalLight( 0xff0000, 2 );
+    light.position.set( 100, 0, -100 );
+    light.castShadow = false;
+    scene.add( light );
 ~~~
 
 Can you tell which way the light is facing?
@@ -114,13 +114,13 @@ If you choose to investigate these, perhaps you add some walls and a floor using
 
 Take a look at this example, it has several coloured point lights. You could easily create nice magical or particle effects with a few point lights.
 
-https://threejs.org/examples/?q=light#webgl_lights_pointlights
+<https://threejs.org/examples/?q=light#webgl_lights_pointlights>
 
 ## Step 4 - Foggy
 
 Check this out...
 
-https://threejs.org/examples/?q=fog#webgl_geometry_terrain_fog
+<https://threejs.org/examples/?q=fog#webgl_geometry_terrain_fog>
 
 Now duplicate your project into a new dir/folder.
 - Leave the ground and cylinder and cube.
@@ -140,6 +140,9 @@ Tweak the fog AND light parameters to make it seem like a night time scene from 
 
 ## Exercises
 
-### Blizzard / Arctic
-### Polluted / Blade Runner
-### Alien / Weird
+Again, Clone Your project and make some new scenes:
+
+- Underwater
+- Arctic Blizzard
+- Polluted Sci-Fi
+- Weird Alien World
