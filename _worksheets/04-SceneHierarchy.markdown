@@ -2,7 +2,6 @@
 layout: worksheet
 title:  "04 TBD (The Scene Hierarchy)"
 date:   2017-09-13 23:46:24 +0100
-desc: "Make a more realistic scene using many atmospheric tools"
 ---
 
 ## Previously on 3DTFTW

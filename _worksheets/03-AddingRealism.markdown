@@ -28,7 +28,7 @@ Take one of your previous project. The one with the interactive box and cylinder
 
 ## Step 2 - Read Up and View Example Materials
 
-Materials are the way we tell computer graphics how a surface responds to lighting. There are different kinds depending on what effect we are looking for. In general though the more realisting, the more expensive it is to compute. NB: by expensive we mean it takes longer for the computer to work out the graphics and so your program will run more slowly.
+Materials are the way we tell computer graphics how a surface responds to lighting. There are different kinds depending on what effect we are looking for. In general though the more realistic, the more expensive it is to compute. NB: by expensive we mean it takes longer for the computer to work out the graphics and so your program will run more slowly.
 
 if you go to threejs.org and within the documentation search for "Material" you should see a long list of Material types:
 
@@ -59,18 +59,19 @@ In computer graphics lights are invisible objects which exist in your scene so t
 
 For now, search for light in the threejs.org documentation, there will appear a long list of lights. We'll only take a look at these ones today. Be aware of the others if you want to do things more interesting later.
 
-- https://threejs.org/docs/index.html#api/lights/AmbientLight
-- https://threejs.org/docs/index.html#api/lights/DirectionalLight
-- https://threejs.org/docs/index.html#api/lights/PointLight
-- https://threejs.org/docs/index.html#api/lights/SpotLight
+- <https://threejs.org/docs/index.html#api/lights/AmbientLight>
+- <https://threejs.org/docs/index.html#api/lights/DirectionalLight>
+- <https://threejs.org/docs/index.html#api/lights/PointLight>
+- <https://threejs.org/docs/index.html#api/lights/SpotLight>
 
 And the base class from which they get some of their functions
-- https://threejs.org/docs/index.html#api/lights/Light
-
+- <https://threejs.org/docs/index.html#api/lights/Light>
 
 ## Step 5 - Simple Ambient Light
 
 Add a simple ambient light to your scene:
+
+Ambient lights are generally used to light a scene where we want a base light with a similar effect everywhere. Sort of like the light from the sky.
 
 ~~~ javascript
     var ambientLight = new THREE.AmbientLight( 0x404040 );
@@ -80,38 +81,65 @@ Add a simple ambient light to your scene:
 Can you see your shapes now? Try different colours, and intensities for the light.
 0x404040 is the current colour, dim white (grey). What do you have to set it to to make it brighter white light?
 
-Note, the ambient light doesnt have a position, just a colour, this is because it affects ALL the objects and
+Note, the ambient light doesn't have a position, just a colour, this is because it affects ALL the objects in the scene. Can you change the colour? How does it affect the colours of the objects in your scene.
 
-Can you change the colour? How does it affect the colours of the objects in your scene.
+## Step 6 - Directional Lights
 
+Next we can add a directional light.
 
-## Step 6 - MORE LIGHTS
+~~~ javascript
+var light = new THREE.DirectionalLight( 0xff0000, 2 );
+light.position.set( 100, 0, -100 );
+light.castShadow = false;
+scene.add( light );
+~~~
 
-TBD
+Can you tell which way the light is facing?
 
-## Step 7 - MOAR LIGHTS
+Now add a second directional light to your scene.
+- Make sure they are spaced apart in different locations.
+- Make the lights have different colours.
+You may need to move them around to get a nice lighting effect.
 
-TBD
+## Step 7 - Different Kinds of Lights
 
+There are still two kinds of light to investigate. Here is a good demo of a spot light.
+<https://threejs.org/examples/?q=light#webgl_lights_spotlight>
+
+Because of its similarity to shaded lamps, the spotlight is most useful for interior scenes. The point light too is similar to a lightbulb, but without a shade.
+- https://threejs.org/docs/index.html#api/lights/PointLight
+- https://threejs.org/docs/index.html#api/lights/SpotLight
+
+If you choose to investigate these, perhaps you add some walls and a floor using planes then reduce or remove the ambient light from the scene.
+
+Take a look at this example, it has several coloured point lights. You could easily create nice magical or particle effects with a few point lights.
+
+https://threejs.org/examples/?q=light#webgl_lights_pointlights
 
 ## Step 4 - Foggy
 
-TBD
+Check this out...
 
-Duplicate your project into a new dir/folder.
-Leave the ground and cylinder and cube.
-Can you make it seem like a very foggy day?
+https://threejs.org/examples/?q=fog#webgl_geometry_terrain_fog
+
+Now duplicate your project into a new dir/folder.
+- Leave the ground and cylinder and cube.
+- Leave the ambient light, but remove all the others.
+
+Go here <https://threejs.org/docs/index.html> and search for fog.
+
+https://threejs.org/docs/index.html#api/scenes/Fog
+https://threejs.org/docs/index.html#api/scenes/FogExp2
+
+Can you make it seem like a foggy day?
+ - Don't use the exponential fog for a very foggy scene, save that for subtle atmospheric effects.
 
 ## Step 5 - Nighttime
 
-TBD
-
-Duplicate your project into a new dir/folder.
-Leave the ground and cylinder and cube.
-Can you make it seem like night time?
+Tweak the fog AND light parameters to make it seem like a night time scene from a movie. We should still be able to see everything clearly though.
 
 ## Exercises
 
-### Bizzard / Arctic
-### Polluted / Blade Runer
+### Blizzard / Arctic
+### Polluted / Blade Runner
 ### Alien / Weird
