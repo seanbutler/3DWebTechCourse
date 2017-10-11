@@ -3,7 +3,6 @@ layout: worksheet
 title:  "03 Adding Realism"
 date:   2017-09-13 23:46:24 +0100
 desc: "Make a more realistic scene using many atmospheric tools"
-
 ---
 
 ## Previously on 3DTFTW
@@ -116,7 +115,7 @@ Take a look at this example, it has several coloured point lights. You could eas
 
 <https://threejs.org/examples/?q=light#webgl_lights_pointlights>
 
-## Step 4 - Foggy
+## Step 8 - Foggy
 
 Check this out...
 
@@ -134,15 +133,15 @@ https://threejs.org/docs/index.html#api/scenes/FogExp2
 Can you make it seem like a foggy day?
  - Don't use the exponential fog for a very foggy scene, save that for subtle atmospheric effects.
 
-## Step 5 - Nighttime
+## Step 9 - Nighttime
 
 Tweak the fog AND light parameters to make it seem like a night time scene from a movie. We should still be able to see everything clearly though.
 
 ## Exercises
 
-Again, Clone Your project and make some new scenes:
+Again, Clone Your project and make some new scenes. Tweak the lighting and fog parameters to create the following scenes, you may need to change the colours of the objects too to make a nice scene.
 
-- Underwater
-- Arctic Blizzard
-- Polluted Sci-Fi
-- Weird Alien World
+1 Underwater
+2 Arctic Blizzard
+3 Polluted Sci-Fi
+4 Weird Alien World
