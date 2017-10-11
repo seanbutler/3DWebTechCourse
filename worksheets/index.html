@@ -8,8 +8,7 @@ title: worksheets
 {% for doc in site.worksheets %}
     <p>
         <a href="/3DWebTechCourse/{{ doc.url }}">{{ doc.title }}</a>
-        <p>
-            {{ doc.desc }}
-        </p>
+        <br />
+        {{ doc.desc }}
     </p>
 {% endfor %}
