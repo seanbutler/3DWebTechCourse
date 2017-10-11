@@ -36,15 +36,16 @@ nav {
 
 h2, h3, h4, h5, h6{
     padding: 1vw;
-    margin-top: 1vw;
+    margin: 1vw 0 0 10vw;
     background-color: #EEE;
     display: block;
 }
 
 
 p, ul, ol {
-    margin-left: 10vw;
+
     padding: 1vw;
+    margin: 0 0 0 10vw;
     background-color: #EEE;
 }
 
