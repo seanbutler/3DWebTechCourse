@@ -142,6 +142,6 @@ Tweak the fog AND light parameters to make it seem like a night time scene from 
 Again, Clone Your project and make some new scenes. Tweak the lighting and fog parameters to create the following scenes, you may need to change the colours of the objects too to make a nice scene.
 
 1 Underwater
-2 Arctic Blizzard
-3 Polluted Sci-Fi
-4 Weird Alien World
+- Arctic Blizzard
+- Polluted Sci-Fi
+- Weird Alien World
