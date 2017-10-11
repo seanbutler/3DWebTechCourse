@@ -1,7 +1,9 @@
 ---
 layout: worksheet
-title:  "A More Complex Scene"
+title:  "02 A More Complex Scene"
 date:   2017-09-13 23:46:24 +0100
+desc: "Refactoring and Several Objects in the Scene Moving at Once"
+
 ---
 
 ## Previously on 3DTFTW
