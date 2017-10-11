@@ -30,38 +30,21 @@ Materials are the way we tell computer graphics how a surface responds to lighti
 
 if you go to threejs.org and within the documentation search for "Material" you should see a long list of Material types:
 
-~~~ javascript
-LineBasicMaterial
-LineDashedMaterial
-Material
-MeshBasicMaterial
-MeshDepthMaterial
-MeshLambertMaterial
-MeshNormalMaterial
-MeshPhongMaterial
-MeshPhysicalMaterial
-MeshStandardMaterial
-MeshToonMaterial
-PointsMaterial
-RawShaderMaterial
-ShaderMaterial
-ShadowMaterial
-SpriteMaterial
-~~~
+![](/3DWebTechCourse/assets/threejsorg_material_types.png)
 
 For today I want you to take a close look at the following 4:
-- https://threejs.org/docs/#api/materials/MeshBasicMaterial.combine
-- https://threejs.org/docs/#api/materials/MeshLambertMaterial.combine
-- https://threejs.org/docs/#api/materials/MeshPhongMaterial.combine
-- https://threejs.org/docs/index.html#api/materials/MeshStandardMaterial
+- <https://threejs.org/docs/#api/materials/MeshBasicMaterial.combine>
+- <https://threejs.org/docs/#api/materials/MeshLambertMaterial.combine>
+- <https://threejs.org/docs/#api/materials/MeshPhongMaterial.combine>
+- <https://threejs.org/docs/index.html#api/materials/MeshStandardMaterial>
 
 These Materials all make use of this base class for some of their functions:
-- https://threejs.org/docs/#api/materials/Material
+- <https://threejs.org/docs/#api/materials/Material>
 
 ## Step 3 - Populate a Scene
 
-As an experiment, lets put a few (4) toruses in your scene.
-https://threejs.org/docs/index.html#api/geometries/TorusBufferGeometry
+As an experiment, lets put a few (4) toruses/torii in your scene.
+<https://threejs.org/docs/index.html#api/geometries/TorusGeometry>
 Scale them small enough and space them apart. Position them so they float slightly over the ground.
 
 Apply a different material from the previous step to each one. In each case make sure the objects have their own material variable and you are assigning to it from a different Material Class from the above selection.
@@ -104,7 +87,7 @@ Can you change the colour? How does it affect the colours of the objects in your
 
 TBD
 
-## Step 7 - MORE LIGHTS
+## Step 7 - MOAR LIGHTS
 
 TBD
 
