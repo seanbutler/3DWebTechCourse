@@ -1,6 +1,6 @@
 ---
 layout: slides
-title:  "03 Lighting for Computing Graphics"
+title:  "03 Lighting for Computer Graphics"
 date:   2017-09-13 23:46:24 +0100
 ---
 
@@ -12,9 +12,9 @@ date:   2017-09-13 23:46:24 +0100
 
 <section>
     <h2>Aims and Objectives</h2>
+    <p>Introductary Overview of Lighting in CG</p>
     <p>Different Surface Responces To Light</p>
-    <p>Different Algorithms Used To Calculate Lighting</p>
-    <p>Learn about the Maths behind lighting for computer graphics</p>
+    <p>Different Kinds of Lights We Can Use</p>
 </section>
 
 <section>
@@ -30,17 +30,63 @@ date:   2017-09-13 23:46:24 +0100
   </pre>
 </section>
 
+
+<section>
+  <h2>Parts of Light</h2>
+  <p>Ambient Light</p>
+  <p>Diffuse Light</p>
+  <p>Specular Light</p>
+</section>
+
+
+
 <section>
   <h2>Ambient Light</h2>
   <p>Simplest Kind of Light</p>
 
   <img src = "../../assets/li_ambient1.gif">
   <pre>
-    In = Ia x Ka
+    Result = Amvient Light x Material Colour
   </pre>
   <p>For When you dont want your shadows completely dark. Universal fill in light.
   </p>
 </section>
+
+
+
+<section>
+  <h2>Diffuse</h2>
+  <img src = "../../assets/li_diffuse1.gif">
+  <p>Scattering Reflection of Colour</p>
+</section>
+
+<section>
+  <h2>Diffuse</h2>
+  <img src = "../../assets/li_diffuse2.gif">
+</section>
+
+<section>
+  <h2>Diffuse</h2>
+  <img src = "../../assets/li_diffuse3.gif">
+</section>
+
+
+
+<section>
+  <h2>Specular</h2>
+  <img src = "../../assets/li_specular1.gif">
+  <img src = "../../assets/li_specular2.gif">
+  <p>Highlights of Focused Reflection</p>
+</section>
+
+<section>
+  <h2>Specular</h2>
+  <img src = "../../assets/li_specular1.gif">
+  <img src = "../../assets/li_specular2.gif">
+</section>
+
+
+
 
 <section>
   <h2>Attenuation<small>Dropoff</small></h2>
@@ -55,31 +101,13 @@ date:   2017-09-13 23:46:24 +0100
   <p>Diffuse Light on the objects but there is attenuation on the ground. You can see it gets darker with distance</p>
 </section>
 
-<section>
-  <h2>Parts of Light</h2>
-  <p>Ambient Light</p>
-  <p>Diffuse Light</p>
-  <p>Specular Light</p>
-</section>
 
-<section>
-  <h2>Diffuse</h2>
-  <img src = "../../assets/li_diffuse1.gif">
-  <img src = "../../assets/li_diffuse2.gif">
-  <img src = "../../assets/li_diffuse3.gif">
-</section>
 
-<section>
-  <h2>Specular</h2>
-  <img src = "../../assets/li_specular1.gif">
-  <img src = "../../assets/li_specular2.gif">
-</section>
 
-<section>
-  <h2>Specular</h2>
-  <img src = "../../assets/li_specular1.gif">
-  <img src = "../../assets/li_specular2.gif">
-</section>
+
+
+
+
 
 <section>
   <h2>Directional Light</h2>
