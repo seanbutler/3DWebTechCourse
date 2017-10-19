@@ -40,7 +40,7 @@ Make the torii float about 30 or 40 above the plane and about 20 apart.
 
 Do you see something like this?
 
-![../../assets/TorusFour.PNG]
+![](../../assets/TorusFour.PNG)
 
 If your torii are flat shaded, then make sure you use a LambertMaterial instead of a BasicMaterial.
 
@@ -72,7 +72,7 @@ Position it above the floating shapes, so they look like they are lit from above
 
 You should now see some shadows below your objects.
 
-![../../assets/TorusFourShadow.PNG]
+![](../../assets/TorusFourShadow.PNG)
 
 ## Step 3 -
 
