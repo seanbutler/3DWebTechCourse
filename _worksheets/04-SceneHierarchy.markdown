@@ -28,6 +28,8 @@ The scene hierarchy is a little more subtle, all the objects in your scene can b
 
 Clone your code from where you got to last time into a new project directory. Perhaps you now have a scene with several floating objects over flat (ish) landscape? Take a look at last weeks worksheet and see where you got to.
 
+Switch off any fog you have for now, we'll add it back in later.
+
 
 ## Step 1 - Four Floating Objects
 
@@ -43,6 +45,8 @@ Do you see something like this?
 ![](../../assets/TorusFour.PNG)
 
 If your torii are flat shaded, then make sure you use a LambertMaterial instead of a BasicMaterial.
+
+<https://threejs.org/docs/#api/materials/MeshLambertMaterial>
 
 ~~~ javascript
 
@@ -64,7 +68,6 @@ Position it above the floating shapes, so they look like they are lit from above
 
 ~~~
 
-
 ## Step 2 - Adding some fake shadows
 
 You should now see some shadows below your objects.
@@ -77,30 +80,37 @@ Take some time to change the colours of your lights. Also the colours of your ma
 
 ## Step 4 - Spotlights
 
-Swap your directional light out for a spotlight. You dont have to delete the old code, just comment it out and replace it with the spotlight instead.
+Swap your directional light out for a spotlight. You don't have to delete the old code, just comment it out and replace it with the spotlight instead.
 
 ~~~ javascript
 
-var light = new THREE.SpotLight( 0xffffff, 1, 1000 );
+  var light = new THREE.SpotLight( 0xffffff, 1, 1000 );
 
-light.position.set( 0, 100, 0 );
-light.castShadow = true;
+  light.position.set( 0, 100, 0 );
+  light.castShadow = true;
 
-light.shadow.mapSize.width = 255;
-light.shadow.mapSize.height = 255;
+  light.shadow.mapSize.width = 255;
+  light.shadow.mapSize.height = 255;
 
-light.shadow.camera.near = 1;
-light.shadow.camera.far = 255;
+  light.shadow.camera.near = 1;
+  light.shadow.camera.far = 255;
 
-scene.add( light );
+  scene.add( light );
 
 ~~~
 
 Do you notice anything different about the shadows? Compare the positions of the shadows in the new scene with those that were being created before.
-The extra parameters we supply are
 
-- shadow.mapsize.width and height : these control the resolution of the shadow created. The shadow map is the rectangular buffer (like a texture) into which the shadows are calculated. Increasing these values gives better shadows. Naturally this comes at the cost of speed. They take longer to calculate. Remember there are two numbers so the speed decrease is proportional to the area which is the width x height. So it can get slow/big pretty quick. It pays to keep these values as low as you can stand.
+What happens if you move the spotlight position down a bit, can you see the difference?
 
-- light.shadow.camera.near and far : from the light position these two values define the volume within which obstacles must be to cast shadows. try experimenting with these values. shrink them and some of your torii should stop casting shadows. Again it pays to keep these values large enough to enclose the objects you need but small enough to exclude those for which you dont want to calculate shadows.
+The extra parameters we supply are:
+
+- shadow.mapsize.width and height
+
+these control the resolution of the shadow created. The shadow map is the rectangular buffer (like a texture) into which the shadows are calculated. Increasing these values gives better shadows. Naturally this comes at the cost of speed. They take longer to calculate. Remember there are two numbers so the speed decrease is proportional to the area which is the width x height. So it can get slow/big pretty quick. It pays to keep these values as low as you can stand.
+
+- light.shadow.camera.near and far
+
+from the light position these two values define the volume within which obstacles must be to cast shadows. try experimenting with these values. shrink them and some of your torii should stop casting shadows. Again it pays to keep these values large enough to enclose the objects you need but small enough to exclude those for which you dont want to calculate shadows.
 
 ## Exercises
