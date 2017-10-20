@@ -70,6 +70,46 @@ Position it above the floating shapes, so they look like they are lit from above
 
 ## Step 2 - Adding some fake shadows
 
+Do you see any shadows in your scene?
+
+Make sure the object's meshes themselves have shadows switched on.
+
+~~~ javascript
+
+  yourMesh.castShadow = true;
+  yourMesh.receiveShadow = true;
+
+~~~
+
+If you have encapsulated them in a class dont forget the this. pointer. Also notice there is a flag for casting and a flag for receiving shadows. You can set them independantly for different effects and for optimisation. You may only need cast shadow on your entities to produce a nice result.
+
+The ground plane or environment also needs to be part of the shadow system. If we assume its the ground for now and all lights will be above it then it doesnt need to cast shadows only receive them.
+
+~~~ javascript
+
+  yourMesh.castShadow = false;
+  yourMesh.receiveShadow = true;
+
+~~~
+
+Can you see some shadows yet? Perhaps you can see a tiny little square shadow below your object, much too small to be realistic. Directional Lights don't have a volume attached to them, so they cast light over the whole scene. So to make their shadow calculations sensible we have to create a volume to describe what can take part in the shadow calculations. This is called the shadow camera, because like the main camera it is used in projection maths. For now understand that you are defining a box attached to the light that sets a large enough volume for the shadows.
+
+
+~~~ javascript
+
+  var light = new THREE.DirectionalLight( 0xffffff, 1, 1000 );
+
+  light.position.set( 0, 100, 0 );
+  light.castShadow = true;
+
+  light.shadow.camera.right    =  400;
+  light.shadow.camera.left     = -400;
+  light.shadow.camera.top      =  400;
+  light.shadow.camera.bottom   = -400;
+
+  scene.add( light );
+~~~
+
 You should now see some shadows below your objects.
 
 ![](../../assets/TorusFourShadow.PNG)
@@ -114,3 +154,7 @@ these control the resolution of the shadow created. The shadow map is the rectan
 from the light position these two values define the volume within which obstacles must be to cast shadows. try experimenting with these values. shrink them and some of your torii should stop casting shadows. Again it pays to keep these values large enough to enclose the objects you need but small enough to exclude those for which you dont want to calculate shadows.
 
 ## Exercises
+
+try making a scene with your cylinders and cubes and whatnot on a flat plane. then using shadows can cast a nice golden hour sunset light across the scene and make it cast shadows to match?
+
+alternatively, white ground, white background, white fog. add in some green cones for trees and cast a harsh blue white light across the scene.

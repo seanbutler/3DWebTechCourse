@@ -1,28 +1,136 @@
 ---
 layout: slides
-title:  "04 TBD"
+title:  "04 MATHS IS FUN! YAY!"
 date:   2017-09-13 23:46:24 +0100
 ---
 
 <section data-background-color="#ff7f00">
-    <h1>TBD</h1>
+    <h1>MATHS IS FUN! YAY!</h1>
+    <h2>(no really!)</h2>
     <p>part of 3d tech for the web course</p>
 </section>
 
 <section>
     <h2>Aims and Objectives</h2>
+    <p>problems with maths?</p>
+    <p>movement</p>
+    <p>nature</p>
 </section>
 
 <section>
-    <h2>Audience</h2>
+  <a href = "https://www.youtube.com/watch?v=CcFVOzQ1Oqc">youtube</a>
+</section>
+
+<section>
+  <img src = "..\..\assets\calvin_physics_maths.jpg">
+</section>
+
+<section>
+  <img src = "..\..\assets\DisplacementVelocityAndAccelerationGraphs.png">
+</section>
+
+<section>
+  <img src = "..\..\assets\speed-time-graph.gif">
+</section>
+
+<section>
+<img src = "..\..\assets\speed-time-graph.gif">
 </section>
 
 <section>
 
+  <h2>Position</h2>
+
+  <pre>
+    this.mesh.position.set(20, -50, 30);
+  </pre>
+
+  <pre>
+    this.mesh.position.x = 20;
+    this.mesh.position.y = -50;
+    this.mesh.position.z = 30;
+  </pre>
+
+</section>
+
+
+
+<section>
+
+  <h2>Movement</h2>
+
+  <pre>
+    fall_speed = -1;
+  </pre>
+
+  <pre>
+    this.mesh.position.y = this.mesh.position.y - fall_speeed;
+  </pre>
+
+</section>
+
+
+<section>
+
+  <h2>Movement in 3D</h2>
+
+  <pre>
+    var movement = new THREE.Vector3();
+  </pre>
+
+  <pre>
+    movement.x = 1;
+    movement.y = 0;
+    movement.z = 1;
+  </pre>
+
+  <pre>
+    this.mesh.position = this.mesh.position. + movement;
+  </pre>
+
+</section>
+
+
+<section>
+
+  <h2>Acceleration</h2>
+
+  <pre>
+    fall_speed = 0;
+    gravity_acc = -0.04;
+  </pre>
+
+  <pre>
+    fall_speed = fall_speed + gravity_acc;
+    this.mesh.position.y = this.mesh.position.y - fall_speeed;
+  </pre>
+
+</section>
+
+<section>
+
+  <h2>Acceleration in 3D</h2>
+
+  <pre>
+    var movement = new THREE.Vector3(0, 0, 0);
+    var acceleration = new THREE.Vector3(0.05, 0, 0.05);
+  </pre>
+
+  <pre>
+    movement = movement + acceleration;
+  </pre>
+
+  <pre>
+    this.mesh.position = this.mesh.position. + movement;
+  </pre>
+
+</section>
+
+
+<section>
+  <a herf = "http://www.larsberg.net/">http://www.larsberg.net/</a>
 </section>
 
 <section>
     <h2>Further Reading</h2>
-    <small>
-    </small>
 </section>
