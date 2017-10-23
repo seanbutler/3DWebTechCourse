@@ -5,8 +5,6 @@ date:   2017-09-13 23:46:24 +0100
 desc:   "We need a game like Race the Sun, but on the web, and fast"
 ---
 
-# Modular Programme
-# Assignment Specification
 
 ## Module Details
 
@@ -37,7 +35,7 @@ The university requires we assess you under controlled conditions, this means we
 
 ## Deliverables
 
-- The Unity game deployed to your UWE student module homepage.
+- The WebGL/ThreeJS game deployed to the web.
 - A zip file that includes all the js, css and html files necessary also any assets and datafiles.
 - Screen shots of key points and features in the game. Clearly labelled and explaining the feature being shown.
 

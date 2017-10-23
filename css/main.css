@@ -42,7 +42,7 @@ h2, h3, h4, h5, h6{
 }
 
 
-p, ul, ol {
+p, ul, ol, table {
 
     padding: 1vw;
     margin: 0 0 0 10vw;
