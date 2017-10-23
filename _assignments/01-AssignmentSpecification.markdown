@@ -1,5 +1,5 @@
 ---
-layout: worksheets
+layout: worksheet
 title:  "Assignment Specification"
 date:   2017-09-13 23:46:24 +0100
 desc:   "We need a game like Race the Sun, but on the web, and fast"
