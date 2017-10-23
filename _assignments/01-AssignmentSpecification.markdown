@@ -2,9 +2,8 @@
 layout: worksheet
 title:  "Assignment Specification"
 date:   2017-09-13 23:46:24 +0100
-desc:   "We need a game like Race the Sun, but on the web, and fast"
+desc:   "We need a game like Race the Sun, but on the web, and fast!"
 ---
-
 
 ## Module Details
 
@@ -18,15 +17,16 @@ Component and Element Number | B1, B2
 Weighting | 75%
 Element Description | Assignment with Supporting Documentation
 
-
 ## Assignment Description
 
 The client has been impressed by the success of 'Race the Sun' game on mobile phones and steam, hoping to cash in on the interest in similar racing games they have contracted you to make a low cost fast abstract/sci-fi racing game in a similar style.
 
+The game should be bug free and run at 30 frames per second or above on the machines in 2Q25 FR (the workshop lab).
+
 ## Deliverables
 
 - The WebGL/ThreeJS game deployed to the web.
-- A zip file that includes all the js, css and html files necessary also any assets and datafiles.
+- A zip file that includes all the js, css and html files necessary also any assets, datafiles and scripts necessary to run the game on a local web server.
 - Screen shots of key points and features in the game. Clearly labelled and explaining the feature being shown.
 
 ## Assessment Criteria
@@ -46,27 +46,27 @@ __Total__                     | __35%__
 
 In the following criteria marks will be awarded for the quality of your submission.
 
-For Example: There are 10% possible marks for the gameplay, that is independent of the quality of your visuals. Games that play poorly, have little enhancement or sophistication will get few marks here.
-
-For Example: There are 10% possible marks for visuals, that is independent of the quality of your gameplay. Art Direction, Coherent Environment, etc will contribute here.  
-
-
 Thematic Achievements | Percentage
 :---|:---
-Gameplay (Does it Play, Is It Fun) | 20%
-Visuals (Beautiful, Cool Looking)  | 20%
-Web Page (Hosted On The Web)       | 10%
-Extra (Sound, Music, Surprise Me)  | 15%
-Total | 65%
+Gameplay (Challenging & Compelling Fun)        | 20%
+Visuals (Beautiful or Cool Looking)            | 20%
+Web Page (On The Web with well deigned page)   | 10%
+Extra (Sound, Music, Surprise Me)              | 15%
+Total                                          | 65%
+
+For Example: There are 20% possible marks for the gameplay, that is independent of the quality of your visuals. Games that play poorly, have little enhancement or sophistication will get few marks here.
+
+For Example: There are 20% possible marks for visuals, that is independent of the quality of your gameplay. Art Direction, Coherent Environment, etc will contribute here.  
+
 
 ## Hints on How to Obtain these Thematic Marks
 
-- Moving Obstacles, Timer, Jumps, Powerups, Collectables, etc.
-- Multiple Levels
-- Nice webpage
-- Thematic Changes per level
-- Thematic Changes per level
-- Visual Change with Gameplay Context
+- Gameplay - Moving Obstacles, Timer, Jumps, Powerups, Collectables, etc, Multiple Levels, etc
+- Coherent Artistic Theme & Concept across the game
+- Visual Environmental Changes per level
+- Visual FX & Music Change with Gameplay Context
+- Webpage style attractive and consistent with game art direction
+
 
 ## Controlled Conditions
 
