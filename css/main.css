@@ -42,11 +42,18 @@ h2, h3, h4, h5, h6{
 }
 
 
-p, ul, ol, table {
+p, ul, ol {
 
     padding: 1vw;
     margin: 0 0 0 10vw;
     background-color: #EEE;
+}
+
+table {
+    padding: 1vw;
+    margin: 0 0 0 10vw;
+    background-color: #EEE;
+    display: block
 }
 
 ul, ol {
