@@ -3,6 +3,12 @@ layout: default
 title: assignments
 ---
 
+<h2>Semester 1</h2>
+
 {% for doc in site.assignments %}
-    <p><a href="/3DWebTechCourse/{{ doc.url }}">{{ doc.title }}</a></p>
+    <p>
+        <a href="/3DWebTechCourse{{ doc.url }}">{{ doc.title }}</a>
+        <br />
+        {{ doc.desc }}
+    </p>
 {% endfor %}
