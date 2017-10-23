@@ -17,6 +17,18 @@ Component and Element Number | ??
 Weighting                    | ??
 Element Description          | Assignment with Supporting Documentation
 
+
+## Dates
+
+What | When
+:--- |:---
+Date Issued to Students:    | Friday 27th October 2017
+To be Returned to Students  | Four working weeks after submission
+Submission Place:           | Electronic Submission via Blackboard
+Submission Date:            | ??
+Submission Time:            | __13:59pm__
+
+
 ## Assignment Description
 
 The client has been impressed by the success of 'Race the Sun' game on mobile phones and steam, hoping to cash in on the interest in similar racing games they have contracted you to make a low cost fast abstract/sci-fi racing game in a similar style.
@@ -25,9 +37,13 @@ The game should be bug free and run at 30 frames per second or above on the mach
 
 ## Deliverables
 
-- The WebGL/ThreeJS game deployed to the web.
-- A zip file that includes all the js, css and html files necessary also any assets, datafiles and scripts necessary to run the game on a local web server.
-- Screen shots of key points and features in the game. Clearly labelled and explaining the feature being shown.
+- A zip file that includes
+  - All the js, css and html files required also any assets, datafiles and scripts and instructions necessary to run the game on a local web server.
+  - A pdf document containing:
+    - A URL to the The WebGL/ThreeJS game deployed to the web.
+    - Screen shots of key points and features in the game. Clearly labelled and explaining the feature being shown.
+
+Where you have used any assets, art, sounds, code from sources which you have not created yourself you must include a credits.txt with a clear list including links and licences.
 
 ## Assessment Criteria
 
