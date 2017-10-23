@@ -37,13 +37,14 @@ The game should be bug free and run at 30 frames per second or above on the mach
 
 ## Deliverables
 
-GAME - All the js, css and html files required also any assets, datafiles and scripts necessary to run the game on a local web server like we use in the labs.
-
-OVERVIEW.PDF - A pdf document containing: A URL to the The WebGL/ThreeJS game deployed to the web. Screen shots of key points and features in the game. Clearly labelled and explaining the feature being shown.
-
-CREDITS.TXT - Where you have used any assets, art, sounds, code from sources which you have not created yourself you must include a credits.txt with a clear list including links and licences.
-
 The entire submission should be in a zip archive which unpacks to a directory named for the module code and your student ID number: UFCXXX-30-2_12345678.zip
+The archive should contain the following:
+
+__Playable__ A folder/dir containing all the js, css and html files required also any assets, datafiles and scripts necessary to run the game on a local web server like we use in the labs.
+
+__overview.pdf__ A pdf document containing: A URL to the The WebGL/ThreeJS game deployed to the web. Screen shots of key points and features in the game. Clearly labelled and explaining the feature being shown.
+
+__credits.txt__  Where you have used any assets, art, sounds, code from sources which you have not created yourself you must include a clear list including links and licences. Where you have not, include a clear statement to this effect in the credits file.
 
 
 ## Assessment Criteria
