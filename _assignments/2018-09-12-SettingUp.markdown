@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: worksheets
 title:  "Assignment Specification"
 date:   2017-09-13 23:46:24 +0100
 ---
