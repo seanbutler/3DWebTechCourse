@@ -9,7 +9,7 @@ desc:   "We need a game like Race the Sun, but on the web, and fast"
 ## Module Details
 
 Code | UFCFS3-30-2
----| ---
+:---|:---
 Run | 16 Sept
 Title | 3D Technologies for the Web
 Leader | Barry Dean
@@ -31,31 +31,42 @@ The client has been impressed by the success of 'Race the Sun' game on mobile ph
 
 ## Assessment Criteria
 
+You may receive the following percentage marks for populating your deliverables with the necessary technical features.
+
 Technical Criteria |  Percentage
----| ---
-Game Loop | 5%
+:---|:---
+Game Loop                 | 5%
 Environment and Obstacles | 5%
-Lighting and Shadows | 5%
-Avatar and Controls | 5%
-Collision | 5%
-Shaders and FX | 5%
-Menus and HUD | 5%
-Total | 35%
+Lighting and Shadows      | 5%
+Avatar and Controls       | 5%
+Collision                 | 5%
+Shaders and FX            | 5%
+Menus and HUD             | 5%
+__Total__                     | __35%__
+
+In the following criteria marks will be awarded for the quality of your submission.
+
+For Example: There are 10% possible marks for the gameplay, that is independent of the quality of your visuals. Games that play poorly, have little enhancement or sophistication will get few marks here.
+
+For Example: There are 10% possible marks for visuals, that is independent of the quality of your gameplay. Art Direction, Coherent Environment, etc will contribute here.  
+
 
 Thematic Achievements | Percentage
----| ---
-Gameplay (Does it Play, Is It Fun) | 30%
-Visuals (Beautiful, Cool Looking)  | 30%
-Web (Hosted On The Web) | 10%
+:---|:---
+Gameplay (Does it Play, Is It Fun) | 20%
+Visuals (Beautiful, Cool Looking)  | 20%
+Web Page (Hosted On The Web)       | 10%
+Extra (Sound, Music, Surprise Me)  | 15%
 Total | 65%
 
 ## Hints on How to Obtain these Thematic Marks
 
-- Moving Obstacles, Timer, Jumps, Powrups, Collectables, etc.
+- Moving Obstacles, Timer, Jumps, Powerups, Collectables, etc.
 - Multiple Levels
-- Nice webpage.
-- Thematic Changes per level.
-- Visual Change with Gameplay Context.
+- Nice webpage
+- Thematic Changes per level
+- Thematic Changes per level
+- Visual Change with Gameplay Context
 
 ## Controlled Conditions
 
