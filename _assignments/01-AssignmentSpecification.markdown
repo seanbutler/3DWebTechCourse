@@ -46,10 +46,9 @@ __overview.pdf__ A pdf document containing: A URL to the The WebGL/ThreeJS game 
 
 __credits.txt__  Where you have used any assets, art, sounds, code from sources which you have not created yourself you must include a clear list including links and licences. Where you have not, include a clear statement to this effect in the credits file.
 
-
 ## Assessment Criteria
 
-You may receive the following percentage marks for populating your deliverables with the necessary technical features. The effectiveness, efficiency, of your feature will be taken into account. So a poor implementation will receive fewer marks.
+You may receive the following percentage marks for populating your deliverables with the necessary technical features. The effectiveness, efficiency, of your feature will be taken into account. So a poor quality, partial, ineffective or slow implementation will receive fewer marks.
 
 Technical Criteria |  Technical Percentage
 :---|:---
@@ -73,9 +72,9 @@ Extra (Web Page, Sound, Music, Surprise Me)          | 10%
 __Total__                                            | __40%__
 
 
-For Example: There are 20% possible marks for the gameplay. These are in addition to the 5% you obtained for the minimal technical achievement of getting an avatar with controls. If you game plays well has a good balance of challenge and is compelling you will score more marks here.
+For Example: There are 15% possible marks for the gameplay. These are in addition to the 10% you might obtain for the technical achievement of getting an avatar with controls. If you game plays particularly well has a good balance of challenge and is compelling you will score more marks here.
 
-For Example: Also there are 20% possible marks for visuals These are in addition to the 5% for lighting and 5% for shaders. Art direction, coherent environmental art, beauty, novelty or otherwise visually interesting etc will gain you marks here.  
+For Example: Also there are 15% possible marks for visuals These are in addition to the 10% for lighting and 5% for shaders. Art direction, coherent environmental art, beauty, novelty or otherwise visually interesting etc will gain you marks here.  
 
 ## Hints on How to Obtain these Thematic Marks
 
@@ -85,7 +84,10 @@ For Example: Also there are 20% possible marks for visuals These are in addition
 - Visual FX & Music Change with Gameplay Context
 - Webpage style attractive and consistent with game art direction
 
-
 ## Controlled Conditions
 
-The university requires we assess you under controlled conditions, this means we must be sure you have carried out the work. Usually this means you carry out the work in the presence of tutors. While you may have carried out some of the work in the tutorial, there are plenty of opportunities for you to do work outside the tutorials. So, we will sit with you for a few minutes and have you demonstrate the game. You will have to show us the code and assets you used. You will have to answer a small number of technical questions about your code and prove understanding and authorship by being able to make minor changes on request.
+The university requires we assess you under controlled conditions, this means we must be sure you have carried out the work. Usually this means you carry out the work in the presence of tutors. While you may have carried out some of the work in the tutorial, there are plenty of opportunities for you to do work outside the tutorials.
+
+## Additional Assessment Method
+
+In addition to the digital submission you will be subject to a personal viva. We will sit with you for a few minutes and have you demonstrate the game 1 to 1. You will have to show us the code and assets you used. You will have to answer a small number of technical questions about your code and prove understanding and authorship by being able to make minor changes on request.
