@@ -49,28 +49,29 @@ __credits.txt__  Where you have used any assets, art, sounds, code from sources 
 
 ## Assessment Criteria
 
-You may receive the following percentage marks for populating your deliverables with the necessary technical features.
+You may receive the following percentage marks for populating your deliverables with the necessary technical features. The effectiveness, efficiency, of your feature will be taken into account. So a poor implementation will receive fewer marks.
 
 Technical Criteria |  Technical Percentage
 :---|:---
-Game Loop                 | 5%
-Environment and Obstacles | 5%
-Lighting and Shadows      | 5%
-Avatar and Controls       | 5%
-Collision                 | 5%
+Game Loop                 | 10%
+Environment and Obstacles | 10%
+Avatar and Controls       | 10%
+Collision                 | 10%
+Lighting and Shadows      | 10%
 Shaders and FX            | 5%
 Menus and HUD             | 5%
-__Total__                 | __35%__
+__Total__                 | __60%__
 
-In the following criteria marks will be awarded for the quality of your submission.
+
+In the following criteria marks will be awarded for the thematic qualities of your submission.
 
 Thematic Achievements | Thematic Percentage
 :---|:---
-Gameplay (Challenging & Compelling Fun)              | 20%
-Visuals (Beautiful, Interesting and or Cool Looking) | 20%
-Web Page (On The Web with well designed page)        | 10%
-Extra (Sound, Music, Surprise Me)                    | 15%
-__Total__                                            | __65%__
+Gameplay (Challenging, Compelling Fun, Novelty)      | 15%
+Visuals (Beautiful, Interesting and or Cool Looking) | 15%
+Extra (Web Page, Sound, Music, Surprise Me)          | 10%
+__Total__                                            | __40%__
+
 
 For Example: There are 20% possible marks for the gameplay. These are in addition to the 5% you obtained for the minimal technical achievement of getting an avatar with controls. If you game plays well has a good balance of challenge and is compelling you will score more marks here.
 
