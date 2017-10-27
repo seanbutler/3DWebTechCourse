@@ -1,0 +1,99 @@
+---
+layout: slides
+title:  "05 Pythagorus"
+date:   2017-09-13 23:46:24 +0100
+---
+
+<section data-background-color="#ff7f00">
+    <h1>Pythagorus</h1>
+    <img src = "..\..\assets\calvin_physics_maths.jpg">
+    <p>part of 3d tech for the web course</p>
+</section>
+
+<section>
+    <h2>Aims and Objectives</h2>
+    <p>coordinates and triangles</p>
+    <p>some trigonometry</p>
+    <p>pythagorus</p>
+    <p>code</p>
+
+</section>
+
+
+<section>
+  <h2>Triangles and Coordinates</h2>
+  <img src = "../../assets/Q2017-diag3.png">
+</section>
+
+<section>
+  <h2>Movement</h2>
+  <img src = "../../assets/pythagorean.png">
+</section>
+
+<section>
+  <h2>Movement</h2>
+  <img src = "../../assets/sphere_distance.png">
+</section>
+
+<section>
+  <h2>Sphere Collision</h2>
+  <img src = "../../assets/sphere_collision.png">
+</section>
+
+
+<section>
+  <h2>Distance</h2>
+  <img src = "../../assets/DistanceFormula.PNG">
+</section>
+
+
+<section>
+  <h2>Collision Code</h2>
+
+  <p class = "fragment">Goal: To Tell if two Object Have Collided</p>
+  <p class = "fragment">Collided Means: When their centres are closer than the sum of their sizes</p>
+  <p class = "fragment">Centres: position coordinates</p>
+  <p class = "fragment">Sizes: a number representing radius (say)</p>
+
+</section>
+
+<section>
+  <h2>Collision Code</h2>
+  <pre>
+  // PSEUDOCODE
+    if ( distance_between(object_a, object_b) < size(object_a) + size(object_b))
+    {
+        output ("COLLISION");
+        // DO SOMETHING
+    }
+  <pre>
+</section>
+
+<section>
+  <h2>Collision Code</h2>
+
+  <pre>
+    distance = Math.sqrt(
+              ((firstBall.x - secondBall.x) * (firstBall.x – secondBall.x))
+            + ((firstBall.y - secondBall.y) * (firstBall.y – secondBall.y))
+             );
+  </pre>
+
+  <pre>
+      if (distance < firstBall.radius + secondBall.radius)
+      {
+          //balls have collided
+      }
+  </pre>
+
+</section>
+
+
+<section>
+    <h2>Further Reading</h2>
+    https://www.slideshare.net/mobart02/rectangular-coordinate-system-graphs
+</section>
+
+<section>
+    <h2>Thanks</h2>
+</section>
