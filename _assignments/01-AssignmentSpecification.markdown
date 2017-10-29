@@ -13,8 +13,6 @@ Run                          | 16 Sept
 Title                        | 3D Technologies for the Web
 Leader                       | Barry Dean
 Tutor                        | Sean Butler
-Component and Element Number | ??
-Weighting                    | ??
 Element Description          | Assignment with Supporting Documentation
 
 
@@ -25,7 +23,7 @@ What | When
 Date Issued to Students:    | Friday 27th October 2017
 To be Returned to Students  | Four working weeks after submission
 Submission Place:           | Electronic Submission via Blackboard
-Submission Date:            | ??
+Submission Date:            | Thursday 7th December 21017 (07/12/2017)
 Submission Time:            | __13:59pm__
 
 
