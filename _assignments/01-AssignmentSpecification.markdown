@@ -7,13 +7,15 @@ desc:   "We need a game like Race the Sun, but on the web, and fast!"
 
 ## Module Details
 
-Code                         | UFCFS3-30-2
+Code                       | UFCFS3-30-2
 :--- |:---
-Run                          | 16 Sept
-Title                        | 3D Technologies for the Web
-Leader                       | Barry Dean
-Tutor                        | Sean Butler
-Element Description          | Assignment with Supporting Documentation
+Run:                       | 16 Sept
+Title:                     | 3D Technologies for the Web
+Leader:                    | Barry Dean
+Tutor:                     | Sean Butler
+Percentage:                | 22.5% of Module
+Component:                 | Portfolio
+Element Description:       | Assignment with Supporting Documentation
 
 
 ## Dates
@@ -33,6 +35,7 @@ The client has been impressed by the success of 'Race the Sun' game on mobile ph
 
 The game should be bug free and run at 30 frames per second or above on the machines in 2Q25 FR (the workshop lab).
 
+
 ## Deliverables
 
 The entire submission should be in a zip archive which unpacks to a directory named for the module code and your student ID number: UFCXXX-30-2_12345678.zip
@@ -43,6 +46,7 @@ __Playable__ A folder/dir containing all the js, css and html files required als
 __overview.pdf__ A pdf document containing: A URL to the The WebGL/ThreeJS game deployed to the web. Screen shots of key points and features in the game. Clearly labelled and explaining the feature being shown.
 
 __credits.txt__  Where you have used any assets, art, sounds, code from sources which you have not created yourself you must include a clear list including links and licences. Where you have not, include a clear statement to this effect in the credits file.
+
 
 ## Assessment Criteria
 
@@ -74,6 +78,7 @@ For Example: There are 15% possible marks for the gameplay. These are in additio
 
 For Example: Also there are 15% possible marks for visuals These are in addition to the 10% for lighting and 5% for shaders. Art direction, coherent environmental art, beauty, novelty or otherwise visually interesting etc will gain you marks here.  
 
+
 ## Hints on How to Obtain these Thematic Marks
 
 - Gameplay - Moving Obstacles, Timer, Jumps, Powerups, Collectables, etc, Multiple Levels, etc
@@ -82,9 +87,11 @@ For Example: Also there are 15% possible marks for visuals These are in addition
 - Visual FX & Music Change with Gameplay Context
 - Webpage style attractive and consistent with game art direction
 
+
 ## Controlled Conditions
 
 The university requires we assess you under controlled conditions, this means we must be sure you have carried out the work. Usually this means you carry out the work in the presence of tutors. While you may have carried out some of the work in the tutorial, there are plenty of opportunities for you to do work outside the tutorials.
+
 
 ## Additional Assessment Method
 
