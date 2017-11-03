@@ -110,7 +110,7 @@ You will need to move/adjust your code for each thing.
 - Put code you need to setup/initialise your thing into the constructor and/or Reset() method.
 - Put code you want to be called from the animate() function in the Update() method.
 
-~~~
+~~~ javascript
     class MY_CLASS_NAME_HERE extends Entity {
     	constructor(newMesh) {
     		super();
@@ -129,10 +129,69 @@ You will need to move/adjust your code for each thing.
 
 If you put a PlaneGeometry into the Environment class, perhaps its methods are empty except for the constructor?
 
-If you put an Avatar class together the Update() method is where you will respond to the keyboard input and move.
+If you put an Avatar class together the Update() method is where you will respond to the keyboard input and move, maybe?
+
+## Step 5 Detecting Collision
+You will recall from the lecture slides that distance is related to pythagorus theorum. THis is because the coordinates of the objects can be thought of as the corners of a triangle and the hypotenuse the line between them. Recheck the lecture slides for ths content if you are unsure.
+
+~~~ javascript
+
+    DistanceTo(x, z) {
+        // (xA-xB)²+(yA-yB)²+(zA-zB)² < (rA+rB)²
+
+        let dist = Math.abs ( Math.sqrt (
+                        ( ( this.mesh.position.x - x ) * ( this.mesh.position.x - x ) ) +
+                        ( ( this.mesh.position.z - z ) * ( this.mesh.position.z - z ) )
+                    ) );
+
+    //		console.log("DistanceTo() = " + dist);
+        return dist;
+    }
+
+~~~
+
+However use distance to detect collision we need to compare it with the sum of the sizes of the two objects being tested.
+
+~~~ javascript
+
+    IsCollidedWith(that) {
+        // size + size > distance
+        let collidedWith = (this.size + that.size) > this.DistanceTo(that.mesh.position.x,  that.mesh.position.z);
+        //	console.log("IsCollidedWith() " + collidedWith + " " + (this.size + that.size));
+        return collidedWith;
+    }
+
+~~~
+
+you avatar isnt interested in testing collision against one obstacle, but all the obstacles, so we call IsCollidedWith() from within a loop...
 
 
-## Step 5
+~~~ javascript
+
+    CollidedWithObstacle() {
+        for(var n=0; n<objects.length; n++) {
+            if ( objects[n].collidable == true ) {
+                if ( this.IsCollidedWith(objects[n]) == true ) {
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
+
+~~~
+
+Finally in the Update() method of the avatar, we can in turn call this.CollidedWithObstacle() and detect if we have collided.
+
+~~~ javascript
+
+    if ( this.CollidedWithObstacle() )
+    {
+        console.log("BANG");
+    }
+
+~~~
+
 
 
 
