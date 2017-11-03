@@ -13,13 +13,11 @@ date:   2017-09-13 23:46:24 +0100
 - Recap Storing Objects in a container and updating them en-masse
 - Detecting Collision Between Player and Obstacles
 
-## Step 1
+## Step 1 - Entity Class
 
 Organise all the things in your world into specialised types of a thing called 'Entity'. So Avatar, Obstacle, Environment will all be a kind of Entity.
 
 Create a new class in your javascript file, somewhere near the top.
-
-## Step 1
 
 ~~~ javascript
 
@@ -38,7 +36,7 @@ Create a new class in your javascript file, somewhere near the top.
 
 Make sure it still compiles.
 
-## Step 2
+## Step 2 - Classes for your Obstacles
 
 Create a new class, 'Obstacle' which extends 'Entity' this means that if we like we can ask Obstacle to do anything that Entity can do to. We say it is derived from Entity.
 
@@ -69,7 +67,7 @@ Notice the super() and super. code, These call functions in the Entity class we 
 
 Take the code your columns or whatever shape you are using, so that they are also wrapped in the obstacle class.
 
-## Step 3
+## Step 3 - Container and Loop to Update many things
 
 Make sure you have a container into which you store
 
@@ -101,8 +99,7 @@ Add the following to your animate() function and then you will visit the Update 
 
 ~~~
 
-
-## Step 4
+## Step 4 - Classes for your other things
 
 Follow a similar pattern to your obstacle with the Environment and Avatar.
 
@@ -131,7 +128,10 @@ If you put a PlaneGeometry into the Environment class, perhaps its methods are e
 
 If you put an Avatar class together the Update() method is where you will respond to the keyboard input and move, maybe?
 
-## Step 5 Detecting Collision
+If you want them to be updated every time you animate() then either add them to the objects array or call the update() method explicitly.
+
+
+## Step 5 - Detecting Collision
 You will recall from the lecture slides that distance is related to pythagorus theorum. THis is because the coordinates of the objects can be thought of as the corners of a triangle and the hypotenuse the line between them. Recheck the lecture slides for this content if you are unsure.
 
 The following method will calculate (and return) the distance between the poisition of the mesh of the current class (via 'this.') and any arbitrary coordinates.
@@ -197,3 +197,4 @@ Finally in the Update() method of the avatar, we can in turn call this.CollidedW
 ## Exercises
 
 - The Lights and the Camera code can also be wrapped in Classes derived from 'Entity' this will allow us to have an update method for them too if we want to move them about or do other things.
+- You could implement a FollowCamera class which uses its update method to access the Avatar's mesh position and move itself accordingly.
