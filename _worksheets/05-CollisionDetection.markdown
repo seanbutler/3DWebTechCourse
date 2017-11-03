@@ -132,7 +132,9 @@ If you put a PlaneGeometry into the Environment class, perhaps its methods are e
 If you put an Avatar class together the Update() method is where you will respond to the keyboard input and move, maybe?
 
 ## Step 5 Detecting Collision
-You will recall from the lecture slides that distance is related to pythagorus theorum. THis is because the coordinates of the objects can be thought of as the corners of a triangle and the hypotenuse the line between them. Recheck the lecture slides for ths content if you are unsure.
+You will recall from the lecture slides that distance is related to pythagorus theorum. THis is because the coordinates of the objects can be thought of as the corners of a triangle and the hypotenuse the line between them. Recheck the lecture slides for this content if you are unsure.
+
+The following method will calculate (and return) the distance between the poisition of the mesh of the current class (via 'this.') and any arbitrary coordinates.
 
 ~~~ javascript
 
@@ -144,7 +146,7 @@ You will recall from the lecture slides that distance is related to pythagorus t
                         ( ( this.mesh.position.z - z ) * ( this.mesh.position.z - z ) )
                     ) );
 
-    //		console.log("DistanceTo() = " + dist);
+        //	console.log("DistanceTo() = " + dist);
         return dist;
     }
 
@@ -187,14 +189,11 @@ Finally in the Update() method of the avatar, we can in turn call this.CollidedW
 
     if ( this.CollidedWithObstacle() )
     {
-        console.log("BANG");
+        console.log(" ------ CRASH ------- ");
     }
 
 ~~~
 
-
-
-
-
-
 ## Exercises
+
+- The Lights and the Camera code can also be wrapped in Classes derived from 'Entity' this will allow us to have an update method for them too if we want to move them about or do other things.
