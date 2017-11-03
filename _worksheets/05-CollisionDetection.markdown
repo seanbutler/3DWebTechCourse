@@ -130,12 +130,11 @@ If you put an Avatar class together the Update() method is where you will respon
 
 If you want them to be updated every time you animate() then either add them to the objects array or call the update() method explicitly.
 
-
 ## Step 5 - Detecting Collision
 
 You will recall from the lecture slides that distance is related to pythagorus theorum. THis is because the coordinates of the objects can be thought of as the corners of a triangle and the hypotenuse the line between them. Recheck the lecture slides for this content if you are unsure.
 
-The following method will calculate (and return) the distance between the poisition of the mesh of the current class (via 'this.') and any arbitrary coordinates.
+The following method will calculate (and return) the distance between the position of the mesh of the current class (via 'this.') and any arbitrary coordinates.
 
 ~~~ javascript
 
@@ -153,7 +152,7 @@ The following method will calculate (and return) the distance between the poisit
 
 ~~~
 
-However use distance to detect collision we need to compare it with the sum of the sizes of the two objects being tested.
+However use distance to detect collision we need to compare it with the sum of the sizes of the two objects being tested. So add a member variable to each of your avatar and the obstacles which store their sizes.
 
 ~~~ javascript
 
@@ -166,7 +165,7 @@ However use distance to detect collision we need to compare it with the sum of t
 
 ~~~
 
-you avatar isnt interested in testing collision against one obstacle, but all the obstacles, so we call IsCollidedWith() from within a loop...
+you avatar isnt interested in testing collision against one obstacle, but all the obstacles, so we call IsCollidedWith() from within a loop.
 
 ~~~ javascript
 
@@ -182,6 +181,8 @@ you avatar isnt interested in testing collision against one obstacle, but all th
     }
 
 ~~~
+
+Notice we test .collidable first, you must add a member variable .collidable and set it to true in the obstacles if you want them to respond to collision tests with  the avatar.
 
 Finally in the Update() method of the avatar, we can in turn call this.CollidedWithObstacle() and detect if we have collided.
 

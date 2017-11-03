@@ -70,7 +70,17 @@ Position it above the floating shapes, so they look like they are lit from above
 
 ## Step 2 - Adding some fake shadows
 
-Do you see any shadows in your scene?
+Do you see any shadows in your scene? Here is an example of some code which casts shadows from a directional light.
+
+<https://threejs.org/docs/#api/lights/shadows/DirectionalLightShadow>
+
+The renderer needs to have shadows switched on.
+~~~ javascript
+
+    renderer.shadowMap.enabled = true;
+    renderer.shadowMap.type = THREE.PCFSoftShadowMap; // default THREE.PCFShadowMap
+
+~~~
 
 Make sure the object's meshes themselves have shadows switched on.
 
@@ -94,54 +104,21 @@ The ground plane or environment also needs to be part of the shadow system. If w
 
 Can you see some shadows yet? Perhaps you can see a tiny little square shadow below your object, much too small to be realistic. Directional Lights don't have a volume attached to them, so they cast light over the whole scene. So to make their shadow calculations sensible we have to create a volume to describe what can take part in the shadow calculations. This is called the shadow camera, because like the main camera it is used in projection maths. For now understand that you are defining a box attached to the light that sets a large enough volume for the shadows.
 
-
 ~~~ javascript
 
-  var light = new THREE.DirectionalLight( 0xffffff, 1, 1000 );
+  //Set up shadow properties for the light
+  light.shadow.mapSize.width = 512;  // default
+  light.shadow.mapSize.height = 512; // default
+  light.shadow.camera.near = 0.5;    // default
+  light.shadow.camera.far = 500;     // default
 
-  light.position.set( 0, 100, 0 );
-  light.castShadow = true;
-
-  light.shadow.camera.right    =  400;
-  light.shadow.camera.left     = -400;
-  light.shadow.camera.top      =  400;
-  light.shadow.camera.bottom   = -400;
-
-  scene.add( light );
 ~~~
 
-You should now see some shadows below your objects.
+You should now see some shadows below your objects. If not try messing about with the light and object positions.
 
 ![](../../assets/TorusFourShadow.PNG)
 
-## Step 3 - Experiment with the colours
-
-Take some time to change the colours of your lights. Also the colours of your materials. As we discussed last week the material and the light work together to create the final colours. The same is true of shadows.
-
-## Step 4 - Spotlights
-
-Swap your directional light out for a spotlight. You don't have to delete the old code, just comment it out and replace it with the spotlight instead.
-
-~~~ javascript
-
-  var light = new THREE.SpotLight( 0xffffff, 1, 1000 );
-
-  light.position.set( 0, 100, 0 );
-  light.castShadow = true;
-
-  light.shadow.mapSize.width = 255;
-  light.shadow.mapSize.height = 255;
-
-  light.shadow.camera.near = 1;
-  light.shadow.camera.far = 255;
-
-  scene.add( light );
-
-~~~
-
-Do you notice anything different about the shadows? Compare the positions of the shadows in the new scene with those that were being created before.
-
-What happens if you move the spotlight position down a bit, can you see the difference?
+## Step 3 - Shadow Quality and Speed
 
 The extra parameters we supply are:
 
@@ -152,6 +129,10 @@ these control the resolution of the shadow created. The shadow map is the rectan
 - light.shadow.camera.near and far
 
 from the light position these two values define the volume within which obstacles must be to cast shadows. try experimenting with these values. shrink them and some of your torii should stop casting shadows. Again it pays to keep these values large enough to enclose the objects you need but small enough to exclude those for which you dont want to calculate shadows.
+
+## Step 4 - Experiment with the colours
+
+Take some time to change the colours of your lights. Also the colours of your materials. As we discussed last week the material and the light work together to create the final colours. The same is true of shadows.
 
 ## Exercises
 
