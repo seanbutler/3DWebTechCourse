@@ -96,14 +96,14 @@ The code below creates a temporary local variable to reference the current face 
 
 	var face = this.geometry.faces[ i ];
 	face.vertexColors[ 0 ] = new THREE.Color().setRGB( Math.random(),
-	 													Math.random(),
-														Math.random());
+							Math.random(),
+							Math.random());
 	face.vertexColors[ 1 ] = new THREE.Color().setRGB( Math.random(),
-														Math.random(),
-														Math.random());
+							Math.random(),
+							Math.random());
 	face.vertexColors[ 2 ] = new THREE.Color().setRGB( Math.random(),
-														Math.random(),
-														Math.random());
+							Math.random(),
+							Math.random());
 
 ~~~
 
@@ -125,7 +125,5 @@ If you are unsure why this code achieves this then consult the PlaneGeometry ins
 ## Exercises
 
 - Can you add a little vertical offset into the vertices so that the landscape is uneven?
-
 - Perhaps you have a road running down the centre of your landscape? Can you use loops and other algebra to make patterns in the landscape?
-
 - Perhaps you have a river running down the centre of your landscape. Can you use sin or cos to make it weave?
