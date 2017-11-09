@@ -32,8 +32,10 @@ Add something like this to the html in the header section
 
 Add this to the body section of a css fiile. reference the css in the html.
 
-~~~ css
-font-family: 'Offside', cursive;
+~~~ html
+body {
+    font-family: 'Offside', cursive;
+}
 ~~~
 
 If you are unsure of how to proceed with the above step, check out w3schools online or try google.
