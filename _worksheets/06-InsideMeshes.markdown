@@ -2,6 +2,8 @@
 layout: worksheet
 title:  "06 Inside Meshes"
 date:   2017-09-13 23:46:24 +0100
+desc: "Use loops to access the internals of a mesh and change them about"
+
 ---
 
 ## Previously on 3DTFTW
@@ -23,27 +25,27 @@ Perhaps you have something a bit like this...
 
 ~~~ javascript
 
-class Environment extends Entity{
-	constructor() {
-		super();
+	class Environment extends Entity{
+		constructor() {
+			super();
 
-		this.size = 0;
-		this.collidable = false;
+			this.size = 0;
+			this.collidable = false;
 
-		this.geometry = new THREE.PlaneGeometry( 500, 500, 50, 50 );
-		this.material = new THREE.MeshBasicMaterial({color: 0xFF7F00});
-		this.mesh = new THREE.Mesh( this.geometry, this.material );
+			this.geometry = new THREE.PlaneGeometry( 500, 500, 50, 50 );
+			this.material = new THREE.MeshBasicMaterial({color: 0xFF7F00});
+			this.mesh = new THREE.Mesh( this.geometry, this.material );
 
-		this.mesh.position.x = this.mesh.position.y = this.mesh.position.z = 0;
+			this.mesh.position.x = this.mesh.position.y = this.mesh.position.z = 0;
 
-        this.mesh.rotation.set(Math.PI * -0.5, 0, 0);
-		scene.add( this.mesh );
+	        this.mesh.rotation.set(Math.PI * -0.5, 0, 0);
+			scene.add( this.mesh );
+		}
+
+	    Update() {
+			//...
+	    }
 	}
-
-    Update() {
-		//...
-    }
-}
 
 ~~~
 
@@ -55,9 +57,9 @@ So, inside your Environment/GroundPlane class create a for loop in the construct
 
 ~~~ javascript
 
-for ( var i = 0; i < this.geometry.vertices.length; i ++ ) {
+	for ( var i = 0; i < this.geometry.vertices.length; i ++ ) {
 
-}
+	}
 
 ~~~~
 
@@ -80,9 +82,9 @@ So, put another for loop in the constructor. This time, make it count from zero 
 
 ~~~ javascript
 
-for ( var i = 0, l = this.geometry.faces.length; i < l; i++ ) {
+	for ( var i = 0, l = this.geometry.faces.length; i < l; i++ ) {
 
-}
+	}
 
 ~~~
 
@@ -93,9 +95,15 @@ The code below creates a temporary local variable to reference the current face 
 ~~~ javascript
 
 	var face = this.geometry.faces[ i ];
-	face.vertexColors[ 0 ] = new THREE.Color().setRGB( Math.random(), Math.random(), Math.random());
-	face.vertexColors[ 1 ] = new THREE.Color().setRGB( Math.random(), Math.random(), Math.random());
-	face.vertexColors[ 2 ] = new THREE.Color().setRGB( Math.random(), Math.random(), Math.random());
+	face.vertexColors[ 0 ] = new THREE.Color().setRGB( Math.random(),
+	 													Math.random(),
+														Math.random());
+	face.vertexColors[ 1 ] = new THREE.Color().setRGB( Math.random(),
+														Math.random(),
+														Math.random());
+	face.vertexColors[ 2 ] = new THREE.Color().setRGB( Math.random(),
+														Math.random(),
+														Math.random());
 
 ~~~
 
@@ -114,13 +122,10 @@ For the small scenes we have been making so far, the small ground plane is fine.
 If you are unsure why this code achieves this then consult the PlaneGeometry instructions on Mr.Doob's website. Read the descriptions of the parameters for the PlaneGeometry constructor.
 
 
-
 ## Exercises
 
-Perhaps you have a road running down the centre of your landscape?
-Can you use loops and other algebra to make patterns in the landscape?
+- Can you add a little vertical offset into the vertices so that the landscape is uneven?
 
-Perhaps you have a river running down the centre of your landscape.
-Can you use sin or cos to make it weave?
+- Perhaps you have a road running down the centre of your landscape? Can you use loops and other algebra to make patterns in the landscape?
 
-Can you add a little vertical offset into the vertices so that the landscape is uneven?
+- Perhaps you have a river running down the centre of your landscape. Can you use sin or cos to make it weave?
