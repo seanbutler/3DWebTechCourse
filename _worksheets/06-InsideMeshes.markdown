@@ -14,8 +14,6 @@ desc: "Use loops to access the internals of a mesh and change them about"
 ## Aims and Objectives
 - Altering the internal vertices of a mesh to add more visual interest
 
-## Introduction
-
 ## Step 0 -
 Remember each week you should duplicate your project into a new dir/folder so that when you make changes you can always revert to an earlier version.
 

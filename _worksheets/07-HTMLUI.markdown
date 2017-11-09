@@ -10,10 +10,7 @@ desc:   Dont forget its a web page, we can access the HTML just like any other j
 
 ## Aims and Objectives
 - create some HUD elements in the web page
-- update them from within Javascript
-
-
-## Introduction
+- update them from within Javascript using data from the 3d scene
 
 ## Step 0 -
 Make sure you duplicate your project into a new dir and work there so you have a history to go back to if you need to.
