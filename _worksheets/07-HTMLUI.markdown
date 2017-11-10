@@ -30,7 +30,7 @@ Add something like this to the html in the header section
 <link href="https://fonts.googleapis.com/css?family=Offside" rel="stylesheet">
 ~~~
 
-Add this to the body section of a css fiile. reference the css in the html.
+Add this to the body section of a css file. reference the css in the html.
 
 ~~~ html
 body {

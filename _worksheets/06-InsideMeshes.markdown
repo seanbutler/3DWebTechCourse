@@ -71,7 +71,14 @@ Now inside this loop we shall use 'i' to count up to the number of vertices stor
 
 ~~~~
 
-Do they look any different?
+Do they look any different, not yet because we must tell the system we are planning on changing the colours for each vertex/face. We do this as follows...
+
+
+~~~ javascript
+
+	this.material = new THREE.MeshBasicMaterial( { vertexColors: THREE.VertexColors } );
+
+~~~
 
 ## Step 3 - Add Colour Variations to the Faces
 
