@@ -26,7 +26,6 @@ we are going to need some HTML for the user interface. so lets create a dialog b
 
 ~~~ javascript
 
-
 	<div class = "ui_overlay" id = "intro_ui">
         <h1>SUPER FUN GAME TIME</h1>
 		<ul>

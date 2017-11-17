@@ -18,7 +18,49 @@ desc:   Dont forget its a web page, we can access the HTML just like any other j
 Make sure you duplicate your project into a new dir and work there so you have a history to go back to if you need to.
 
 ## Step 1 - HTML DIVS for the HUD
-update the html to include a couple of divs with some text in them. make sure each div has a unique ID, something like hud_distance and hud_sheilds
+update the html to include a couple of divs with some text in them. make sure each div has a unique ID, something like hud_distance and hud_shields
+
+also we need to do some styling to make it overlay the canvas. try the following css as your starting point, it should make sure your renderer's dom object fills the screen and that the hud elements are nicely placed in the top corners.
+
+~~~ html
+
+    body {
+        font-size: 3vw;
+        font-family:  monospace;
+        width: 100%;
+        height: 100%;
+
+        margin: 0;
+        border: 0;
+        padding: 0;
+
+        display: block;
+        position: fixed;
+
+        top: 0;
+        left: 0;
+        z-index: -9999;
+    }
+
+    #hud_distance{
+        display: block;
+        position: fixed;
+
+        top: 5%;
+        right: 5%;
+        z-index: 0;
+    }
+
+    #hud_shields {
+        display: block;
+        position: fixed;
+
+        top: 5%;
+        left: 5%;
+        z-index: 0;
+    }
+
+~~~
 
 
 ## Step 2 - Nice Fonts
@@ -33,9 +75,9 @@ Add something like this to the html in the header section
 Add this to the body section of a css file. reference the css in the html.
 
 ~~~ html
-body {
+
     font-family: 'Offside', cursive;
-}
+
 ~~~
 
 If you are unsure of how to proceed with the above step, check out w3schools online or try google.
