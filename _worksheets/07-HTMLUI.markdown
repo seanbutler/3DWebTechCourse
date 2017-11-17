@@ -1,6 +1,6 @@
 ---
 layout: worksheet
-title:  "07 HTML UI"
+title:  "07 HTML HUD"
 date:   2017-09-13 23:46:24 +0100
 desc:   Dont forget its a web page, we can access the HTML just like any other js
 ---
@@ -47,7 +47,9 @@ This code does two main things. the LHS finds the piece of the web page DOM whic
 The RHS retrieves the position of the box or whatever you are drawing as your avatar and scales it from metres to km then limits the decimal places and appends a kilometer sign.
 
 ~~~ javascript
-document.getElementById('hud_distance').innerHTML = (this.mesh.position.z/1000).toFixed(2) + " km";
+
+    document.getElementById('hud_distance').innerHTML = (this.mesh.position.z/1000).toFixed(2) + " km";
+
 ~~~
 
 Add the above code to the Update() method of your avatar class.
@@ -57,23 +59,29 @@ Add the above code to the Update() method of your avatar class.
 add a shields member to the constructor of your Avatar
 
 ~~~ javascript
+
     this.shields = 100;
+
 ~~~
 
 during the Update() method, find the hud_shields part of the DOM and update it to hold the value this.shields
 
 ~~~ javascript
+
     document.getElementById('hud_shields').innerHTML = (this.shields).toFixed(2) + " %";
+
 ~~~
 
 previously you wrote some collision code to test if the player had collided with an obstacle. Update it to include the following lines as the collision test within the avatar.
 
 ~~~ javascript
+
     if ( this.CollidedWithObstacle() )
     {
         this.shields--;
         console.log("BANG");
     }
+
 ~~~
 
 ## Exercises
