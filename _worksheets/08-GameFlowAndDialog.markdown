@@ -15,13 +15,14 @@ desc:   Your game will need a UI, some dialog boxes and
 - make it hide and show some html ui elements
 - link it to the gameplay via the avatar and keyboard
 
-![](../../assets/PRG_HUD.PNG)
+![](../../assets/Dialog1.PNG)
+
+![](../../assets/Dialog2.PNG)
 
 ## Step 0 -
 Make sure you duplicate your project into a new dir and work there so you have a history to go back to if you need to.
 
 ## Step 1 - HTML and CSS for the dialogs
-
 we are going to need some HTML for the user interface. so lets create a dialog box to go over the gameplay. build a div in the body of the html file. You can put whatever text you like inside it for now.
 
 ~~~ javascript
@@ -176,7 +177,6 @@ add a switch statement to the Update() method. a switch is a bit like an 'if' ex
 		break;
 
 		// and so on, make a case/break for each of the GameFlowState values.
-
 	}
 
 ~~~
