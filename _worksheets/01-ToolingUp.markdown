@@ -8,9 +8,9 @@ desc: "Where on the Web can we get it and where should we start"
 
 ## Aims & Objectives
 - Discover Three.js
-- Download and Install Tools
-- Download and Three.js code library
-- Make a simple project in a dir
+- Possibly Download and Install Some Tools
+- Download and Three.js Code Library
+- Make a simple Project in a Dir/Folder
 - Type in the code which should get you a cube spinning on screen
 - Celebrate!
 
@@ -30,7 +30,7 @@ This is the home of three.js on the web. There you can find an array of featured
 
 Keep this bookmarked somewhere convenient. Over the rest of the module you will visit this website many times.
 
-Please take the time to review a few of the featured projects. You will get a feel for the possabilities tha are achievable using three.js and webgl.
+Please take the time to review a few of the featured projects. You will get a feel for the possibilities that are achievable using three.js and webgl.
 
 - <http://hexgl.bkcore.com/>
 - <http://www.georgeandjonathan.com/#1>

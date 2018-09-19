@@ -13,12 +13,12 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: 3D Tech For The Web
+title: 3D Technology For The Web
+modulecode: UFCFS3-30-2
+run: 2018 Sept
 email: sean2.butler@uwe.ac.uk
 description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  Tutorial worksheets for learning to program 3d games and simulations which run in a web browser using javascript, webgl and three.js.
 baseurl: "/3DWebTechCourse" # the subpath of your site, e.g. /blog
 url: "http://www.seanbutler.net" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: butlersean
@@ -37,9 +37,9 @@ collections:
     worksheets:
         output: true
         permalink: /worksheets/:path/
-    lectures:
-        output: true
-        permalink: /lectures/:path/
-    assignments:
-        output: true
-        permalink: /assignments/:path/
+    # lectures:
+    #     output: false
+    #     permalink: /lectures/:path/
+    # assignments:
+    #     output: false
+    #     permalink: /assignments/:path/
