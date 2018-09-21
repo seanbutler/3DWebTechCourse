@@ -11,9 +11,7 @@ body {
     font-size: 1.6vw;
     font-weight: light;
 
-
     background-color:rgba(200, 200, 200, 0.75);
-
 }
 
 .container {
@@ -23,17 +21,16 @@ body {
 
 h1 {
     padding: 1vw;
-    font-size: 4vw;
-    /* background-color: #EEE; */
+    font-size: 3vw;
     margin: 2vw 0 0 0;
     display: block;
 }
 
 nav {
     padding: 1vw;
-    font-size: 2.2vw;
+    /* font-size: 2.2vw; */
     margin: 0;
-    /* background-color:rgba(200, 200, 200, 0.75); */
+    background-color:rgba(200, 200, 200, 0.75);
 }
 
 h2, h3, h4, h5, h6{
@@ -76,13 +73,13 @@ strong {
 }
 
 a {
-    background-color:rgba(200, 200, 200, 0.75);
+    /* background-color:rgba(200, 200, 200, 0.75); */
     color: black;
 }
 
 a[href]:hover {
-    background-color:rgba(200, 200, 200, 0.75);
-    color: #EEE;
+    background-color:black;
+    color: white;
 }
 
 scenery {

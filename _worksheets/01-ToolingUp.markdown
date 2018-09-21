@@ -192,6 +192,9 @@ chrome apparently has a security measure so it doesn't let you run local code, t
 
 make sure you can open it in a web browser on your machine before advancing. this way if your code in the next section has problems or errors you know its because of what happened next. you should see 'Hello World' in the top left hand corner of the window.
 
+![](/3DWebTechCourse/assets/HelloWorld.png)
+
+
 if not, go back and check your code. check the dir/folder structure. check your url and make sure you have reached the correct index.html in the directory you made earlier.
 
 ## Step 5 - Include The Three.js Library in Your Project
@@ -215,14 +218,14 @@ A. This code tells the browser to open the file and interpret it as javascript. 
 
 To draw some 3d graphics on a 2d screen and have complete control over everything programmatically we need at a minimum three ingredients.
 
-- a scene
-    - a set of software objects which are going to be part of the scene, such as rectangles, points, meshes, lights, etc. each can be constructed to appear as anything we like.
+### scene
+- something that holds a set of software objects which are going to be part of the scene, such as rectangles, points, meshes, lights, etc. each can be constructed to appear as anything we like. You can think of this as a stage on which the scenery will appear.
 
-- a camera
-    - this is where we imagine the observer (in our case the user) to be, it holds the position and a kind of simple virtual lens called a frustrum. its used to give the programmer control over what the user can actually see.
+### camera
+- this is where we imagine the observer (in our case the user) to be, it holds the position and a kind of simple virtual lens called a frustrum. its used to give the programmer control over what the user can actually see.
 
-- renderer
-    - This visits at all the objects within the scene and looks at the numbers associated with each such as position, size, scale, color etc. It also examines the camera and the numbers associated with that especially position and field of view. All od this data is combined and used to construct a representation of a 3d environment which is then 'projected' which is a form of flattening so it can be drawn on a 2d plane, the domElement.
+### renderer
+- This visits at all the objects within the scene and looks at the numbers associated with each such as position, size, scale, color etc. It also examines the camera and the numbers associated with that especially position and field of view. All od this data is combined and used to construct a representation of a 3d environment which is then 'projected' which is a form of flattening so it can be drawn on a 2d plane, the domElement.
 
 ~~~ javascript
     var scene = new THREE.Scene();
@@ -236,10 +239,6 @@ To draw some 3d graphics on a 2d screen and have complete control over everythin
                         window.innerHeight );
     document.body.appendChild( renderer.domElement );
 
-
-
-
-
     renderer.render(scene, camera);    
 ~~~
 
@@ -250,7 +249,6 @@ A. Creates 3 variables scene, camera and renderer. Associates the renderer with 
 Q. What will you see when you run it?
 
 A. Nothing! We have put all the infrastructure in place, but our scene is empty.
-
 
 ## Step 7 - Making a 3d Object and adding it to the scene
 
@@ -264,7 +262,6 @@ A. Nothing! We have put all the infrastructure in place, but our scene is empty.
 Add the above code to your project after 'document.body.appendChild' and before 'renderer.render'.
 
 ![](/3DWebTechCourse/assets/square.png)
-
 
 If you dont see something like this:
 - check your code is identical to that above
@@ -280,20 +277,48 @@ If you are using chrome or firefox, open the inspector and go to the console to 
 |Edge    |? |
 
 
-## Notes
+## Step 8 - Making a 3d Object and adding it to the scene
 
-### Debugging Support in Browser
+~~~ javascript
+    var geometry = new THREE.BoxGeometry( 1, 1, 1 );
+    var material = new THREE.MeshNormalMaterial();
+    var cube = new THREE.Mesh( geometry, material );
+    scene.add( cube );
+~~~
 
-As for web browsers, both Google Chrome and Mozilla Firefox have excellent WebGL support. Google Chrome has a particularly helpful set of built-in developer tools that can greatly simplify the workflow process, such as a console that can be used for debugging and inspecting Javascript values and objects, and Workspace settings that allow you to edit and save source files from within the browser. More details can be found at the Chrome DevTools site.
+Add the above code to your project after 'document.body.appendChild' and before 'renderer.render'.
+
+![](/3DWebTechCourse/assets/square.png)
+
+If you dont see something like this:
+- check your code is identical to that above
+- check the locations of your files
+
+
+## Step 9 - Making Things Move
+
+~~~ javascript
+
+~~~
+
+Add the above code to your project after .
+
+![](/3DWebTechCourse/assets/cube.png)
+
+If you dont see something like this:
+- check your code is identical to that above
+- check the locations of your files
+
+If you are using chrome or firefox, open the inspector and go to the console to see if it has generated any errors.
 
 
 
-## Step 9
+
+## Step 10
 
 Try to do as many of the following as you can.
 
-- Change the colour of your cube
 - Change the size of your cube
 - Move the cube around
 - Add in some more cubes
-- Try the cubes in different positions ( a grid, random)
+- Add in some other shapes too
