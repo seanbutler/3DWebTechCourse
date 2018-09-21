@@ -7,32 +7,23 @@
 	<head>
 		<title>3d Web Technology/{{ page.title }}</title>
 		<link rel="stylesheet" type="text/css" href="./css/main.css">
-
 	</head>
 
 	<body>
-
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/87/three.min.js"></script>
-
 		<h1>{{site.title}}
 			<br />{{ site.modulecode }} {{ site.run }}
 			<br />*{{ page.title }}
 		</h1>
-
 		<nav>
-			<a href="./">[home]</a>
-			<a href="./worksheets">[worksheets]</a>
-			<!-- <a href="./lectures">[lectures]</a>
-			<a href="./assignments">[assignments]</a> -->
-			<a href="./sources">[sources]</a>
+			<a href="./">home</a>
+			<a href="./worksheets">worksheets</a>
+			<a href="./sources">sources</a>
 		</nav>
-
 		<div class="container">
 			{{ content }}
 		</div>
-
 	</body>
-
 	<script src="./lib/backgrounds/cubes.js"></script>
 
 </html>

@@ -3,28 +3,29 @@ html{
     height: 100%;
 
     font-family: sans-serif;
-    margin: 0;
-    border: 0;
-    padding: 0;
+    background-color: white;
 }
 
 body {
-    margin: 3vw 12vw 3vw 12vw;
+    margin: 3vw 15vw 3vw 15vw;
     font-size: 1.6vw;
     font-weight: light;
-}
 
+
+    background-color:rgba(200, 200, 200, 0.75);
+
+}
 
 .container {
     margin: 0px;
-    /* border: 10px solid red; */
+    /* border: 1px solid red; */
 }
 
 h1 {
     padding: 1vw;
     font-size: 4vw;
-    background-color: #EEE;
-    margin: 0;
+    /* background-color: #EEE; */
+    margin: 2vw 0 0 0;
     display: block;
 }
 
@@ -32,25 +33,25 @@ nav {
     padding: 1vw;
     font-size: 2.2vw;
     margin: 0;
-    background-color: #EEE;
+    /* background-color:rgba(200, 200, 200, 0.75); */
 }
 
 h2, h3, h4, h5, h6{
     padding: 1vw;
-    margin: 2vw 0 0 10vw;
-    background-color:rgba(200, 200, 200, 0.75);
+    margin: 0 0 0 0vw;
+    /* background-color:rgba(200, 200, 200, 0.75); */
     display: block;
 }
 
 p, ul, ol {
-    background-color:rgba(200, 200, 200, 0.75);
+    /* background-color:rgba(200, 200, 200, 0.75); */
     padding: 1vw;
-    margin: 0 0 0 10vw;
+    margin: 0 0 0 0vw;
 }
 
 table {
     padding: 1vw;
-    margin: 0 0 0 10vw;
+    /* margin: 0 0 0 10vw; */
     background-color:rgba(200, 200, 200, 0.95);
     display: block
 }
@@ -67,26 +68,33 @@ li {
     /*border: 1px dashed blue;*/
 }
 
+strong {
+    /* color: red; */
+    /* background-color:rgba(200, 200, 200, 0.75); */
+    /* padding: 1vw; */
+    /* margin: 0 0 0 50vw; */
+}
+
 a {
-    background-color:rgba(200, 200, 200, 0.95);
+    background-color:rgba(200, 200, 200, 0.75);
     color: black;
 }
 
 a[href]:hover {
+    background-color:rgba(200, 200, 200, 0.75);
     color: #EEE;
-    background-color:rgba(200, 200, 200, 0.95);
 }
 
 scenery {
-  width: 100vw;
-  height: 100vh;
-
-  display: block;
+  /* width: 45vw;
+  height: 45vh; */
+  /* display: block; */
   position: fixed;
 
   top: 0;
   left: 0;
   z-index: -9999;
+  background: transparent;
 }
 
 img{
@@ -96,17 +104,23 @@ img{
 .language-python,
 .language-javascript,
 .language-html {
-    margin-left: 10vw;
+
+    background-color:rgba(200, 200, 200, 0.95);
+    padding: 1vw;
+    /* margin: 0 0 0 10vw; */
+
+    /* margin-left: 10vw;
     padding-top: 1vw;
     margin-top: 1vw;
     padding-bottom: 1vw;
-    margin-bottom: 1vw;
+    margin-bottom: 1vw; */
+
     font-family: monospace;
     font-size: 1.2vw;
 
-    border: 1px solid #333;
+    /* border: 1px solid #333; */
     color: #333;
-    background: #EEE;
+    /* background: #EEE; */
 
 }
 
