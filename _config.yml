@@ -38,7 +38,7 @@ collections:
         output: true
         permalink: /worksheets/:path/
     lectures:
-        output: false
+        output: true
         permalink: /lectures/:path/
     # assignments:
     #     output: false
