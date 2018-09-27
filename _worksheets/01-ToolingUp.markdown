@@ -288,19 +288,16 @@ If you are using chrome or firefox, open the inspector and go to the console to 
         cube.rotation.y += 0.01;
         renderer.render( scene, camera );
     };
-
     animate();
 ~~~
 
 Add the above code to your project after the line where you add the mesh, overrwrite the current rendere.render() with this new code.
 
-This code does 3 main things. From var animate = we are defining a function and assigning it to a variable for later reference.
+This code does 3 main things. From 'var animate =' onwards we are defining a function and assigning it to a variable for later reference.
 
-Inside animate there is the line 'renderer.render( scene, camera );' this is the code whcih tells three.js to draw your scene.
+Inside animate there is the line 'renderer.render( scene, camera );' this is the code which tells three.js to draw your scene.
 
 'requestAnimationFrame(animate)' is where we ask the browser to call animate each time it draws the webpage and to do so continually.
-
-
 
 ![](/3DWebTechCourse/assets/cube.png)
 
@@ -310,9 +307,6 @@ If you dont see something like this:
 
 If you are using chrome or firefox, open the inspector and go to the console to see if it has generated any errors.
 
-
-
-
 ## Step 10
 
 Try to do as many of the following as you can.
@@ -320,4 +314,7 @@ Try to do as many of the following as you can.
 - Change the size of your cube
 - Move the cube around
 - Add in some more cubes
-- Add in some other shapes too
+- Change a cube to a different shape, like cylinder or cone
+- Add in a plane
+
+![](/3DWebTechCourse/assets/cubecylinderplane.png)
