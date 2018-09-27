@@ -300,7 +300,7 @@ Inside animate there is the line 'renderer.render( scene, camera );' this is the
 'requestAnimationFrame(animate)' is where we ask the browser to call animate each time it draws the webpage and to do so continually.
 
 ![](/3DWebTechCourse/assets/cube.png)
-
+ 
 If you dont see something like this:
 - check your code is identical to that above
 - check the locations of your files

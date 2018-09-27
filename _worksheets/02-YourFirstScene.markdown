@@ -21,7 +21,9 @@ desc: "Refactoring and Several Objects in the Scene Moving at Once"
 
 ## Introduction
 
-Last week you built the hello world of graphics, a spinning cube. Seen everywhere since the 1950s.
+Last week you built the hello world of graphics, a spinning cube. Seen everywhere since the 1950s. You also probably tweaked it a little adding in some more shapes and moving them around. Perhaps your scene now looks a little like this:
+
+![](/3DWebTechCourse/assets/cubecylinderplane.png)
 
 This week we are going to add more to the scene and as make it interactive! But first, lets re-structure the project slightly by separating the code into different files and making them reference each other. This restructuring is and example of 'refactoring' which is a common activity when developing products with code.
 
