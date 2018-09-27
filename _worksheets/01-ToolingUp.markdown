@@ -180,7 +180,7 @@ make a index.html file and __type, not copy__ the following code...
     	<body>
             <p>Hello World</p>
             <script>
-
+                <!-- YOUR CODE WILL GO IN HERE -->
             </script>
     	</body>
     </html>
@@ -232,6 +232,8 @@ To draw some 3d graphics on a 2d screen and have complete control over everythin
     var camera = new THREE.PerspectiveCamera( 75,
                         window.innerWidth/window.innerHeight,
                         0.1, 1000 );
+
+    camera.position.z = 2;
 
     var renderer = new THREE.WebGLRenderer();
 
