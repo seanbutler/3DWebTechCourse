@@ -279,28 +279,17 @@ If you are using chrome or firefox, open the inspector and go to the console to 
 |Edge    |? |
 
 
-## Step 8 - Making a 3d Object and adding it to the scene
-
-~~~ javascript
-    var geometry = new THREE.BoxGeometry( 1, 1, 1 );
-    var material = new THREE.MeshNormalMaterial();
-    var cube = new THREE.Mesh( geometry, material );
-    scene.add( cube );
-~~~
-
-Add the above code to your project after 'document.body.appendChild' and before 'renderer.render'.
-
-![](/3DWebTechCourse/assets/square.png)
-
-If you dont see something like this:
-- check your code is identical to that above
-- check the locations of your files
-
-
 ## Step 9 - Making Things Move
 
 ~~~ javascript
+    var animate = function () {
+        requestAnimationFrame( animate );
+        cube.rotation.x += 0.01;
+        cube.rotation.y += 0.01;
+        renderer.render( scene, camera );
+    };
 
+    animate();
 ~~~
 
 Add the above code to your project after .
