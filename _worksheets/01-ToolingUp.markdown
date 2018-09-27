@@ -294,6 +294,14 @@ If you are using chrome or firefox, open the inspector and go to the console to 
 
 Add the above code to your project after the line where you add the mesh, overrwrite the current rendere.render() with this new code.
 
+This code does 3 main things. From var animate = we are defining a function and assigning it to a variable for later reference.
+
+Inside animate there is the line 'renderer.render( scene, camera );' this is the code whcih tells three.js to draw your scene.
+
+'requestAnimationFrame(animate)' is where we ask the browser to call animate each time it draws the webpage and to do so continually.
+
+
+
 ![](/3DWebTechCourse/assets/cube.png)
 
 If you dont see something like this:
