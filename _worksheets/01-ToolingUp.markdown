@@ -292,7 +292,7 @@ If you are using chrome or firefox, open the inspector and go to the console to 
     animate();
 ~~~
 
-Add the above code to your project after .
+Add the above code to your project after the line where you add the mesh, overrwrite the current rendere.render() with this new code.
 
 ![](/3DWebTechCourse/assets/cube.png)
 
