@@ -80,20 +80,15 @@ If your code doesn't work, there are a few possible sources of errors.
 Goto https://threejs.org/ and select 'documents'. In the search box type 'plane'. Then under geometries select 'PlaneGeometry'. This will take you to a page where you can see a demo of a plane, a source code example of a plane being made, and also a description of the parameters for the function that constructs a plane.
 
 ~~~ javascript
-    var planeGeometry = new THREE.PlaneGeometry(100, 100, 50, 50);
-    var planeMaterial = new THREE.MeshBasicMaterial({color: 0xFF7F00});
-    var plane = new THREE.Mesh(planeGeometry,planeMaterial);
+    var planeGeometry = new THREE.PlaneGeometry( 10, 10);
+    var planeMaterial = new THREE.MeshNormalMaterial( );
+    var plane = new THREE.Mesh( planeGeometry, planeMaterial );
+    scene.add( plane );
+~~~    
 
-    plane.position.x = 15;
-    plane.position.y = 0;
-    plane.position.z = 0;
+You may not see the plane properly from the above code, its likely blocking much of the scene on screen. So, you will have to make the plane small enough to see and not so small its hidden inside your cube.
 
-    scene.add(plane);
-~~~
-
-You may not see the plane from the above code initially, its too large to show on screen. So, you will have to make the plane small enough to see and not so small its hidden inside your cube.
-
-If you still cant see the plane, check where it is positioned? Perhaps it is out of view of the camera. Move it to the origin of the scene, this is also the middle of the scene and located at coords (0, 0, 0).
+If you still cant see the plane, check where it is positioned? Perhaps it is out of view of the camera. Move it to the origin of the scene, this is also the middle of the scene and located at coords (0, 0, 0). Make sure the camera and the other objects are positioned so you will see everything. It may take you some experimentation to make a clear scene.
 
 ~~~ javascript
     plane.position.x = 0;
@@ -101,30 +96,33 @@ If you still cant see the plane, check where it is positioned? Perhaps it is out
     plane.position.z = 0;
 ~~~
 
+# Experimenting With Your Plane
+
 Try changing the above code so that the plane is medium, say 5 * 5 and has only 1 subdivision/segments in each direction.
 
 ~~~ javascript
     var planeGeometry = new THREE.PlaneGeometry(5, 5, 1, 1);
 ~~~
 
-Next...
+## Rotating your Plane
 
-- Move the plane so it is at coordinates 0, 0, 0.
-- Scale the plane so it is very large.
-- Rotate the plane so it is horizontal.
+Lets say to make a nice scene we want the plane horizontal, with the two objects floating above it.
+Rotate your plane around its x-axis.
 
-## Add a Column
+~~~ javascript
+    plane.rotation.x = -1.570;
+~~~
 
-Like the sphere, but use new THREE.CylinderGeometry().
-Check the documentation to see what the parameters do.
-Try to make it 1x1x2 with fewer than 20 sides.
+With computers we usually use radians instead of degrees, because there is a close relationship between circles and PI. There are 2xPI radians in a circle.
 
-Note: There are lots of other built in geometries to use later.
+~~~ javascript
+    plane.rotation.x = -3.14159 * 0.5;
+~~~
 
-## Make the Cube Move On Input
+Use google to find the wikipedia page on radians. Read It. Raise your hand if you have any questions.
 
-Alright. If you put the cylinder in the middle then it may be obscuring your cube from earlier. Lets do something about that.
 
+## Make an Object Move On Input
 
 web browsers provide facilities to interface with the larger operating system. we can tap into these using 'EventListeners'.
 
@@ -162,6 +160,7 @@ function onDocumentKeyDown(event) {
         myCube.position.z = 0.0;
     }
 };
+
 ~~~
 
 Thats great now our cube should move if we use the keyboard. What are the problems with this approach?
@@ -169,7 +168,7 @@ Thats great now our cube should move if we use the keyboard. What are the proble
 - Can you adjust the code above so that you can move the cube in two directions at the same time?
 - What do the numbers mean? Can you change the code so that we refer to words instead of 68, 83 etc?
 
-## Creating an Obstacle Class
+## Creating an Entity Class
 
 Create a class, like the one below. Now instead of creating your column object materials and meshes in the global code make them in the constructor.
 
@@ -178,7 +177,7 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes
 i've left some incomplete parts of this code, you should look above at where we created the planeGeometry for some pointers to what should go in instead of the //...
 
 ~~~ javascript
-  class Obstacle {
+  class Entity {
     constructor() {
         this.geometry = //...
         this.material = //...
@@ -197,7 +196,7 @@ use the new command and the THREE geometry, material and mesh methods from earli
 you will need to make sure the mesh function's parameters are this.material and this.geometry instead of the global variables you used before.
 
 ~~~ javascript
-  var myObject = new Obstacle();
+  var myObject = new Entity();
 ~~~
 
 The new keyword calls the constructor method of the class above. the value returned is the new object created with the variables setup as in the constructor.
@@ -230,7 +229,7 @@ You can create an array just like any other variable. Except this time you use s
 The array is a flexible versatile container, we can think of it like a list or a table and also like a stack or queue. There are methods for each way of accessing it. For now, to add something to the array we say 'push' which adds a variable to the top and also grows the array by one. Bit like a stack of trays in a cafeteria.
 
 ~~~ javascript
-  obstacleList.push(new Obstacle());
+  obstacleList.push(new Entity());
 ~~~
 
 ## Loop to Fill the Array of obstacles
@@ -253,4 +252,4 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects
 - Can you make the obstacles them appear in a winding row?
 - Can you make them appear in 2 winding parallel rows?
 - Use the update function to slide the obstacles or the player along the ground automatically?
-- Can you use the random numbers to make the obstacles appear with a clear path between them?
+- Can you use the random numbers to make the obstacles appear with a clear space between them?
