@@ -28,5 +28,17 @@
         "title": "Three.js",
         "author": "WIKIPEDIA",
         "comments": "Often a good place to start from is wikipedia"
+    },
+    {
+        "url": "http://gnab.github.io/js-workshop/#1",
+        "title": "Javascript the Good Parts",
+        "author": "WIKIPEDIA",
+        "comments": "The language has flaws, dont let them set traps for you."
+    },
+    {
+        "url": "http://gameprogrammingpatterns.com/",
+        "title": "Game Programming Patterns",
+        "author": "Robert Nystrom",
+        "comments": "Several of these are super useful for non games too."
     }
 ]
