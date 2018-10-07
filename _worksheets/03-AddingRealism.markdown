@@ -1,23 +1,23 @@
 ---
 layout: worksheet
-title:  "03 Adding Realism"
+title:  "03 Adding Atmosphere"
 date:   2017-09-13 23:46:24 +0100
-desc: "Make a more realistic scene using many atmospheric tools"
+desc: "Make a more realistic scene using many lights and fog"
 ---
 
 ## Previously on 3DTFTW
 
 - More appropriate file structure
 - Build a More Complex Scene
-- Input & Movement
+- Basic Input & Movement
 
 ## Aims and Objectives
 
 - Make a more realistic scene using many atmospheric tools
-- Add Fog to the scene
-- Add Lights to the scene
 - Setup some better materials
-- Investigate variations in lighting and for to see how it changes the scene
+- Add Lights to the scene
+- Add Fog to the scene
+- Investigate variations in lighting and for to see how it changes the mood
 
 ## Introduction
 
@@ -31,13 +31,18 @@ Materials are the way we tell computer graphics how a surface responds to lighti
 
 if you go to threejs.org and within the documentation search for "Material" you should see a long list of Material types:
 
-![](../../assets/threejsorg_material_types.png)
+So far you have been using Mesh Normal Material
+
+![](../../assets/MeshNormalMaterial.png)
 
 For today I want you to take a close look at the following 4:
 - <https://threejs.org/docs/#api/materials/MeshBasicMaterial.combine>
 - <https://threejs.org/docs/#api/materials/MeshLambertMaterial.combine>
 - <https://threejs.org/docs/#api/materials/MeshPhongMaterial.combine>
 - <https://threejs.org/docs/index.html#api/materials/MeshStandardMaterial>
+
+![](../../assets/MeshBasicMaterial.png)
+![](../../assets/MeshLambertMaterial.png)
 
 These Materials all make use of this base class for some of their functions:
 - <https://threejs.org/docs/#api/materials/Material>
@@ -135,13 +140,14 @@ Can you make it seem like a foggy day?
 
 ## Step 9 - Nighttime
 
-Tweak the fog AND light parameters to make it seem like a night time scene from a movie. We should still be able to see everything clearly though.
+Tweak the fog AND light parameters to make it seem like a night time scene from a film. We should still be able to see everything clearly though.
 
-## Exercises
+## Step 10 - Try Some Variations
 
-Again, Clone Your project and make some new scenes. Tweak the lighting and fog parameters to create the following scenes, you may need to change the colours of the objects too to make a nice scene.
+Again, Duplicate Your project and make some new scenes. Tweak the lighting and fog parameters to create the following scenes, you may need to change the colours of the objects too to make a nice scene.
 
-- Underwater
 - Arctic Blizzard
 - Polluted Sci-Fi
 - Weird Alien World
+- Underwater
+- Or Whatever else you can think of
