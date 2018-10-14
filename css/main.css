@@ -8,43 +8,55 @@ html{
 
 body {
     margin: 3vw 15vw 3vw 15vw;
+    /* padding: 25px; */
     font-size: 1.6vw;
     font-weight: light;
 
     background-color:rgba(200, 200, 200, 0.75);
+    border-radius: 2vw;
 }
 
 .container {
     margin: 0px;
+    /* padding: 2vw; */
     /* border: 1px solid red; */
 }
 
-h1 {
-    padding: 1vw;
-    font-size: 3vw;
-    margin: 2vw 0 0 0;
-    display: block;
-}
-
 nav {
-    padding: 1vw;
+    padding: 2vw;
     /* font-size: 2.2vw; */
     margin: 0;
-    background-color:rgba(200, 200, 200, 0.75);
+    background-color:rgba(200, 200, 200, 1);
 }
 
-h2, h3, h4, h5, h6{
-    padding: 1vw;
-    margin: 0 0 0 0vw;
-    /* background-color:rgba(200, 200, 200, 0.75); */
+h1, h2, h3, h4, h5, h6 {
+    /* padding: 1vw; */
+    margin: 0;
+    padding: 2vw;
     display: block;
 }
 
-p, ul, ol {
-    /* background-color:rgba(200, 200, 200, 0.75); */
-    padding: 1vw;
-    margin: 0 0 0 0vw;
+h1 {
+    font-size: 3vw;
 }
+
+p {
+    /* background-color:rgba(200, 200, 200, 0.75); */
+    /* padding: 1vw; */
+
+    margin: 0;
+    /* border: 1px solid red; */
+    padding: 1vw 2vw 1vw 2vw;
+}
+
+
+ul, ol {
+    /* background-color:rgba(200, 200, 200, 0.75); */
+    /* padding: 1vw; */
+    margin: 0;
+    /* padding: 2vw; */
+}
+
 
 table {
     padding: 1vw;
@@ -53,16 +65,16 @@ table {
     display: block
 }
 
-ul, ol {
-    /*border: 1px solid orange;*/
-    /*padding: 1vw;*/
-}
-
 li {
-    margin-left: 1em;
+    margin 0;
+    margin-left: 2vw;
     /*border: 1px dashed orange;*/
     /*padding-left: 1vw;*/
     /*border: 1px dashed blue;*/
+}
+
+footer {
+    padding: 2vw;
 }
 
 strong {
@@ -98,27 +110,14 @@ img{
     width: 60vw;
 }
 
-.language-python,
-.language-javascript,
-.language-html {
+.language-python, .language-javascript, .language-html {
+    /* border: 1px solid #333; */
+    padding: 1vw 1vw 1vw 1vw;
 
-    background-color:rgba(200, 200, 200, 0.95);
-    padding: 1vw;
-    /* margin: 0 0 0 10vw; */
-
-    /* margin-left: 10vw;
-    padding-top: 1vw;
-    margin-top: 1vw;
-    padding-bottom: 1vw;
-    margin-bottom: 1vw; */
-
+    background-color:rgba(200, 200, 200, 1);
     font-family: monospace;
     font-size: 1.2vw;
-
-    /* border: 1px solid #333; */
     color: #333;
-    /* background: #EEE; */
-
 }
 
 @media print

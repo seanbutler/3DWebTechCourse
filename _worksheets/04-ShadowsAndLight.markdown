@@ -104,19 +104,31 @@ The ground plane or environment also needs to be part of the shadow system. If w
 
 ~~~
 
-Can you see some shadows yet? Perhaps you can see a tiny little square shadow below your object, much too small to be realistic. Directional Lights don't have a volume attached to them, so they cast light over the whole scene. So to make their shadow calculations sensible we have to create a volume to describe what can take part in the shadow calculations. This is called the shadow camera, because like the main camera it is used in projection maths. For now understand that you are defining a box attached to the light that sets a large enough volume for the shadows.
+Can you see some shadows yet? Perhaps you can see a tiny little square shadow below your object, much too small to be realistic. Directional Lights don't have a volume attached to them, so they cast light over the whole scene.
+
+To make shadow calculations sensible we have to create a volume to describe what can take part in the shadow calculations. This is called the shadow camera, because like the main camera it is used in projection maths. For now understand that you are defining a box attached to the light that sets a large enough volume for the shadows to occur within.
 
 ~~~ javascript
 
-  //Set up shadow properties for the light
-  light.shadow.mapSize.width = 512;  // default
-  light.shadow.mapSize.height = 512; // default
-  light.shadow.camera.near = 0.5;    // default
-  light.shadow.camera.far = 500;     // default
+    // the map size is the texture/buffer used to store the shadows
+    // therefore smaller is faster, and bigger is better quality
+    light.shadow.mapSize.width = 128;
+    light.shadow.mapSize.height = 128;
+
+    // shadow camera is to create a box within which shadows are calculated
+    light.shadow.camera.near = 1;
+    light.shadow.camera.far = 20;
+
+    light.shadow.camera.left     = -3;
+    light.shadow.camera.right    =  3;
+    light.shadow.camera.top      =  3;
+    light.shadow.camera.bottom   = -3;
+
+    // the shadow map is stretched to fit the shadow camera box
 
 ~~~
 
-You should now see some shadows below your objects. If not try messing about with the light and object positions.
+You should now see some shadows below your objects. If not try messing about with the object positions, or the shadow camera sizes.
 
 ![](../../assets/TorusFourShadow.PNG)
 
@@ -124,13 +136,18 @@ You should now see some shadows below your objects. If not try messing about wit
 
 The extra parameters we supply are:
 
-- shadow.mapsize.width and height
+- shadow.mapsize.values
 
 these control the resolution of the shadow created. The shadow map is the rectangular buffer (like a texture) into which the shadows are calculated. Increasing these values gives better shadows. Naturally this comes at the cost of speed. They take longer to calculate. Remember there are two numbers so the speed decrease is proportional to the area which is the width x height. So it can get slow/big pretty quick. It pays to keep these values as low as you can stand.
 
-- light.shadow.camera.near and far
+- light.shadow.camera.values
 
-from the light position these two values define the volume within which obstacles must be to cast shadows. try experimenting with these values. shrink them and some of your torii should stop casting shadows. Again it pays to keep these values large enough to enclose the objects you need but small enough to exclude those for which you dont want to calculate shadows.
+from the light position these values define the volume within which obstacles must be to cast shadows. try experimenting with these values. shrink them and some of your torii should stop casting shadows. Again it pays to keep these values large enough to enclose the objects you need but small enough to exclude those for which you dont want to calculate shadows.
+
+- Experiment with the shadow.mapSize values, what happens to the shadows if you make them 64, 32, 8?
+- Experiment with the shadow.camera, left, right, top, bottom values, what happens to the shadows if you make them  much much larger? Once you have made them larger, try a large value in the mapSize. Make them small again, try a small value in the mapSize.
+
+In general its efficient to have the minimum number of lights you need for your scene. Also keep the shadow map size as small as your quality sensibilities allow. Finally make the shadow volume only cover the elements in your scene for which you must have a shadow. Perhaps just the area near the player's character?
 
 ## Step 4 - Experiment with the colours
 

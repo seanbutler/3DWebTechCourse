@@ -3,18 +3,14 @@ layout: default
 title: sources
 ---
 
-<div class="container">
+<h2>websites</h2>
 
-	<h2>websites</h2>
+{% for source in site.data.websites %}
+	<p><a href = "{{source.url}}">{{source.title}}</a><br />{{source.comments}}</p>
+{% endfor %}
 
-	{% for source in site.data.websites %}
-		<p><a href = "{{source.url}}">{{source.title}}</a><br />{{source.comments}}</p>
-	{% endfor %}
+<h2>books</h2>
 
-	<h2>books</h2>
-
-	{% for source in site.data.books %}
-		<p>{{source.authors}} ({{source.year}}) <em>{{source.title}}</em> {{source.publisher}}</p>
-	{% endfor %}
-
-</div>
+{% for source in site.data.books %}
+	<p>{{source.authors}} ({{source.year}}) <em>{{source.title}}</em> {{source.publisher}}</p>
+{% endfor %}

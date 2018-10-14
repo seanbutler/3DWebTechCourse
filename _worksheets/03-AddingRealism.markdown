@@ -35,11 +35,16 @@ So far you have been using Mesh Normal Material
 
 ![](../../assets/MeshNormalMaterial.png)
 
-For today I want you to take a close look at the following 4:
+Which is pretty, but not at all realistic. What this material does is say the direction of the face at this point, its XYZ, is translated into RGB to make the colour of that point.
+
+
+For today I want you to take a close look at the following 3:
 - <https://threejs.org/docs/#api/materials/MeshBasicMaterial.combine>
 - <https://threejs.org/docs/#api/materials/MeshLambertMaterial.combine>
 - <https://threejs.org/docs/#api/materials/MeshPhongMaterial.combine>
-- <https://threejs.org/docs/index.html#api/materials/MeshStandardMaterial>
+
+
+<!-- - <https://threejs.org/docs/index.html#api/materials/MeshStandardMaterial> -->
 
 ![](../../assets/MeshBasicMaterial.png)
 ![](../../assets/MeshLambertMaterial.png)

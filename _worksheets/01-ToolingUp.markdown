@@ -213,6 +213,7 @@ Q. what does the above code do?
 
 A. This code tells the browser to open the file and interpret it as javascript. which means the browser will begin to follow the instructions in a regular manner within the context of the current webpage. i say this in particular because the javascript can be used to investigate or update the web page. data stored in the web page can be read and written by the script. it can be made to do various things in partnership with the webpage, the two go together with the page as the io and the js as the logic.
 
+Did it work?
 
 ## Step 6 - Simplest Possible Application Actually Does Nothing At All
 
