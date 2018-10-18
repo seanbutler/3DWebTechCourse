@@ -1,6 +1,6 @@
 ---
 layout: worksheet
-title:  "05 Better Input"
+title:  "Better Input System"
 date:   2017-09-13 23:46:24 +0100
 desc: "Move all keyboard Input, store it and share data across the entities"
 

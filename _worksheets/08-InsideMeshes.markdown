@@ -1,6 +1,6 @@
 ---
 layout: worksheet
-title:  "06 Inside Meshes"
+title:  "Inside Meshes"
 date:   2017-09-13 23:46:24 +0100
 desc: "Use loops to access the internals of a mesh and change them about"
 

@@ -1,6 +1,6 @@
 ---
 layout: worksheet
-title:  "05 Collision Detection"
+title:  "Classes and Collision Detection"
 date:   2017-09-13 23:46:24 +0100
 desc: "Reorganise the Code Into Classes and Add Functions To Measure Distance Between Them"
 
