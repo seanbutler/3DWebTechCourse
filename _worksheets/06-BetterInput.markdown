@@ -1,8 +1,8 @@
 ---
 layout: worksheet
-title:  "05 Collision Detection"
+title:  "05 Better Input"
 date:   2017-09-13 23:46:24 +0100
-desc: "Reorganise the Code Into Classes and Add Functions To Measure Distance Between Them"
+desc: "Move all keyboard Input, store it and share data across the entities"
 
 ---
 
