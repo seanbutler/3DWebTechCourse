@@ -14,8 +14,6 @@ desc: "Move all keyboard Input, store it and share data across the entities"
 
 ## Step 1 -
 
-Organise all the things in your world into specialised types of a thing called 'Entity'. So Avatar, Obstacle, Environment will all be a kind of Entity.
-
 Create a new class in your javascript file, somewhere near the top.
 
 ~~~ javascript
