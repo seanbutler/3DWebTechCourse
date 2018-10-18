@@ -12,7 +12,7 @@ desc: "Reorganise the Code Into Classes and Add Functions To Measure Distance Be
 ## Aims and Objectives
 
 
-## Step 1 - 
+## Step 1 -
 
 Organise all the things in your world into specialised types of a thing called 'Entity'. So Avatar, Obstacle, Environment will all be a kind of Entity.
 
