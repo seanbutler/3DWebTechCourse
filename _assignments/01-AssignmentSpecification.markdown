@@ -11,7 +11,7 @@ Code                       | UFCFS3-30-2
 :--- |:---
 Run:                       | 16 Sept
 Title:                     | 3D Technologies for the Web
-Leader:                    | Barry Dean
+Leader:                    | Sean Butler
 Tutor:                     | Sean Butler
 Percentage:                | 22.5% of Module
 Component:                 | Portfolio
