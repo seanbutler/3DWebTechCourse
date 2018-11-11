@@ -24,7 +24,7 @@ So if you press Spacebar the 32nd element of the array is set to true. If you re
 
 This way we can have a single event to store the updated keyboard state but lots of different entities can examine the data.
 
-## Step 1 -
+## Step 1 - A Game Engine is made of Services
 
 Create a new class in your javascript file, somewhere near the top.
 
@@ -42,7 +42,7 @@ Create a new class in your javascript file, somewhere near the top.
 
 This is the base for the Service class, you wont create any of these directly, but will derive from it when we want to add functionality to the main loop that exists as part of the engine rather than as part of the entities. Notice it uses the Update() method pattern.
 
-## Step 2 -
+## Step 2 - One Service takes care of the Keyboard for us
 
 Next create another class KeyboardService which is derived from the Service. This holds an array which will be used to store information about all the keys on the keyboard. Also provide a method which allows other code to get the keys status.
 
@@ -64,6 +64,8 @@ Next create another class KeyboardService which is derived from the Service. Thi
 
 ~~~
 
+Declare a variable 'keyboard' and assign a new KeyboardService to it, you will use this below and at various places in your code.
+
 Next, add two methods to the above class. Each one takes an event as its parameter then extracts they keycode from that event. This keycode is used to index the array and set it to true and false.
 
 ~~~ javascript
@@ -82,7 +84,7 @@ Next, add two methods to the above class. Each one takes an event as its paramet
 
 ~~~
 
-## Step 3 -
+## Step 3 - Connect the Browser to the Keyboard Service by Event Listeners
 
 This is all very well, but we have to connect this class to the web-browser and make the methods run when keys are pressed and released.
 
@@ -95,7 +97,7 @@ This is all very well, but we have to connect this class to the web-browser and 
 
 Add the above code to the constructor. It will join the methods to the web browser's generated events.
 
-## Step 4 -
+## Step 4 - The Entity then checks the Keyboard itself
 
 In the update method of the entity you wish to respond to keyboard, add the code below.
 
