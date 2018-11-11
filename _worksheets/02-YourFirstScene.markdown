@@ -1,6 +1,6 @@
 ---
 layout: worksheet
-title:  "2 A More Complex Scene"
+title:  "S1 W2 A More Complex Scene"
 date:   2017-09-13 23:46:24 +0100
 desc: "Refactoring and Several Objects in the Scene Moving at Once"
 

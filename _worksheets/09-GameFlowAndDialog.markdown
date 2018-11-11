@@ -1,6 +1,6 @@
 ---
 layout: worksheet
-title:  "9 Gameflow and Dialogs"
+title:  "S1 W9 Gameflow and Dialogs"
 date:   2017-09-13 23:46:24 +0100
 desc:   Your game will need a UI, some dialog boxes and
 ---

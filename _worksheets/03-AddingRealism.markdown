@@ -1,6 +1,6 @@
 ---
 layout: worksheet
-title:  "3 Adding Atmosphere"
+title:  "S1 W3 Adding Atmosphere"
 date:   2017-09-13 23:46:24 +0100
 desc: "Make a more realistic scene using many lights and fog"
 ---

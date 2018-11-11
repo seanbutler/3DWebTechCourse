@@ -1,6 +1,6 @@
 ---
 layout: worksheet
-title:  "5 Classes and Collision Detection"
+title:  "S1 W5 Classes and Collision Detection"
 date:   2017-09-13 23:46:24 +0100
 desc: "Reorganise the Code Into Classes and Add Functions To Measure Distance Between Them"
 
@@ -65,9 +65,9 @@ The Obstacle class should follow the same structure as the Entity class...
 
 ~~~
 
-Notice the super() and super. code, These call functions in the Entity class we defined earlier. Currently its empty. In this way we can make all the types of objects share code from one root or parent class.
+Notice the super() and super.etc() code, These call functions in the Entity class we defined earlier. Currently its empty. In this way we can make all the types of objects which extend from Entity share code from one root or parent class.
 
-Take the code your columns or whatever shape you are using, so that they are also wrapped in the obstacle class.
+Take the code your columns or boxes or knots or whatever shape you are using, so that they are also wrapped in the obstacle class.
 
 ## Step 3 - Container and Loop to Update many things
 
@@ -84,7 +84,7 @@ Push the obstacles into the container
 
 ~~~ javascript
 
-    for ( /* make a loop do it a few times */) {
+    for ( /* make a loop do it a few times, you should look this up online */) {
         var obstacle = new Obstacle();
         objects.push(obstacle);
     }
@@ -130,7 +130,7 @@ If you put a PlaneGeometry into the Environment class, perhaps its methods are e
 
 If you put an Avatar class together the Update() method is where you will respond to the keyboard input and move, maybe?
 
-If you want them to be updated every time you animate() then either add them to the objects array or call the update() method explicitly.
+If you want them to be updated every time you animate() then either add them to the objects array or call the update() method explicitly from within the animate() function.
 
 ## Step 5 - Detecting Collision
 
