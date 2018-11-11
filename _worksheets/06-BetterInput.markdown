@@ -1,12 +1,16 @@
 ---
 layout: worksheet
-title:  "Better Input System & the Service Pattern"
+title:  "6 Better Input System & the Service Pattern"
 date:   2017-09-13 23:46:24 +0100
 desc: "Move all keyboard Input, store it and share data across the entities"
 
 ---
 
 ## Previously on 3DTFTW
+
+- Nice scene with objects, lights and similar
+- Recap Storing Objects in a container and updating them en-masse
+- Detecting Collision Between Player and Obstacles
 
 ## Aims and Objectives
 
