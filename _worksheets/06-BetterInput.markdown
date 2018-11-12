@@ -127,8 +127,6 @@ In the update method of the entity you wish to respond to keyboard, add the code
 
 ~~~
 
-
-
 ## Exercises
 
 If you google 'keycodes' you will reach some sites which let you know the keycodes for any buttons you like. Failing that try, https://keycode.info/
