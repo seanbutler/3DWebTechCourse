@@ -80,13 +80,13 @@ Now you have your object, make sure you construct one into your game, you will n
 ![](../../assets/trees1.png)
 
 
-~~~
-
 ## Exercises
 
+Can you...
 - add a trunk to your tree?
 - make the tree cone green, but the trunk brown?
 
+Better Yet...
 - how about a snowman?
 - riding on skiis?
 - holding skipoles?
