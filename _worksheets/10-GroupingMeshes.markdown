@@ -79,7 +79,6 @@ Now you have your object, make sure you construct one into your game, you will n
 
 ![](../../assets/trees1.png)
 
-
 ## Exercises
 
 Can you...
