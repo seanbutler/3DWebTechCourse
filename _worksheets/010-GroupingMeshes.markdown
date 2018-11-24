@@ -77,6 +77,9 @@ scene.add( this.meshgroup );
 
 Now you have your object, make sure you construct one into your game, you will notice however that its just a cylinder. Go back to the mesh1, mesh2 and mesh3 and adjust the scale and positions so they look like a tree. I suggest you increase the y of the position of two of them and decrease the scale of them as well. That way with some work you will get a decent looking pinetree.
 
+![](../../assets/trees1.png)
+
+
 ~~~
 
 ## Exercises
