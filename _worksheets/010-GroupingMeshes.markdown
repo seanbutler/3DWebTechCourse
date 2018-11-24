@@ -1,8 +1,8 @@
 ---
 layout: worksheet
-title:  "S1 W9 Gameflow and Dialogs"
+title:  "S1 W10 Grouping Meshes"
 date:   2017-09-13 23:46:24 +0100
-desc:   Your game will need a UI, some dialog boxes and
+desc:   So you can make some more complicated shapes
 ---
 
 ## Previously on 3DTFTW
