@@ -59,13 +59,15 @@ this.meshgroup = new THREE.Group();
 
 ~~~
 
-But you have to add them, so underneath each section where you created and initialised mesh1, mesh2, and mesh3 add a line similar to this one below. This takes the mesh you created and puts it in a container so that the scene can draw them from one command rather than individually. Probably you will use different member variable names.
+But you have to add them, so underneath each section where you created and initialised mesh1, mesh2, and mesh3 add a line similar to this one below.
 
 ~~~ javascript
 
 this.meshgroup.add(this.mesh1);
 
 ~~~
+
+This takes the mesh you created and puts it in a container so that the scene can draw them from one command rather than individually. Probably you will use different member variable names.
 
 Finally near the bottom of your constructor instead of adding a mesh to the scene we are going to add a meshgroup instead.
 
@@ -78,6 +80,16 @@ scene.add( this.meshgroup );
 Now you have your object, make sure you construct one into your game, you will notice however that its just a cylinder. Go back to the mesh1, mesh2 and mesh3 and adjust the scale and positions so they look like a tree. I suggest you increase the y of the position of two of them and decrease the scale of them as well. That way with some work you will get a decent looking pinetree.
 
 ![](../../assets/trees1.png)
+
+
+The advantage of this approach is taht if we want to we can apply transforms (such as scale or translate) to the entire tree, or to its parts. Which is super convenient when we want to have lots of trees made up of smaller parts.
+
+
+
+## Next
+
+Grouping is convenient but isn't very efficient, next time we will look at ways to use groups andsimilar ideas to make your scene quicker for the computer to draw.
+
 
 ## Exercises
 
