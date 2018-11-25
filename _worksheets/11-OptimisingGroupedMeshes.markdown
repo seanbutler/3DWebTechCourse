@@ -66,4 +66,8 @@ this.mesh = new THREE.Mesh(this.geometry, this.material);
 
 ![](../../assets/trees2.png)
 
+If you are combining meshes they should use the same material for optimal rendering. You can of course put meshes with different materials in the same entity.
+
 ## Exercises
+
+- If you made any other entities with meshs made of several parts, apply the same technique to optimise those too.
