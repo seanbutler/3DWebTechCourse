@@ -40,5 +40,14 @@
         "title": "Game Programming Patterns",
         "author": "Robert Nystrom",
         "comments": "Several of these are super useful for non games too."
+    },
+    {
+        "url": "https://medium.com/@joshmarinacci/procedural-geometry-trees-896cc06f54ce",
+        "title": "Intermediary WebGl",
+        "author": "https://medium.com/@joshmarinacci",
+        "comments": "Josh's tutorial is the inspiration for some of the later tutorials."
     }
+
+
+
 ]
