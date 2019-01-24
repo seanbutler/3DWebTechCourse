@@ -1,6 +1,6 @@
 ---
 layout: worksheet
-title:  "S1 W1 Tooling Up & Getting Started"
+title:  "S1 W01 Tooling Up & Getting Started"
 date:   2017-09-13 23:46:24 +0100
 desc: "Where on the Web can we get it and where should we start"
 ---
@@ -319,7 +319,3 @@ Try to do as many of the following as you can.
 - Add in a plane
 
 ![](/3DWebTechCourse/assets/cubecylinderplane.png)
-
-<!-- ## Next
-Next
-![02-YourFirstScene]({% link _worksheets/02-YourFirstScene.markdown %}) -->
