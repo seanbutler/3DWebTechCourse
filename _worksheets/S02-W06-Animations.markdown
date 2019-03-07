@@ -28,7 +28,7 @@ Make sure you backup any existing project you are working from. Best to use gith
 Here is a link to a zip which countains some mesh-anim JSON files which work with today's code. They may be the wrong scale or rotation, but you can fix that in your own time. Download it and unpack it somewhere near your working dir.
 
 
-## Step 1 -
+## Step 1 - Clean out the Avatar Constructor
 
 So, using the code from earlier in the module when you had 3 torii spinning in front of a camera and could move one object around. Dive into the avatar and strip out the constructor, so it now looks like this.
 
