@@ -133,4 +133,4 @@ Add this method to the avatar it calls update on the mixer with the elapsed time
 Do all that and you should have an animating mesh on screen. Whoot!
 
 
-![](../../assets/staticbird.png)
+![](../../assets/flappybird.png)
