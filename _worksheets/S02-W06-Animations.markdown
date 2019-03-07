@@ -7,11 +7,11 @@ desc:   How To Animate Meshes using Three.js
 
 ## Previously on 3DTFTW
 
-You made learned how to optimise meshes made from several simple simple geometry meshes.
+You learned how to make and optimise meshes assembled from several simple simple geometry meshes.
 
 ## Aims and Objectives
 
-To load up a mesh from an external source.
+Today we are going to render and animate meshes and animations created using tools such as maya, blender or clara.io.
 
 ## Discussion
 
@@ -23,9 +23,9 @@ So, these materials are a super simple introduction to loading meshes and displa
 
 Make sure you backup any existing project you are working from. Best to use github as outlined in the earlier session or at least duplicate your project into a new folder and work there so you have a history to go back to if you need to.
 
-![](../../assets/json_mesh_anim.zip)
+[/assets/json_mesh_anim.zip](../../assets/json_mesh_anim.zip "Download Me Now")
 
-Here is a link to a zip which countains some mesh-anim JSON files which work with today's code. They may be the wrong scale or rotation, but you can fix that in your own time.
+Here is a link to a zip which countains some mesh-anim JSON files which work with today's code. They may be the wrong scale or rotation, but you can fix that in your own time. Download it and unpack it somewhere near your working dir.
 
 
 ## Step 1 -
