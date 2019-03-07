@@ -23,10 +23,16 @@ So, these materials are a super simple introduction to loading meshes and displa
 
 Make sure you backup any existing project you are working from. Best to use github as outlined in the earlier session or at least duplicate your project into a new folder and work there so you have a history to go back to if you need to.
 
-[/assets/json_mesh_anim.zip](../../assets/json_mesh_anim.zip "Download Me Now")
+[/assets/stork.json](../../assets/stork.json "Download Me Now")
 
-Here is a link to a zip which countains some mesh-anim JSON files which work with today's code. They may be the wrong scale or rotation, but you can fix that in your own time. Download it and unpack it somewhere near your working dir.
+[/assets/horse.json](../../assets/horse.json "Download Me Now")
 
+[/assets/centipede.json](../../assets/centipede.json "Download Me Now")
+
+[/assets/cow.json](../../assets/cow.json "Download Me Now")
+
+
+Here are links to some mesh-anim JSON files which work with today's code. They may be the wrong scale or rotation, but you can fix that in your own time. Download somewhere near your working dir.
 
 ## Step 1 - Clean out the Avatar Constructor
 
