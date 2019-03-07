@@ -23,6 +23,11 @@ So, these materials are a super simple introduction to loading meshes and displa
 
 Make sure you backup any existing project you are working from. Best to use github as outlined in the earlier session or at least duplicate your project into a new folder and work there so you have a history to go back to if you need to.
 
+![](../../assets/json_mesh_anim.zip)
+
+Here is a link to a zip which countains some mesh-anim JSON files which work with today's code. They may be the wrong scale or rotation, but you can fix that in your own time.
+
+
 ## Step 1 -
 
 So, using the code from earlier in the module when you had 3 torii spinning in front of a camera and could move one object around. Dive into the avatar and strip out the constructor, so it now looks like this.
@@ -129,6 +134,3 @@ Do all that and you should have an animating mesh on screen. Whoot!
 
 
 ![](../../assets/staticbird.png)
-
-
-## Exercises
