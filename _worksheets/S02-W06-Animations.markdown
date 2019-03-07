@@ -19,22 +19,25 @@ Making models with meshs works for only the most rudementary scenes. Also its a 
 
 So, these materials are a super simple introduction to loading meshes and displaying them in js using three.js.
 
+
 ## Step 0 - Backup Your Work So Far
+
 
 Make sure you backup any existing project you are working from. Best to use github as outlined in the earlier session or at least duplicate your project into a new folder and work there so you have a history to go back to if you need to.
 
-[/assets/stork.json](../../assets/stork.json "Download Me Now")
+[Stork](../../assets/stork.json "Download Me Now")
 
-[/assets/horse.json](../../assets/horse.json "Download Me Now")
+[Horse](../../assets/horse.json "Download Me Now")
 
-[/assets/centipede.json](../../assets/centipede.json "Download Me Now")
+[Centipede](../../assets/centipede.json "Download Me Now")
 
-[/assets/cow.json](../../assets/cow.json "Download Me Now")
+[Cow](../../assets/cow.json "Download Me Now")
 
+Here are links to some mesh-anim JSON files which work with today's code. They may be the wrong scale or rotation, but you can fix that in your own time. Download the stork and save it somewhere near your working dir.
 
-Here are links to some mesh-anim JSON files which work with today's code. They may be the wrong scale or rotation, but you can fix that in your own time. Download somewhere near your working dir.
 
 ## Step 1 - Clean out the Avatar Constructor
+
 
 So, using the code from earlier in the module when you had 3 torii spinning in front of a camera and could move one object around. Dive into the avatar and strip out the constructor, so it now looks like this.
 
@@ -51,7 +54,9 @@ constructor(x, y, z) {
 
 ~~~
 
+
 ## Step 2 - Loading A Mesh
+
 
 Loading Meshes requires using code to parse a datafile. We are going to focus on the JSON fileformat because its closely associated with Three.js.
 
@@ -97,7 +102,9 @@ scene.add(this.mesh);
 
 ~~~
 
-Step 3 - Setting Up the Animations
+
+## Step 3 - Setting Up the Animations
+
 
 Run this and you should have large bird on screen.
 
@@ -120,7 +127,9 @@ A mixer object allows us to manage meshes and animations together it takes one o
 
 However that only initialises the animation, each frame the game is rendered we must update the animation and specifically tell it we want the next portion of the data.
 
-Step 4 - Playing the Animation Every Frame
+
+## Step 4 - Playing the Animation Every Frame
+
 
 Add this method to the avatar it calls update on the mixer with the elapsed time, since it was last called. This allows the animation to know how much time has passed and so how to calculate the new positions of the vertices.
 
@@ -138,5 +147,42 @@ Add this method to the avatar it calls update on the mixer with the elapsed time
 
 Do all that and you should have an animating mesh on screen. Whoot!
 
-
 ![](../../assets/flappybird.png)
+
+## Further work
+
+Here is a [https://clara.io/view/70982f67-b7cf-4f43-8d60-b05a49e8e323](Simple Mesh).
+ on [https://clara.io/](clara.io) which can be exported and loaded in a similar way to the bird and stork above.
+
+Difference is you will have to work out how to download it in the right format (JSON) and display it yourself. There is no animation and its not face mapped like the stork and horse.
+
+Its a very similar process to the one described above and clara.io provide a quick example of generic code
+for loading simple meshes in three.js.
+
+[https://clara.io/learn/user-guide/data_exchange/threejs_export](Simple Mesh Link).
+
+
+## Even Further work
+
+http://www.ro.me/
+
+http://www.ro.me/tech/
+
+https://github.com/dataarts/3-dreams-of-black
+
+If you have a nose around inside the github repo for this project you will find some JSON meshes that are licensed as opensource/creative commons which we can therefore use.
+
+https://github.com/dataarts/3-dreams-of-black/tree/master/deploy/files/models
+
+In some cases the models have animations and others they are combined with multiple meshes in each file, but many work just fine. You will have to take a look and see which ones work and may have to do some research to find out how to load them.
+
+
+
+
+## OK, noone is going to get this far...
+
+Here are links to the source code of several tech demos made by the same team. Much more advaneced techniques than we are using, but still interesting and easy to access.
+
+[https://github.com/dataarts/3-dreams-of-black/tree/master/deploy/tech/demos](Advanced Tech Demos)
+
+Includes Shaders, Video, Point Clouds etc
