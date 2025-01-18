@@ -1,6 +1,5 @@
 # 3DWebTechCourse
 
-
-https://seanbutler.github.io/3DWebTechCourse/
+https://github.com/seanbutler/3DWebTechCourse
 
 
